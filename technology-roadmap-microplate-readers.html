@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="starttime"
+          content="2023-06-29 14:13:57.855857" />
+    <meta name="endtime"
+          content="2023-06-29 14:35:41.983181" />
+    <meta name="duration"
+          content="0:21:44.127324" />
+    <meta name="query_count"
+          content="294" />
+    <meta name="token_count"
+          content="429916" />
+    <meta name="answer_time"
+          content="0:00:02.806364" />
+    <meta name="manual_synonyms"
+          content="['microplate reader', 'microplate reader system', 'microplate spectrophotometer', 'microplate photometer', 'microplate absorbance reader', 'microplate luminome']" />
+    <title>Mergeflow Technology Roadmap</title>
+    <script src="https://kit.fontawesome.com/e554370735.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: "Segoe UI","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        .single-section-container{
+                align-items: stretch;
+            }
+        .single-section-container > .content-container {
+                border-radius: 10px;
+                border: 1px solid #cccccc;
+            }
+        
+        .section-container {
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .outer-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+        }
+
+        ul {
+                 margin: 0px;
+             }
+
+
+        .content-container {
+            flex: 1 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 30px 10px 30px;
+            font-size: 16px;
+            text-align: left;
+            border: none;
+            
+        }
+
+        .container-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        a {
+            font-weight: bold;
+            color: green;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-top: 9px;
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+        }
+        table {
+            width: auto;
+            border-collapse: collapse;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        table th, table td {
+            padding: 8px;
+            border: 1px solid #cccccc;
+            text-align: left;
+        }
+
+        table a {
+            text-decoration: none;
+        }
+
+        .heading {
+                      font-weight: bold;
+                      margin-bottom: 10px;
+       }
+
+        .sub-heading{
+                         font-weight: normal;
+                     }
+        .heading-link,
+        .sub-heading-link {
+            color: #6a6b67;
+            text-decoration: none;
+        }
+        .heading-link {
+                           font-size: 18px
+                       }
+        .sub-heading-link {
+                               font-size: 15px;
+         }
+        .vc-table {
+            width: auto;
+        }
+        .date {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0px;
+        }
+        .explore-more {
+            text-decoration: none;
+        }
+        .total-hits {
+            font-size: 16px;
+            font-weight: normal;
+            color: #999;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 17%; 
+            height: 100%;
+            overflow-y: auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #pagecontent {
+            margin-left: 19%;
+        }
+        .not-found {
+            font-size: 14px;
+            color: #999;
+        }
+        .orientation-subheading{
+            margin-bottom: 10px;
+            color: #999;
+        }
+        .dataset-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Content</h2>
+        <ol>
+            <li class="heading">
+                <a href="#section-1" class="heading-link">Introduction</a>
+            </li>
+            <li class="heading">
+                <a href="#section-2" class="heading-link">Figures of Merit</a>
+            </li>
+            <li class="heading">
+                <a href="#section-3" class="heading-link">Key Technologies</a>
+                <ul><li><a class="sub-heading-link" href="#section-3-1">Optical Detection</a></li><li><a class="sub-heading-link" href="#section-3-2">Automation</a></li><li><a class="sub-heading-link" href="#section-3-3">Data Analysis Software</a></li><li><a class="sub-heading-link" href="#section-3-4">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-3-5">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-4" class="heading-link">Applications</a>
+                <ul><li><a class="sub-heading-link" href="#section-4-1">Enzyme-linked immunosorbent assay (ELISA)</a></li><li><a class="sub-heading-link" href="#section-4-2">Cell viability assays</a></li><li><a class="sub-heading-link" href="#section-4-3">Reporter gene assays</a></li><li><a class="sub-heading-link" href="#section-4-4">Drug discovery</a></li><li><a class="sub-heading-link" href="#section-4-5">Environmental monitoring</a></li><li><a class="sub-heading-link" href="#section-4-6">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-4-7">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-5" class="heading-link">Unsolved Problems</a>
+                <ul><li><a class="sub-heading-link" href="#section-5-1">Limited sensitivity for low concentration samples</a></li><li><a class="sub-heading-link" href="#section-5-2">Inability to measure certain types of samples</a></li><li><a class="sub-heading-link" href="#section-5-3">High cost of equipment and reagents</a></li><li><a class="sub-heading-link" href="#section-5-4">Lack of standardization in data analysis</a></li><li><a class="sub-heading-link" href="#section-5-5">Limited throughput for high-throughput screening</a></li><li><a class="sub-heading-link" href="#section-5-6">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-5-7">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-6" class="heading-link">Future Outlook</a>
+            </li>
+        </ol>
+    </div>
+    <div id="pagecontent">
+        <div class="logo-container">
+            <a href="https://mergeflow.com/">
+                <img src="https://mergeflow.net/Images/logo-text.png" class="logo" alt="Logo" width="200" height="100" class="logo">
+            </a>
+            <h1>Technology Roadmap on Microplate Readers</h1>
+        </div>
+
+        <h2 id="section-1">1. Introduction</h2>
+        <div><h3>Overview</h3>
+<p>Microplate readers are laboratory instruments used to detect and measure biological, chemical or physical events in microtiter plates. They are widely used in life science research, drug discovery, clinical diagnostics, and quality control testing in various industries.</p>
+
+<h3>Working Principle</h3>
+<p>Microplate readers work by measuring the absorbance, fluorescence, or luminescence of samples in microtiter plates. The microtiter plates contain multiple wells, each of which can hold a small volume of sample. The instrument uses a light source to illuminate the samples in the wells, and then detects the amount of light that is absorbed, emitted, or scattered by the samples. The amount of light detected is proportional to the amount of the target molecule or analyte present in the sample. The data obtained from the microplate reader can be used to quantify the concentration of the target molecule or analyte, or to monitor changes in biological or chemical processes over time.</p></div>
+        <h2 id="section-2">2. Figures of Merit</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Sensitivity</td>
+      <td>[RFU]</td>
+      <td>Minimum detectable signal</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Dynamic Range</td>
+      <td>[RFU]</td>
+      <td>Ratio of the largest and smallest signals that can be detected</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Accuracy</td>
+      <td>[%]</td>
+      <td>Closeness of the measured value to the true value</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Precision</td>
+      <td>[%]</td>
+      <td>Repeatability of the measurement</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Speed</td>
+      <td>[s/plate]</td>
+      <td>Time required to read a microplate</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Ease of Use</td>
+      <td>[1-5]</td>
+      <td>User-friendliness of the instrument</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Versatility</td>
+      <td>[1-5]</td>
+      <td>Ability to perform multiple assays</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Cost</td>
+      <td>[€]</td>
+      <td>Cost of the instrument</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3>Sensitivity</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.biorxiv.org/content/10.1101/2022.08.12.503755v2' target='_blank'>Precise and versatile microplate reader-based analyses of biosensor signals from arrayed microbial colonies</a></div><div class="date">14.01.2023</div><div><ul>
+<li>Problem: Sensitivity in optical analyses of fluorescent sensor signals</li>
+<li>Solution: Use of monochromator equipped microplate readers</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1420-3049/28/10/4221' target='_blank'>Molecules | Free Full-Text | Development and Validation of Green and High-Throughput Microwell Spectrophotometric Assay for the Determination of Selective Serotonin Reuptake Inhibitors in Their Pharmaceutical Dosage Forms</a></div><div class="date">21.05.2023</div><div><ul>
+<li>Problem: Limited throughput and high solvent consumption in existing spectrophotometric assays for SSRIs</li>
+<li>Solution: Development of a green and high-throughput microwell spectrophotometric assay</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.biorxiv.org/content/10.1101/2022.11.02.514587v1' target='_blank'>Modification of blood-based (IgG) to salivary-based (IgA) ELISA for Inflammatory Bowel Disease Diagnostic: Tumor necrosis factor (TNF) alpha quantification</a></div><div class="date">04.11.2022</div><div><ul>
+<li>Problem: Lack of accessibility to expensive diagnostic tools for Inflammatory Bowel Disease</li>
+<li>Solution: Modification of blood-based ELISA to salivary-based ELISA</li>
+</ul></div></div></div></div><div class="section-container"><h3>Dynamic Range</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/00032719.2022.2139836?af=R' target='_blank'>Determination of DNA Methyltransferase 1 in Cells Using a RG108-Fluorescein Conjugate to Monitor the Fluorescent Ratio with a Microplate Reader: Analytical Letters: Vol 0, No 0</a></div><div class="date">30.10.2022</div><div><ul>
+<li>Problem: Dynamic Range in microplate readers for DNMT1 detection</li>
+<li>Solution: Use of RG108-fluorescein conjugate as a DNMT1 detector</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1424-8247/16/7/933' target='_blank'>Pharmaceuticals | Free Full-Text | EVOO Polyphenols Exert Anti-Inflammatory Effects on the Microglia Cell through TREM2 Signaling Pathway</a></div><div class="date">27.06.2023</div><div><ul>
+<li>Problem: Chronic inflammation and neurotoxicity in microglia cells in Alzheimer's disease.</li>
+<li>Solution: EVOO polyphenols activate TREM2-dependent anti-inflammatory pathway and enhance protective microglial activity.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1420-3049/28/9/3949' target='_blank'>Molecules | Free Full-Text | &beta;-Carboline-&alpha;-aminophosphonate Derivative: A Promising Antitumor Agent for Breast Cancer Treatment</a></div><div class="date">08.05.2023</div><div><ul>
+<li>Problem: Need for new therapeutic approaches for breast cancer treatment</li>
+<li>Solution: Development of BCP-1 compound to interfere with breast cancer cell proliferation</li>
+</ul></div></div></div></div><div class="section-container"><h3>Accuracy</h3><div class="outer-container"><div class="content-container"><div><a href='http://pubs.rsc.org/en/Content/ArticleLanding/2023/AN/D2AN01571D' target='_blank'>Smartphone-based Microplate Reader for High-throughput Quantitation of Disease Markers in Serum - Analyst (RSC Publishing)</a></div><div class="date">15.12.2022</div><div><ul>
+<li>Problem: Accuracy in microplate readers</li>
+<li>Solution: Smartphone-based portable reader with integrated optics</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/35969072' target='_blank'>Enhanced Reproducibility and Precision of High-Throughput Quantification of Bacterial Growth Data Using a Microplate Reader.</a></div><div class="date">16.08.2022</div><div><ul>
+<li>Problem: Accuracy and reproducibility in monitoring bacterial growth in microplate readers</li>
+<li>Solution: Development of a reliable, repeatable protocol with verification steps</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.biorxiv.org/content/10.1101/2021.12.06.471413v3' target='_blank'>FPCountR: Absolute protein quantification using fluorescence measurements</a></div><div class="date">08.09.2022</div><div><ul>
+<li>Problem: Accuracy in calibration of fluorescence readings on microplate readers</li>
+<li>Solution: FPCountR method for absolute protein quantification using fluorescence measurements</li>
+</ul></div></div></div></div><div class="section-container"><h3>Precision</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/10641963.2023.2192444?af=R' target='_blank'>Full article: Hirsutine ameliorates myocardial ischemia-reperfusion injury through improving mitochondrial function via CaMKII pathway</a></div><div class="date">23.03.2023</div><div><ul>
+<li>Problem: Ischemia-reperfusion injury in acute myocardial infarction</li>
+<li>Solution: Hirsutine pre-treatment to improve mitochondrial function</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37166239' target='_blank'>A Rapid Method to Determine Growth-Limiting Nutrient Concentrations for Yeast in a Microplate Spectrophotometer.</a></div><div class="date">11.05.2023</div><div><ul>
+<li>Problem: Challenges in estimating cell concentrations using single-sample spectrophotometer</li>
+<li>Solution: Rapid method using microplate spectrophotometer to reduce contamination and processing time</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/19768354.2022.2152864?af=R' target='_blank'>Full article: 1,2,3,4,6-Penta-O-galloyl-β-D-glucose Inhibits CD44v3, a cancer stem cell marker, by regulating its transcription factor, in human pancreatic cancer cell line</a></div><div class="date">04.12.2022</div><div><ul>
+<li>Problem: Inhibition of CD44, a pancreatic cancer stem cell marker, for potential treatment of pancreatic ductal adenocarcinoma (PDAC) </li>
+<li>Solution: 1,2,3,4,6-Penta-O-galloyl-β-D-glucose (PGG) inhibits CD44s and CD44v3 expression in Mia-PaCa-2 cells, which may have therapeutic effects in pancreatic cancer mediated by inhibition of CSC markers.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Speed</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37170137' target='_blank'>A novel aptamer-G-quadruplex/hemin self-assembling color system: rapid visual diagnosis of invasive fungal infections.</a></div><div class="date">12.05.2023</div><div><ul>
+<li>Problem: Challenging early clinical diagnosis of invasive fungal infections (IFI)</li>
+<li>Solution: Development of a novel aptamer-G-quadruplex/hemin self-assembling color system (AGSCS)</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36345563' target='_blank'>Fast Screening of ProteinâProtein Interactions Using Fluorescence Resonance Energy Transfer (FRET-) Based Fluorescence Plate Reader Assay in Live Cells.</a></div><div class="date">09.11.2022</div><div><ul>
+<li>Problem: Time-consuming and expensive FRET analysis methods for PPIs</li>
+<li>Solution: FRET-based high-throughput assay method with a standard microplate reader</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36846677' target='_blank'>Hexane fraction of Prunus japonica thunb. Seed extract enhances boar sperm motility via CatSper ion channel.</a></div><div class="date">28.02.2023</div><div><ul>
+<li>Problem: Slow sperm motility in boars</li>
+<li>Solution: Prunus japonica seed extract improves sperm motility via ion channel</li>
+</ul></div></div></div></div><div class="section-container"><h3>Ease of Use</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1422-0067/24/11/9139' target='_blank'>IJMS | Free Full-Text | A Novel Time-Resolved Fluorescence Resonance Energy Transfer Assay for the Discovery of Small-Molecule Inhibitors of HIV-1 Tat-Regulated Transcription</a></div><div class="date">23.05.2023</div><div><ul>
+<li>Problem: Limitations of current high-throughput screening assays for identifying inhibitors of Tat-TAR RNA interaction.</li>
+<li>Solution: Homogenous time-resolved fluorescence resonance energy transfer (TR-FRET) assay using europium cryptate as a fluorescence donor.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2076-393X/11/2/225' target='_blank'>Vaccines | Free Full-Text | Evaluation of Virus-Free Manufacture of Recombinant Proteins Using CRISPR-Mediated Gene Disruption in Baculovirus-Infected Insect Cells</a></div><div class="date">19.01.2023</div><div><ul>
+<li>Problem: Baculovirus contamination in VLP production</li>
+<li>Solution: CRISPR-Cas9 mediated disruption of gp64 gene</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2079-4983/14/5/238' target='_blank'>JFB | Free Full-Text | Submicron-Grooved Films Modulate the Directional Alignment and Biological Function of Schwann Cells</a></div><div class="date">23.04.2023</div><div><ul>
+<li>Problem: Poor understanding of the effects of submicron-grooved patterns on Schwann cell behavior.</li>
+<li>Solution: Submicron-grooved patterns can guide cell alignment and migration, upregulate gene expression, and decrease membrane potential.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Versatility</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1420-3049/28/10/4049' target='_blank'>Molecules | Free Full-Text | Development of Green and High Throughput Microplate Reader-Assisted Universal Microwell Spectrophotometric Assay for Direct Determination of Tyrosine Kinase Inhibitors in Their Pharmaceutical Formulations Irrespective the Diversity of Their Chemical Structures</a></div><div class="date">12.05.2023</div><div><ul>
+<li>Problem: Lack of a universal spectrophotometric assay for all TKIs.</li>
+<li>Solution: Development of a universal microwell spectrophotometric assay for all TKIs.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2077-0383/12/9/3135' target='_blank'>JCM | Free Full-Text | Effect of Resistance Training with Different Set Structures on Neurotrophic Factors and Obesity-Related Biomarkers in Middle-Aged Korean Women with Obesity</a></div><div class="date">26.04.2023</div><div><ul>
+<li>Problem: Limited research on the impact of resistance training on neurotrophic factors and obesity-related markers in middle-aged women with obesity</li>
+<li>Solution: Comparing the effects of different set structures of resistance training on blood levels of biomarkers in middle-aged women with obesity</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/08927014.2022.2094259?af=R' target='_blank'>Full article: High-throughput method development for in-situ quantification of aquatic phototrophic biofilms</a></div><div class="date">06.07.2022</div><div><ul>
+<li>Problem: Lack of standardized, non-invasive, and high-throughput methods for in situ quantification of phototrophic biofilms</li>
+<li>Solution: Development of a low-cost and high-throughput bioassay using microplate reader and fluorescence microscopy for in situ quantification of phototrophic biofilms</li>
+</ul></div></div></div></div><div class="section-container"><h3>Cost</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/09540105.2022.2128070?af=R' target='_blank'>Full article: Effect of velvet antler on the immune activity of cyclophosphamide-induced immunosuppressed mice</a></div><div class="date">11.10.2022</div><div><ul>
+<li>Problem: Cost of microplate readers</li>
+<li>Solution: No solution proposed in the text</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1422-0067/24/1/229' target='_blank'>IJMS | Free Full-Text | Evaluation of the Combined Effect of Artemisinin and Ferroptosis Inducer RSL3 against Toxoplasma gondii</a></div><div class="date">23.12.2022</div><div><ul>
+<li>Problem: Cost of developing new drugs for toxoplasmosis.</li>
+<li>Solution: Combination of DHA and RSL3 as an alternative drug.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1422-0067/23/24/15839' target='_blank'>IJMS | Free Full-Text | Changes in the Phytochemical and Bioactive Compounds and the Antioxidant Properties of Wolfberry during Vinegar Fermentation Processes</a></div><div class="date">13.12.2022</div><div><ul>
+<li>Problem: Preservation and intensive processing of wolfberry</li>
+<li>Solution: Fermentation of wolfberry into vinegar for preservation and functional food</li>
+</ul></div></div></div></div></div>
+        <h2 id="section-3">3. Key Technologies</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Optical Detection</td>
+      <td>Uses optical methods to detect signals from samples in microplates</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Automation</td>
+      <td>Automates the process of reading multiple samples in microplates</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Data Analysis Software</td>
+      <td>Software to analyze and interpret data generated by microplate readers</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-3-1">Optical Detection</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Optical%20Detection%22%7COptical%20Sensing%7COptical%20Imaging%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 106 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Optical Detection'' for ''microplate readers''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36460855' target='_blank'>Promising instrument-free detections of various analytes using smartphones with Spotxel® Reader.</a></div><div class="date">03.12.2022</div><div><ul>
+<li>Problem: Expensive accessories and instruments required for smartphone-based detections</li>
+<li>Solution: Free app (Spotxel® Reader) for accurate data analysis without instruments</li>
+</ul></div><br/><div><a href='http://dx.doi.org/10.1007/s44211-022-00216-1' target='_blank'>Promising instrument-free detections of various analytes using smartphones with Spotxel(®) Reader</a></div><div class="date">02.12.2022</div><div><ul>
+<li>Problem: Expensive accessories and instruments for smartphone-based detections</li>
+<li>Solution: Free app (Spotxel(®) Reader) for microplate data analysis</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36681234' target='_blank'>Evaluation of hydrocortisone as a strain-dependent growth-regulator of Porphyromonasgingivalis.</a></div><div class="date">22.01.2023</div><div><ul>
+<li>Problem: Long incubation time for P. gingivalis detection in clinical samples</li>
+<li>Solution: Hydrocortisone as a growth stimulant to reduce incubation time</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Optical%20Detection%22%7COptical%20Sensing%7COptical%20Imaging%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 1 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Optical Detection'' for ''microplate readers''</div><div><a href='http://3dprint.com/85098/3d-printed-diagnostics-elisa/' target='_blank'>3D Printed Device Allows Smartphones to Detect Viruses Such as HIV, West Nile & More Within ELISA Plates - 3DPrint.com</a></div><div class="date">28.07.2015</div><div><ul>
+<li>3D printed mobile phone-based device can read ELISA trays, reducing diagnosis costs per patient.</li>
+<li>Device uses a 3D-printed optomechanical attachment to hold and illuminate a 96-well plate using a LED array.</li>
+<li>Hand-held and cost-effective platform could assist health-care professionals to perform high-throughput disease screening or tracking of vaccination campaigns at the point-of-care.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Optical%20Detection%22%7COptical%20Sensing%7COptical%20Imaging%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Optical Detection'' for ''microplate readers''</div><div><a href='https://phys.org/news/2023-01-mobile-breakthrough-environment-colorimetric-multi-channel.html' target='_blank'>A mobile breakthrough for water environment monitoring: Novel colorimetric multi-channel sensor using a cell phone</a></div><div class="date">17.01.2023</div><div><ul>
+<li>Cellphone-based colorimetric multi-channel sensor for water environmental monitoring</li>
+<li>Diffraction grating used to split six white beams for improved sensitivity</li>
+<li>Simultaneous detection of various environmental contaminants with high sensitivity and specificity</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-2">Automation</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Automation%22%7C%22Automatization%22%7C%22Automated%20process%22%7C%22Automated%20system%22%7C%22Robotic%20process%20automation%22%7C%22RPA%22%7C%22Artificial%20intelligence%22%7C%22AI%22%7C%22Machine%20learning%22%7C%22ML%22%7C%22Computer%20automation%22%7C%22Industrial%20automation%22%7C%22Smart%20automation%22%7C%22Automating%22%7C%22Automate%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1651 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automation'' for ''microplate readers''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36478250' target='_blank'>CRISPR-Cas12-based field-deployable system for rapid detection of synthetic DNA sequence of the monkeypox virus genome.</a></div><div class="date">09.12.2022</div><div><ul>
+<li>Problem: Need for rapid and cost-effective MPXV detection tools</li>
+<li>Solution: Portable CRISPR-Cas-based system for naked-eye detection of MPXV</li>
+</ul></div><br/><div><a href='http://dx.doi.org/10.3389/fmicb.2023.1079033' target='_blank'>Development of a high-throughput minimum inhibitory concentration (HT-MIC) testing workflow</a></div><div class="date">25.05.2023</div><div><ul>
+<li>Problem: Inability to simultaneously evaluate a large number of samples efficiently.</li>
+<li>Solution: Development of a high-throughput minimum inhibitory concentration (HT-MIC) testing workflow.</li>
+</ul></div><br/><div><a href='https://www.biorxiv.org/content/10.1101/2022.10.21.513098v1' target='_blank'>Development of a High-Throughput Minimum Inhibitory Concentration (HT-MIC) Testing Workflow</a></div><div class="date">21.10.2022</div><div><ul>
+<li>Problem: Inability to simultaneously evaluate a large number of samples efficiently.</li>
+<li>Solution: Development of a High-Throughput Minimum Inhibitory Concentration (HT-MIC) Testing Workflow.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Automation%22%7C%22Automatization%22%7C%22Automated%20process%22%7C%22Automated%20system%22%7C%22Robotic%20process%20automation%22%7C%22RPA%22%7C%22Artificial%20intelligence%22%7C%22AI%22%7C%22Machine%20learning%22%7C%22ML%22%7C%22Computer%20automation%22%7C%22Industrial%20automation%22%7C%22Smart%20automation%22%7C%22Automating%22%7C%22Automate%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 75 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automation'' for ''microplate readers''</div><div><a href='http://www.businesswire.com/news/home/20230120005415/en/Microplate-Reader-Global-Market-Report-2022-Growth-in-Drug-Discovery-and-Research-Development-Activities-Undertaken-by-Biopharmaceutical-Companies-Bolsters-Sector---ResearchAndMarkets.com/' target='_blank'>Microplate Reader Global Market Report 2022 Growth in Drug Discovery and Research & Development Activities Undertaken by Biopharmaceutical Companies Bolsters Sector - ResearchAndMarkets.com | Business Wire</a></div><div class="date">20.01.2023</div><div><ul>
+<li>Automation in microplate readers enables high-throughput screening and reduces operational time and reagent quantity.</li>
+<li>Increasing preference for multi-mode readers and rising investments in biotechnology sector fuel market growth.</li>
+<li>COVID-19 pandemic increases demand for portable and easy-to-use microplate readers for diagnostic testing activities.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221201005606/en/Lab-Automation-Global-Market-Report-2022-Amalgamation-of-AI-and-Analytical-Tools-in-Laboratory-Workflows-Presents-Opportunities---ResearchAndMarkets.com/' target='_blank'>Lab Automation Global Market Report 2022: Amalgamation of AI and Analytical Tools in Laboratory Workflows Presents Opportunities - ResearchAndMarkets.com | Business Wire</a></div><div class="date">01.12.2022</div><div><ul>
+<li>Lab automation market projected to grow with significant CAGR</li>
+<li>Microplate readers studied across various types and applications</li>
+<li>Amalgamation of AI and analytical tools presents opportunities in lab automation</li>
+</ul></div><br/><div><a href='https://www.prweb.com/releases/2022/11/prweb18994946.htm' target='_blank'>Molecular Devices announces ValitaTiter IgG quantitation assay to fast track biologics sample testing</a></div><div class="date">02.11.2022</div><div><ul>
+<li>ValitaTiter is a 10-minute titer assay that can be run on SpectraMax microplate readers.</li>
+<li>ValitaTiter is efficient, minimizes cost and time to results, and easily integrates into automated workflows.</li>
+<li>Molecular Devices' technical support team and PhD-level field application scientists partner with customers to create complete automated workflows.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div><div class="section-container"><h3 id="section-3-3">Data Analysis Software</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Data%20Analysis%20Software%22%7C%22Data%20Analytics%20Software%22%7C%22Data%20Analysis%20Tool%22%7C%22Data%20Analytics%20Tool%22%7C%22Data%20Analysis%20Program%22%7C%22Data%20Analytics%20Program%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 27 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Data Analysis Software'' for ''microplate readers''</div><div><a href='https://www.mdpi.com/2079-6374/13/5/511' target='_blank'>Bacterial Lux Biosensors in Genotoxicological Studies</a></div><div class="date">29.04.2023</div><div><ul>
+<li>Problem: Assessing genotoxicity of chemical compounds in microplate readers</li>
+<li>Solution: Using bacterial lux biosensors to identify potential genotoxicants</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1422-0067/24/12/9878' target='_blank'>IJMS | Free Full-Text | Thymoquinone Inhibition of Chemokines in TNF-&alpha;-Induced Inflammatory and Metastatic Effects in Triple-Negative Breast Cancer Cells</a></div><div class="date">08.06.2023</div><div><ul>
+<li>Problem: Chemokines promoting breast cancer growth and metastasis in TNBC.</li>
+<li>Solution: Thymoquinone (TQ) as an anti-inflammatory and antimetastatic agent.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2304-8158/12/12/2412' target='_blank'>Foods | Free Full-Text | Optimization of Cold Brew Coffee Using Central Composite Design and Its Properties Compared with Hot Brew Coffee</a></div><div class="date">20.06.2023</div><div><ul>
+<li>Problem: Limited literature on the health benefits of cold brew coffee.</li>
+<li>Solution: Investigate the influences of brewing conditions on physicochemical properties.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Data%20Analysis%20Software%22%7C%22Data%20Analytics%20Software%22%7C%22Data%20Analysis%20Tool%22%7C%22Data%20Analytics%20Tool%22%7C%22Data%20Analysis%20Program%22%7C%22Data%20Analytics%20Program%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 5 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Data Analysis Software'' for ''microplate readers''</div><div><a href='http://www.businesswire.com/news/home/20230321005630/en/Cell-Viability-Assays-Global-Market-to-Reach-3.01-Billion-by-2030---Rising-Focus-on-the-Development-of-Cell-based-Therapeutics-Drives-Growth---ResearchAndMarkets.com/' target='_blank'>Cell Viability Assays Global Market to Reach $3.01 Billion by 2030 - Rising Focus on the Development of Cell-based Therapeutics Drives Growth - ResearchAndMarkets.com | Business Wire</a></div><div class="date">21.03.2023</div><div><ul>
+<li>Cell viability assays market to reach $3.01 billion by 2030, driven by rising focus on cell-based therapeutics.</li>
+<li>Increasing funding for cell-based research and technological innovations are boosting market growth.</li>
+<li>COVID-19 pandemic positively influences market growth due to increased usage of CVAs in vaccine research.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-3-4">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Optical Detection</th><th>Automation</th><th>Data Analysis Software</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/141360' target='_blank'>Dakota Technologies</a></td><td><ul><li>Fluorescence microplate readers with multiplexing capability</li><li>High performance LIF detection for biomedical research</li></ul></td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/141384' target='_blank'>Dakota Technologies, Inc.</a></td><td><ul><li>Laser-induced fluorescence instrument for microplate reading</li><li>High throughput screening</li></ul></td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/677113' target='_blank'>Fluorescence Innovations</a></td><td><ul><li>Fluorescence lifetime (FLT) readout of FRET between fluorescent fusion proteins</li><li>Revolutionize HTS for drug discovery</li></ul></td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/274646' target='_blank'>PSI</a></td><td><ul><li>Microplate technology for cytokine assay</li><li>Diagnosis of immunological response to infection</li><li>Utilization of COTS components for microplate reader</li><li>Field worthy system for deployment to field hospitals</li><li>Diagnosis of chemical, biological and radiation exposure</li></ul></td><td>x</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/109487' target='_blank'>BIOO SCIENTIFIC</a></td><td><ul><li>Rapid enzyme-based assays for detecting banned substances in food</li><li>Screening food supply for low molecular weight banned substances</li></ul></td><td>x</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/151080' target='_blank'>Echelon Biosciences</a></td><td><ul><li>Fluorescent protein kinase assays</li><li>High-throughput screening for drug discovery</li></ul></td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/283078' target='_blank'>Steven Sundberg Proteomic Systems</a></td><td><ul><li>Automation of MembraneChipTM production</li><li>Novel biological assays for basic research and drug discovery</li></ul></td><td>x</td><td>x</td><td>-</td></tr></table><h4 id="section-3-5">Venture Capital Companies</h4><div>No documents found.</div></div></div>
+        <h2 id="section-4">4. Applications</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Enzyme-linked immunosorbent assay (ELISA)</td>
+      <td>Microplate readers are commonly used in ELISA to detect and quantify proteins, antibodies, and other biomolecules.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Cell viability assays</td>
+      <td>Microplate readers can measure the metabolic activity of cells, which is often used as an indicator of cell viability.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Reporter gene assays</td>
+      <td>Microplate readers can detect and quantify the expression of reporter genes, which are often used to study gene regulation and signaling pathways.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Drug discovery</td>
+      <td>Microplate readers are used in high-throughput screening to identify potential drug candidates.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Environmental monitoring</td>
+      <td>Microplate readers can be used to measure the concentration of pollutants and other environmental contaminants in water and soil samples.</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-4-1">Enzyme-linked immunosorbent assay (ELISA)</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Enzyme-linked%20immunosorbent%20assay%22%7C%22ELISA%22%7C%22Enzyme%20immunoassay%22%7C%22EIA%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 969 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Enzyme-linked immunosorbent assay (ELISA)'' for ''microplate readers''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36738624' target='_blank'>Development of small-sized fluorescence detector for pipette tip-based biosensor for on-site diagnosis.</a></div><div class="date">05.02.2023</div><div><ul>
+<li>Problem: Size and cost of microplate readers for ELISA</li>
+<li>Solution: Small-sized and low-cost pipette tip-based biosensor</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36038242' target='_blank'>Rapid magneto-enzyme-linked immunosorbent assay for ultrasensitive protein detection.</a></div><div class="date">30.08.2022</div><div><ul>
+<li>Problem: Cumbersome and time-intensive ELISA</li>
+<li>Solution: Magneto-ELISA with dually labeled magnetic nanoparticles</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/35851203' target='_blank'>The role of serum levels of anti-phospholipase A2 receptor antibodies in the diagnosis of primary membranous nephropathy.</a></div><div class="date">20.07.2022</div><div><ul>
+<li>Problem: Differentiating primary membranous nephropathy from other nephropathies</li>
+<li>Solution: Use of anti-PLA2R1 serum concentration as a biomarker</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Enzyme-linked%20immunosorbent%20assay%22%7C%22ELISA%22%7C%22Enzyme%20immunoassay%22%7C%22EIA%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 42 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Enzyme-linked immunosorbent assay (ELISA)'' for ''microplate readers''</div><div><a href='https://www.nanowerk.com/nanotechnology-news2/newsid=57247.php' target='_blank'>New rapid test uses magnetic nanoparticles to detect coronavirus antibodies</a></div><div class="date">09.02.2021</div><div><ul>
+<li>Rapid test using magnetic nanoparticles detects Covid-19 antibodies in minutes with high sensitivity and specificity.</li>
+<li>Test requires only a small sample of blood and can be used on site without special equipment.</li>
+<li>Test can also be applied to serological diagnosis of other diseases and has potential to replace ELISA test.</li>
+</ul></div><br/><div><a href='http://www.3ders.org/articles/20150728-3d-printed-smartphone-device-reads-elisa-diagnostic-tests-accurately-and-within-one-minute.html' target='_blank'>3D printer and 3D printing news</a></div><div class="date">28.07.2015</div><div><ul>
+<li>3D printed smartphone device reads ELISA tests with up to 99.6% accuracy within one minute</li>
+<li>Low-cost and portable, it can diagnose viruses such as HIV, West Nile, and hepatitis B</li>
+<li>Diagnostic results for the entire 96-well plate can be sent back to the phone within one minute</li>
+</ul></div><br/><div><a href='https://www.news-medical.net/news/20190102/Using-Assay-Kits-and-Dyes-to-Advance-Cell-Biology-Research.aspx' target='_blank'>Using Assay Kits and Dyes to Advance Cell Biology Research</a></div><div class="date">02.01.2019</div><div><ul>
+<li>ELISA kits provide consistent and fully quantitative results for neurotransmitter monitoring in neurological function.</li>
+<li>ELISAs are faster and more efficient than other methods for high-throughput analysis of cell samples.</li>
+<li>Enzo Life Sciences' CELLESTIAL® analysis kit allows for non-toxic live cell analysis and manipulation.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Enzyme-linked%20immunosorbent%20assay%22%7C%22ELISA%22%7C%22Enzyme%20immunoassay%22%7C%22EIA%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Enzyme-linked immunosorbent assay (ELISA)'' for ''microplate readers''</div><div><a href='http://www.medgadget.com/2015/07/smartphone-device-runs-elisa-tests-helps-fit-a-clinical-lab-in-doctors-tote.html' target='_blank'>Smartphone Device Runs ELISA Tests, Helps Fit a Clinical Lab in Doctor's Tote | Medgadget</a></div><div class="date">28.07.2015</div><div><ul>
+<li>ELISA microplate reader can use a smartphone for imaging, remote processing, and result readout.</li>
+<li>The device has room for 96 samples that are placed within an array of tiny wells.</li>
+<li>The smartphone powered device had high accuracy in diagnosing mumps, measles, herpes simplex 1 and 2.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-2">Cell viability assays</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Cell%20viability%20assays%22%7C%22Cell%20viability%20tests%22%7C%22Cell%20viability%20measurements%22%7C%22Cell%20viability%20analysis%22%7C%22Cell%20viability%20screening%22%7C%22Cell%20viability%20evaluation%22%7C%22Cell%20viability%20determination%22%7C%22Assays%20for%20cell%20viability%22%7C%22Tests%20for%20cell%20viability%22%7C%22Measurements%20for%20cell%20viability%22%7C%22Analysis%20for%20cell%20viability%22%7C%22Screening%20for%20cell%20viability%22%7C%22Evaluation%20for%20cell%20viability%22%7C%22Determination%20for%20cell%20viability%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 141 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Cell viability assays'' for ''microplate readers''</div><div><a href='http://dx.doi.org/10.2147/ijn.s394861' target='_blank'>Combined Black Phosphorus Nanosheets with ICG/aPDT is an Effective Anti-Inflammatory Treatment for Periodontal Disorders</a></div><div class="date">15.02.2023</div><div><ul>
+<li>Problem: Side effects of ROS-based aPDT in periodontal treatment</li>
+<li>Solution: Use of black phosphorus nanosheets to eliminate side effects</li>
+</ul></div><br/><div><a href='https://www.tandfonline.com/doi/full/10.1080/08916934.2023.2194584?af=R' target='_blank'>Full article: RGS7 silence protects palmitic acid-induced pancreatic β-cell injury by inactivating the chemokine signaling pathway</a></div><div class="date">31.03.2023</div><div><ul>
+<li>Problem: Palmitic acid-induced pancreatic β-cell injury</li>
+<li>Solution: RGS7 silence protects pancreatic β-cells from PA-induced injury</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1422-0067/24/12/9834' target='_blank'>IJMS | Free Full-Text | mTOR Inhibition Is Effective against Growth, Survival and Migration, but Not against Microglia Activation in Preclinical Glioma Models</a></div><div class="date">07.06.2023</div><div><ul>
+<li>Problem: Lack of efficacy of mTORC1 inhibitors in clinical trials for GBM patients</li>
+<li>Solution: Development of non-selective mTOR inhibitors, such as SAP</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div></div><div class="not-found">(No matching industry news found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div><div class="section-container"><h3 id="section-4-3">Reporter gene assays</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Reporter%20gene%20assays%22%7C%22Reporter%20gene%20analysis%22%7C%22Reporter%20gene%20screening%22%7C%22Reporter%20gene%20testing%22%7C%22Reporter%20gene%20measurement%22%7C%22Reporter%20gene%20evaluation%22%7C%22Reporter%20gene%20investigation%22%7C%22Reporter%20gene%20examination%22%7C%22Reporter%20gene%20assessment%22%7C%22Reporter%20gene%20study%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 14 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Reporter gene assays'' for ''microplate readers''</div><div><a href='http://feeds.nature.com/~r/cddis/rss/current/~3/cEldzUfbbqc/s41419-021-04146-0' target='_blank'>The long non-coding RNA HOTAIRM1 promotes tumor aggressiveness and radiotherapy resistance in glioblastoma | Cell Death & Disease</a></div><div class="date">28.09.2021</div><div><ul>
+<li>Problem: Lack of clinically relevant biomarkers for glioblastoma prognosis and treatment.</li>
+<li>Solution: Identification of HOTAIRM1 as a potential biomarker and therapeutic target.</li>
+</ul></div><br/><div><a href='https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02819-3' target='_blank'>METTL4-mediated nuclear N6-deoxyadenosine methylation promotes metastasis through activating multiple metastasis-inducing targets</a></div><div class="date">03.12.2022</div><div><ul>
+<li>Problem: The role of DNA N6-deoxyadenosine methylation in tumor metastasis</li>
+<li>Solution: METTL4-mediated nuclear N6-deoxyadenosine methylation promotes metastasis</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Reporter%20gene%20assays%22%7C%22Reporter%20gene%20analysis%22%7C%22Reporter%20gene%20screening%22%7C%22Reporter%20gene%20testing%22%7C%22Reporter%20gene%20measurement%22%7C%22Reporter%20gene%20evaluation%22%7C%22Reporter%20gene%20investigation%22%7C%22Reporter%20gene%20examination%22%7C%22Reporter%20gene%20assessment%22%7C%22Reporter%20gene%20study%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 2 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Reporter gene assays'' for ''microplate readers''</div><div><a href='http://www.prweb.com/releases/2017/04/prweb14241183.htm' target='_blank'>Molecular Devices Introduces SpectraMax DuoLuc Reporter Assay Kit</a></div><div class="date">18.04.2017</div><div><ul>
+<li>DuoLuc Reporter Assay Kit detects firefly and Renilla luciferase expression in as few as ten cells per well.</li>
+<li>Reporter gene assays monitor cellular events associated with gene expression, regulation, and signal transduction.</li>
+<li>The assay kit offers better pricing and a preconfigured SoftMax Pro Software protocol optimized for microplate readers.</li>
+</ul></div><br/><div><a href='http://www.news-medical.net/news/20161202/Applying-quantitative-microscopy-to-live-cells.aspx' target='_blank'>Applying quantitative microscopy to live cells</a></div><div class="date">02.12.2016</div><div><ul>
+<li>Microscopy has evolved from a qualitative to a quantitative technique enabled by digital age.</li>
+<li>Quantitative microscopy allows direct, real-time measurement of cell processes and function.</li>
+<li>BioTek provides automated digital widefield microscopy for various applications including drug discovery.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div><div class="section-container"><h3 id="section-4-4">Drug discovery</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Drug%20discovery%22%7C%22Drug%20development%22%7C%22Pharmaceutical%20discovery%22%7C%22Pharmaceutical%20development%22%7C%22Medicinal%20chemistry%22%7C%22Bioactive%20compound%20discovery%22%7C%22Small%20molecule%20discovery%22%7C%22Lead%20compound%20discovery%22%7C%22Drug%20design%22%7C%22Drug%20research%22%7C%22Drug%20exploration%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 245 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Drug discovery'' for ''microplate readers''</div><div><a href='https://www.mdpi.com/1422-0067/24/4/3364' target='_blank'>IJMS | Free Full-Text | Magnetic Ion Channel Activation (MICA)-Enabled Screening Assay: A Dynamic Platform for Remote Activation of Mechanosensitive Ion Channels</a></div><div class="date">08.02.2023</div><div><ul>
+<li>Problem: Difficulty in high-throughput drug screening for ion channel-modulated diseases</li>
+<li>Solution: MICA-based screening assay for remote activation of mechanosensitive ion channels</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1422-8599/2023/1/M1580' target='_blank'>Methyl 9-(2-Iminothiazol-3(2H)-yl)-9-oxononanoate</a></div><div class="date">04.02.2023</div><div><ul>
+<li>Problem: Developing new drugs for cancer treatment</li>
+<li>Solution: Synthesizing a novel hybrid compound with antiproliferative ability</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1420-3049/28/1/115' target='_blank'>Molecules | Free Full-Text | Miglitol, an Oral Antidiabetic Drug, Downregulates Melanogenesis in B16F10 Melanoma Cells through the PKA, MAPK, and GSK3&beta;/&beta;-Catenin Signaling Pathways</a></div><div class="date">23.12.2022</div><div><ul>
+<li>Problem: Developing effective antimelanogenic agents for hyperpigmentation</li>
+<li>Solution: Repurposing antidiabetic drug miglitol as a cosmeceutical agent</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Drug%20discovery%22%7C%22Drug%20development%22%7C%22Pharmaceutical%20discovery%22%7C%22Pharmaceutical%20development%22%7C%22Medicinal%20chemistry%22%7C%22Bioactive%20compound%20discovery%22%7C%22Small%20molecule%20discovery%22%7C%22Lead%20compound%20discovery%22%7C%22Drug%20design%22%7C%22Drug%20research%22%7C%22Drug%20exploration%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 80 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Drug discovery'' for ''microplate readers''</div><div><a href='http://www.businesswire.com/news/home/20230227005027/en/BioAuxilium-Research-Launches-New-THUNDER%E2%84%A2-TR-FRET-Biomarker-Assay-Kits-and-an-Enhanced-Assay-Development-Service-for-Drug-Discovery/' target='_blank'>BioAuxilium Research Launches New THUNDER™ TR-FRET Biomarker Assay Kits and an Enhanced Assay Development Service for Drug Discovery | Business Wire</a></div><div class="date">27.02.2023</div><div><ul>
+<li>BioAuxilium Research launched new THUNDER™ TR-FRET biomarker assay kits for drug discovery</li>
+<li>The new assays provide an alternative to expensive immunoassay platforms</li>
+<li>The assay development service offers custom solutions to fast-track assay development</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230224005190/en/PerkinElmer-Launches-EnVison-Nexus-Multimode-Plate-Reader-to-Drive-Improved-Research-and-Discovery-Workflows/' target='_blank'>PerkinElmer Launches EnVison Nexus Multimode Plate Reader to Drive Improved Research and Discovery Workflows | Business Wire</a></div><div class="date">24.02.2023</div><div><ul>
+<li>EnVision Nexus platform offers increased assay flexibility and high-throughput screening for drug discovery.</li>
+<li>The system can be equipped with a plate stacker or fully automated for 24/7 workflow-driven automation.</li>
+<li>The EnVision Nexus platform works across major detection technologies, allowing a wide range of assays to be performed.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Drug%20discovery%22%7C%22Drug%20development%22%7C%22Pharmaceutical%20discovery%22%7C%22Pharmaceutical%20development%22%7C%22Medicinal%20chemistry%22%7C%22Bioactive%20compound%20discovery%22%7C%22Small%20molecule%20discovery%22%7C%22Lead%20compound%20discovery%22%7C%22Drug%20design%22%7C%22Drug%20research%22%7C%22Drug%20exploration%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Drug discovery'' for ''microplate readers''</div><div><a href='https://www.nextbigfuture.com/2021/07/the-microplate-reader-perfect-for-biotechnology.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+blogspot%2Fadvancednano+(nextbigfuture)' target='_blank'>Microplate-Reader</a></div><div class="date">08.07.2021</div><div><ul>
+<li>Microplate readers are versatile instruments that measure biological, chemical, or physical reactions and properties.</li>
+<li>They are particularly important in drug discovery, detecting optical signals emitted from biochemical processes.</li>
+<li>Different detection modes include absorbance, fluorescence intensity, luminescence, and fluorescence polarization.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-5">Environmental monitoring</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Environmental%20monitoring%22%7C%22Ecological%20monitoring%22%7C%22Environmental%20surveillance%22%7C%22Ecological%20surveillance%22%7C%22Environmental%20assessment%22%7C%22Ecological%20assessment%22%7C%22Environmental%20observation%22%7C%22Ecological%20observation%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 23 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Environmental monitoring'' for ''microplate readers''</div><div><a href='https://www.mdpi.com/1420-3049/28/5/2046' target='_blank'>Molecules | Free Full-Text | Phytotoxicity of Bisphenol A to Allium cepa Root Cells Is Mediated through Growth Hormone Gibberellic Acid and Reactive Oxygen Species</a></div><div class="date">22.02.2023</div><div><ul>
+<li>Problem: BPA phytotoxicity and genotoxic potential to A. cepa roots</li>
+<li>Solution: Monitoring BPA presence in the environment</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2073-4441/15/2/248' target='_blank'>Water | Free Full-Text | Influence of Environmental Variables on Biochemical Biomarkers in the Amphipod Monoporeia affinis from the Gulf of Riga (Baltic Sea)</a></div><div class="date">06.01.2023</div><div><ul>
+<li>Problem: The complexity of the marine environment and increasing anthropogenic pressure create a necessity to expand existing monitoring approaches for environmental quality control of aquatic ecosystems.</li>
+<li>Solution: The research proposes the use of biochemical biomarkers in M. affinis as a possible starting point for regular biomonitoring of contamination effects in the Gulf of Riga.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1422-0067/24/4/3209' target='_blank'>IJMS | Free Full-Text | Identify the Virus-like Models for COVID-19 as Bio-Threats: Combining Phage Display, Spectral Detection and Algorithms Analysis</a></div><div class="date">06.02.2023</div><div><ul>
+<li>Problem: Difficulty in identifying and monitoring SARS-CoV-2 due to its high infectivity and pathogenicity.</li>
+<li>Solution: Use virus-like models produced by phage display and differentiate them from other viruses, proteins, and bacteria using three-dimensional excitation-emission matrix fluorescence and Raman spectroscopy combined with PCA and LDA analysis.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22microplate%20readers%22%7C%22microplate%20reader%22%7C%22microplate%20absorbance%20reader%22%7C%22microplate%20spectrophotometer%22%7C%22microplate%20photometer%22%7C%22microplate%20fluorometer%22%7C%22microplate%20fluorescence%20reader%22%7C%22microplate%20luminometer%22%7C%22microplate%20chemiluminescence%20reader%22%7C%22microplate%20ELISA%20reader%22%7C%22microplate%20assay%20reader%22%7C%22microplate%20plate%20reader%22%7C%22microtiter%20plate%20reader%22%7C%22multiwell%20plate%20reader%22%7C%22microplate%20absorbance%20spectrophotometer%22%7C%22microplate%20absorbance%20photometer%22%7C%22microplate%20absorbance%20fluorometer%22%7C%22microplate%20absorbance%20luminometer%22%7C%22microplate%20absorbance%20chemiluminescence%20reader%22%7C%22microplate%20absorbance%20ELISA%20reader%22%7C%22microplate%20absorbance%20assay%20reader%22%7C%22microplate%20absorbance%20plate%20reader%22%7C%22microplate%20absorbance%20microtiter%20plate%20reader%22%7C%22microplate%20absorbance%20multiwell%20plate%20reader%22%7C%22microplate%20reader%20system%22%7C%22microplate%20luminome%22&q=%22Environmental%20monitoring%22%7C%22Ecological%20monitoring%22%7C%22Environmental%20surveillance%22%7C%22Ecological%20surveillance%22%7C%22Environmental%20assessment%22%7C%22Ecological%20assessment%22%7C%22Environmental%20observation%22%7C%22Ecological%20observation%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 2 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Environmental monitoring'' for ''microplate readers''</div><div><a href='https://www.prnewswire.com/news-releases/microplate-systems-market-worth-9969-million-by-2022-673803903.html' target='_blank'>Microplate Systems Market Worth 996.9 million by 2022</a></div><div class="date">12.02.2018</div><div><ul>
+<li>Microplate readers segment dominates the market due to its various applications in research and drug discovery.</li>
+<li>Multi-mode microplate reader segment is expected to dominate the market due to its increased throughput and efficiency.</li>
+<li>Drug discovery segment is projected to grow at the highest CAGR during the forecast period.</li>
+</ul></div><br/><div><a href='http://www.prnewswire.com/news-releases/sample-preparation-market-worth-72032-million-usd-by-2021-582971371.html' target='_blank'>Sample Preparation Market Worth 7,203.2 Million USD by 2021</a></div><div class="date">14.06.2016</div><div><ul>
+<li>Shift from manual to automated sample preparation driving growth</li>
+<li>Genomics segment expected to account for largest share of market</li>
+<li>North America expected to account for largest share of sample preparation market in 2016</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-4-6">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Enzyme-linked immunosorbent assay (ELISA)</th><th>Cell viability assays</th><th>Reporter gene assays</th><th>Drug discovery</th><th>Environmental monitoring</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/141360' target='_blank'>Dakota Technologies</a></td><td><ul><li>Pulsed microlaser excitation source</li><li>Novel digitizer technology</li><li>High performance LIF detection</li><li>Improved multiplexing capability</li></ul></td><td>-</td><td>x</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/141384' target='_blank'>Dakota Technologies, Inc.</a></td><td><ul><li>Laser-induced fluorescence instrument</li><li>High throughput screening</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/355727' target='_blank'>Jay Stoerker Applied Technology Genetics</a></td><td><ul><li>DNA-based assay method</li><li>Identification of fetal blood group antigens</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/677113' target='_blank'>Fluorescence Innovations</a></td><td><ul><li>Fluorescence lifetime (FLT) readout of FRET between fluorescent fusion proteins</li><li>Revolutionary NovaFluor PR fluorescence lifetime microplate reader developed by Fluorescence Innovations</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/274646' target='_blank'>PSI</a></td><td><ul><li>Microplate technology</li><li>Diagnosis of immunological response to infection</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/109487' target='_blank'>BIOO SCIENTIFIC</a></td><td><ul><li>Enzyme-based assays for detecting banned substances</li><li>High-throughput screening of low molecular weight compounds</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/151080' target='_blank'>Echelon Biosciences</a></td><td><ul><li>Fluorescence technology for protein kinase assays</li><li>Drug discovery for protein kinase inhibitors</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/283078' target='_blank'>Steven Sundberg Proteomic Systems</a></td><td><ul><li>Automated membrane microarray fabrication</li><li>Novel biological assays for research and drug discovery</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/168148' target='_blank'>Fluxion Biosciences</a></td><td><ul><li>Microfluidics for biofilm analysis</li><li>Anti-microbial drug discovery</li></ul></td><td>-</td><td>x</td><td>-</td><td>x</td><td>x</td></tr></table><h4 id="section-4-7">Venture Capital Companies</h4><div>No documents found.</div></div></div>
+        <h2 id="section-5">5. Unsolved problems</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Limited sensitivity for low concentration samples</td>
+      <td>Microplate readers have limited sensitivity for low concentration samples, which can lead to inaccurate results.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Inability to measure certain types of samples</td>
+      <td>Microplate readers are unable to measure certain types of samples, such as those with high viscosity or those that are turbid.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>High cost of equipment and reagents</td>
+      <td>The cost of microplate readers and associated reagents can be prohibitively high for many research labs and institutions.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Lack of standardization in data analysis</td>
+      <td>There is a lack of standardization in data analysis for microplate reader experiments, which can make it difficult to compare results across different labs and studies.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Limited throughput for high-throughput screening</td>
+      <td>Microplate readers have limited throughput for high-throughput screening, which can slow down the drug discovery process.</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div></div>
+        <div><div class="table-overview"><h4 id="section-5-6">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Limited sensitivity for low concentration samples</th><th>Inability to measure certain types of samples</th><th>High cost of equipment and reagents</th><th>Lack of standardization in data analysis</th><th>Limited throughput for high-throughput screening</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/141360' target='_blank'>Dakota Technologies</a></td><td><ul><li>Pulsed microlaser excitation source</li><li>Novel digitizer technology</li></ul></td><td>x</td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/141384' target='_blank'>Dakota Technologies, Inc.</a></td><td><ul><li>Laser-induced fluorescence instrument</li><li>High-throughput screening</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1216587' target='_blank'>Kevin Seitter Cerillo</a></td><td><ul><li>Miniaturized multiwell plate reader</li><li>Alleviation of difficulties in measuring bacterial growth</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/355727' target='_blank'>Jay Stoerker Applied Technology Genetics</a></td><td><ul><li>DNA-based assay method</li><li>Identification of fetal blood group antigens</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/677113' target='_blank'>Fluorescence Innovations</a></td><td><ul><li>Fluorescence lifetime (FLT) readout of FRET between fluorescent fusion proteins</li><li>High-throughput screening (HTS) format for small-molecule drug discovery</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/274646' target='_blank'>PSI</a></td><td><ul><li>Microplate technology</li><li>Diagnosis of immunological response to infection</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/109487' target='_blank'>BIOO SCIENTIFIC</a></td><td><ul><li>Rapid enzyme-based assays</li><li>Detection of banned substances in food</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/151080' target='_blank'>Echelon Biosciences</a></td><td><ul><li>Fluorescence technology for protein kinase assays</li><li>High-throughput screening of kinase activities</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/283078' target='_blank'>Steven Sundberg Proteomic Systems</a></td><td><ul><li>Membrane microarray fabrication</li><li>Automation of biological assays</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1682859' target='_blank'>Trace-Ability</a></td><td><ul><li>Blockchain-based traceability technology</li><li>Limited sensitivity for low concentration samples</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table><h4 id="section-5-7">Venture Capital Companies</h4><div>No documents found.</div></div></div>
+        <h2 id="section-6">6. Future outlook</h2>
+        <div><div><div class="section-container"><h3>Future trends in anti-ferroptotic therapeutics</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1422-0067/23/24/16205' target='_blank'>Receptor-Independent Anti-Ferroptotic Activity of TrkB Modulators</a></div><div class="date">19.12.2022</div><div><ul>
+<li>TrkB modulators such as 7,8-DHF, phenelzine sulphate, and GNF-5837 could be potential anti-ferroptotic therapeutics for various diseases.</li>
+<li>These TrkB modulators show anti-ferroptotic activity via a receptor-independent radical-trapping antioxidant mechanism.</li>
+<li>Caution should be applied when interpreting the results of these compounds in prior and future studies since the potent radical-trapping antioxidant effect may confound the result.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in microplate readers</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1420-3049/28/6/2808' target='_blank'>Molecules | Free Full-Text | One-Step Microwell Plate-Based Spectrofluorimetric Assay for Direct Determination of Statins in Bulk Forms and Pharmaceutical Formulations: A Green Eco-Friendly and High-Throughput Analytical Approach</a></div><div class="date">20.03.2023</div><div><ul>
+<li>Development of high-throughput microplate readers</li>
+<li>Integration of eco-friendly features in microplate readers</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Biosensing trends</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36909610' target='_blank'>FRET assay for live-cell high-throughput screening of the cardiac SERCA pump yields multiple classes of small-molecule allosteric modulators.</a></div><div class="date">14.03.2023</div><div><ul><li>Development of drug-like small-molecule activators for heart failure treatment</li><li>Identification of multiple classes of small-molecule allosteric modulators</li><li>Timeframe: Not mentioned</li></ul></div></div></div></div><div class="section-container"><h3>Future trends in microplate reader technology</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/32420048' target='_blank'>Method for measurement of bacillithiol redox potential changes using the Brx-roGFP2 redox biosensor in Staphylococcus aureus.</a></div><div class="date">19.05.2020</div><div><ul><li>Development of more specific biosensors for real-time imaging</li><li>Improvement of sensitivity and spatiotemporal resolution</li></ul></div></div></div></div></div></div>
+    </div>
+</body>
+</html>

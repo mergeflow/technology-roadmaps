@@ -1,0 +1,759 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="starttime"
+          content="2023-06-30 09:20:48.876240" />
+    <meta name="endtime"
+          content="2023-06-30 09:46:10.419358" />
+    <meta name="duration"
+          content="0:25:21.543118" />
+    <meta name="query_count"
+          content="384" />
+    <meta name="token_count"
+          content="439087" />
+    <meta name="answer_time"
+          content="0:00:03.209008" />
+    <meta name="manual_synonyms"
+          content="['parking management', 'parking automation', 'parking optimization', 'smart city parking', 'intelligent parking', 'connected parking', 'smart parking system', 'smart parking technology', 'smart parking solution']" />
+    <title>Mergeflow Technology Roadmap</title>
+    <script src="https://kit.fontawesome.com/e554370735.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: "Segoe UI","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        .single-section-container{
+                align-items: stretch;
+            }
+        .single-section-container > .content-container {
+                border-radius: 10px;
+                border: 1px solid #cccccc;
+            }
+        
+        .section-container {
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .outer-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+        }
+
+        ul {
+                 margin: 0px;
+             }
+
+
+        .content-container {
+            flex: 1 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 30px 10px 30px;
+            font-size: 16px;
+            text-align: left;
+            border: none;
+            
+        }
+
+        .container-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        a {
+            font-weight: bold;
+            color: green;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-top: 9px;
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+        }
+        table {
+            width: auto;
+            border-collapse: collapse;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        table th, table td {
+            padding: 8px;
+            border: 1px solid #cccccc;
+            text-align: left;
+        }
+
+        table a {
+            text-decoration: none;
+        }
+
+        .heading {
+                      font-weight: bold;
+                      margin-bottom: 10px;
+       }
+
+        .sub-heading{
+                         font-weight: normal;
+                     }
+        .heading-link,
+        .sub-heading-link {
+            color: #6a6b67;
+            text-decoration: none;
+        }
+        .heading-link {
+                           font-size: 18px
+                       }
+        .sub-heading-link {
+                               font-size: 15px;
+         }
+        .vc-table {
+            width: auto;
+        }
+        .date {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0px;
+        }
+        .explore-more {
+            text-decoration: none;
+        }
+        .total-hits {
+            font-size: 16px;
+            font-weight: normal;
+            color: #999;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 17%; 
+            height: 100%;
+            overflow-y: auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #pagecontent {
+            margin-left: 19%;
+        }
+        .not-found {
+            font-size: 14px;
+            color: #999;
+        }
+        .orientation-subheading{
+            margin-bottom: 10px;
+            color: #999;
+        }
+        .dataset-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Content</h2>
+        <ol>
+            <li class="heading">
+                <a href="#section-1" class="heading-link">Introduction</a>
+            </li>
+            <li class="heading">
+                <a href="#section-2" class="heading-link">Figures of Merit</a>
+            </li>
+            <li class="heading">
+                <a href="#section-3" class="heading-link">Key Technologies</a>
+                <ul><li><a class="sub-heading-link" href="#section-3-1">IoT</a></li><li><a class="sub-heading-link" href="#section-3-2">Wireless Communication</a></li><li><a class="sub-heading-link" href="#section-3-3">Data Analytics</a></li><li><a class="sub-heading-link" href="#section-3-4">Mobile App Development</a></li><li><a class="sub-heading-link" href="#section-3-5">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-3-6">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-4" class="heading-link">Applications</a>
+                <ul><li><a class="sub-heading-link" href="#section-4-1">Real-time parking availability</a></li><li><a class="sub-heading-link" href="#section-4-2">Parking reservation</a></li><li><a class="sub-heading-link" href="#section-4-3">Automated payment</a></li><li><a class="sub-heading-link" href="#section-4-4">Traffic management</a></li><li><a class="sub-heading-link" href="#section-4-5">Environmental monitoring</a></li><li><a class="sub-heading-link" href="#section-4-6">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-4-7">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-5" class="heading-link">Unsolved Problems</a>
+                <ul><li><a class="sub-heading-link" href="#section-5-1">Data privacy and security</a></li><li><a class="sub-heading-link" href="#section-5-2">Legal and regulatory challenges</a></li><li><a class="sub-heading-link" href="#section-5-3">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-5-4">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-6" class="heading-link">Future Outlook</a>
+            </li>
+        </ol>
+    </div>
+    <div id="pagecontent">
+        <div class="logo-container">
+            <a href="https://mergeflow.com/">
+                <img src="https://mergeflow.net/Images/logo-text.png" class="logo" alt="Logo" width="200" height="100" class="logo">
+            </a>
+            <h1>Technology Roadmap on Smart Parking</h1>
+        </div>
+
+        <h2 id="section-1">1. Introduction</h2>
+        <div><h3>Overview</h3>
+<p>Smart parking is a technology that uses sensors, cameras, and other devices to monitor parking spaces and provide real-time information to drivers about available parking spots. It aims to reduce traffic congestion, save time and fuel, and improve the overall parking experience for drivers.</p>
+
+<h3>Working Principle</h3>
+<p>The working principle of smart parking involves the use of various sensors and cameras that are installed in parking lots or on the streets. These sensors detect the presence or absence of vehicles in parking spaces and transmit this information to a central system. The system then processes this data and provides real-time information to drivers about available parking spots through mobile apps, electronic signs, or other means. This information can also be used to optimize parking operations, such as identifying areas with high demand and adjusting pricing accordingly. Smart parking can also be integrated with other technologies, such as automated payment systems and electric vehicle charging stations, to provide a seamless parking experience for drivers.</p></div>
+        <h2 id="section-2">2. Figures of Merit</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Parking Occupancy Rate</td>
+      <td>[%]</td>
+      <td>Percentage of parking spaces occupied at any given time</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Parking Turnover Rate</td>
+      <td>[#/hr]</td>
+      <td>Number of vehicles that can be parked and leave per hour</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Parking Duration</td>
+      <td>[min]</td>
+      <td>Average time a vehicle spends parked</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Parking Violation Rate</td>
+      <td>[%]</td>
+      <td>Percentage of vehicles parked illegally or in violation of parking rules</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Parking Revenue</td>
+      <td>[€/day]</td>
+      <td>Revenue generated from parking fees</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Customer Satisfaction</td>
+      <td>[%]</td>
+      <td>Percentage of customers satisfied with the parking experience</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Parking Efficiency</td>
+      <td>[%]</td>
+      <td>Percentage of parking spaces utilized efficiently</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Parking Availability</td>
+      <td>[%]</td>
+      <td>Percentage of parking spaces available at any given time</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Parking Management Cost</td>
+      <td>[€/day]</td>
+      <td>Cost of managing the parking system, including personnel and maintenance</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3>Parking Occupancy Rate</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/8/6808' target='_blank'>Sustainability | Free Full-Text | Research on Parking Recommendation Methods Considering Travelers&rsquo; Decision Behaviors and Psychological Characteristics</a></div><div class="date">18.04.2023</div><div><ul>
+<li>Problem: Cruising for parking in big cities</li>
+<li>Solution: Parking recommendation model considering psychological thresholds and attention</li>
+</ul></div></div></div></div><div class="section-container"><h3>Parking Duration</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36369268' target='_blank'>Providing curb availability information to delivery drivers reduces cruising for parking.</a></div><div class="date">13.11.2022</div><div><ul>
+<li>Problem: Difficulty in finding available curb space for delivery vehicles</li>
+<li>Solution: Providing real-time curb availability information to drivers</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1999-4893/16/1/32' target='_blank'>Algorithms | Free Full-Text | Deep Reinforcement Learning-Based Dynamic Pricing for Parking Solutions</a></div><div class="date">05.01.2023</div><div><ul>
+<li>Problem: Inefficient carpark control due to the rise of private automobiles.</li>
+<li>Solution: Dynamic pricing integrated with real-time parking data.</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37346314' target='_blank'>Privacy-preserving solution for vehicle parking services complying with EU legislation.</a></div><div class="date">22.06.2023</div><div><ul>
+<li>Problem: Privacy concerns in smart parking services</li>
+<li>Solution: Privacy-preserving vehicle parking system</li>
+</ul></div></div></div></div><div class="section-container"><h3>Customer Satisfaction</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2226-4310/10/7/588' target='_blank'>Aerospace | Free Full-Text | A Smart Airport Mobile Application Concept and Possibilities of Its Use for Predictive Modeling and Analysis</a></div><div class="date">27.06.2023</div><div><ul>
+<li>Problem: Customer-oriented smart solution for airport digitization</li>
+<li>Solution: Mobile application for faster and efficient customer information provision</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/4/3428' target='_blank'>Sustainability | Free Full-Text | Analyzing Healthcare and Wellness Products&rsquo; Quality Embedded in Online Customer Reviews: Assessment with a Hybrid Fuzzy LMAW and Fermatean Fuzzy WASPAS Method</a></div><div class="date">13.02.2023</div><div><ul>
+<li>Problem: Customer dissatisfaction in online shopping for health and wellness products.</li>
+<li>Solution: Hybrid MCDM method to rank quality criteria and improve CS.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2076-3417/13/10/5888' target='_blank'>Applied Sciences | Free Full-Text | A Framework for Urban Last-Mile Delivery Traffic Forecasting: An In-Depth Review of Social Media Analytics and Deep Learning Techniques</a></div><div class="date">10.05.2023</div><div><ul>
+<li>Problem: Inaccurate traffic prediction for last-mile delivery logistics</li>
+<li>Solution: Framework using social media analysis and deep learning techniques</li>
+</ul></div></div></div></div><div class="section-container"><h3>Parking Efficiency</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/8/6916' target='_blank'>Sustainability | Free Full-Text | A Trust-Based Secure Parking Allocation for IoT-Enabled Sustainable Smart Cities</a></div><div class="date">20.04.2023</div><div><ul>
+<li>Problem: Security and privacy challenges in IoT-enabled smart parking</li>
+<li>Solution: A novel hybrid approach to trust management using machine learning algorithms</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2076-3417/13/8/5003' target='_blank'>Applied Sciences | Free Full-Text | Intelligent Parking Control Method Based on Multi-Source Sensory Information Fusion and End-to-End Deep Learning</a></div><div class="date">16.04.2023</div><div><ul>
+<li>Problem: Parking efficiency in smart parking</li>
+<li>Solution: Real-time intelligent parking control using deep learning</li>
+</ul></div></div><div class="content-container"><div><a href='https://orsociety.tandfonline.com/doi/full/10.1080/09537325.2021.1994941?af=R' target='_blank'>The position and role on patent citation network of the parking lot guidance system</a></div><div class="date">23.02.2023</div><div><ul>
+<li>Problem: Inefficient parking behavior due to lack of guidance information</li>
+<li>Solution: Smart parking "navigation system" to guide drivers to vacant spaces</li>
+</ul></div></div></div></div><div class="section-container"><h3>Parking Availability</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2079-9292/12/13/2801' target='_blank'>Smart Parking System Based on Edge-Cloud-Dew Computing Architecture</a></div><div class="date">25.06.2023</div><div><ul>
+<li>Problem: Interruption of parking lot business due to internet outage</li>
+<li>Solution: Edge-Cloud-Dew architecture for mobile industry</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/2/938' target='_blank'>Sustainability | Free Full-Text | New Parking Lot Selection Approach Based on the Multi-Criteria Decision Making (MCDM) Methods: Health Criteria</a></div><div class="date">04.01.2023</div><div><ul>
+<li>Problem: Finding an adequate parking space in major cities.</li>
+<li>Solution: A new criterion based on the physical condition of the driver and a multi-criteria decision making (MCDM) model for parking space allocation.</li>
+</ul></div></div><div class="content-container"><div><a href='http://arxiv.org/abs/2303.03152' target='_blank'>U-Park: A User-Centric Smart Parking Recommendation System for Electric
+  Shared Micromobility Services</a></div><div class="date">06.03.2023</div><div><ul>
+<li>Problem: Lack of parking availability for shared E-bikes</li>
+<li>Solution: U-Park, a user-centric smart parking recommendation system</li>
+</ul></div></div></div></div></div>
+        <h2 id="section-3">3. Key Technologies</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>IoT</td>
+      <td>Sensors and devices to detect parking space availability</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Wireless Communication</td>
+      <td>To transmit data from sensors to a central system</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Data Analytics</td>
+      <td>To process and analyze the data collected from sensors</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Mobile App Development</td>
+      <td>To provide real-time information to drivers about parking availability</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-3-1">IoT</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22error&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1009 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''IoT'' for ''smart parking''</div><div><a href='https://www.mdpi.com/2624-6511/5/4/78' target='_blank'>Smart Cities | Free Full-Text | Efficient Communication Model for a Smart Parking System with Multiple Data Consumers</a></div><div class="date">02.11.2022</div><div><ul>
+<li>Problem: Efficient communication model for smart parking with multiple data consumers</li>
+<li>Solution: Multi-collator model with data superimposition technique</li>
+</ul></div><br/><div><a href='http://link.springer.com/10.1007/s00500-022-07411-2' target='_blank'>An intelligent parking management system using RFID technology based on user preferences</a></div><div class="date">12.08.2022</div><div><ul>
+<li>Problem: Parking challenges due to increasing number of cars</li>
+<li>Solution: Intelligent multi-storey car parking management system using RFID technology</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2224-2708/12/2/22' target='_blank'>JSAN | Free Full-Text | Determining Commercial Parking Vacancies Employing Multiple WiFiRSSI Fingerprinting Method</a></div><div class="date">10.03.2023</div><div><ul>
+<li>Problem: Inaccurate parking occupancy/vacancy detection in commercial centers.</li>
+<li>Solution: Utilizing WiFi RSSI signals to establish parking fingerprints for prediction.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22error&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 5805 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''IoT'' for ''smart parking''</div><div><a href='https://paultan.org/2023/05/22/proton-cars-to-gain-integrated-smart-parking-system-moc-signed-between-heitech-padu-and-aco-tech/' target='_blank'>Proton cars to get integrated smart parking system - find and pay parking through app on Atlas head unit - paultan.org</a></div><div class="date">22.05.2023</div><div><ul>
+<li>Smart Parking Solutions to be integrated into Proton cars' infotainment head units</li>
+<li>Real-time information on parking availability, location and pricing through sensors and mobile apps</li>
+<li>Drivers can pay for parking digitally through the in-car head unit</li>
+</ul></div><br/><div><a href='https://www.lelezard.com/en/news-20940689.html' target='_blank'>Global Smart Parking Strategic Research Report 2023: Parking 4.0 is the Future of Smart Parking - Market to Reach $31.1 Billion by 2030</a></div><div class="date">13.06.2023</div><div><ul>
+<li>Smart parking market to reach $31.1 billion by 2030 with a CAGR of 21.5%</li>
+<li>Off-street segment projected to record 23.6% CAGR and reach $25.4 billion by 2030</li>
+<li>China forecast to grow at 24.7% CAGR and reach $4.3 billion by 2030</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221207005658/en/Strategic-Insights-on-Future-Smart-Parking-Systems-Global-Market-to-Reach-18-Billion-By-2030-With-IoT-Blockchain-and-RFID-Reshaping-Business-Models-and-Enhancing-Management-Solutions---ResearchAndMarkets.com/' target='_blank'>Strategic Insights on Future Smart Parking Systems: Global Market to Reach $18 Billion By 2030 With IoT, Blockchain, and RFID Reshaping Business Models and Enhancing Management Solutions - ResearchAndMarkets.com | Business Wire</a></div><div class="date">07.12.2022</div><div><ul>
+<li>IoT, blockchain, and RFID are reshaping smart parking systems</li>
+<li>Digital technologies simplify parking monitoring with less labor dependency</li>
+<li>Effective smart systems benefit parking operators and consumers</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22error&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1489 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''IoT'' for ''smart parking''</div><div><a href='https://techxplore.com/news/2023-03-intelligent-revolutionize-smart-cities.html' target='_blank'>New intelligent parking system could revolutionize parking in smart cities</a></div><div class="date">09.03.2023</div><div><ul>
+<li>IoT-AIPS system uses embedded cameras and machine learning to predict available parking spots</li>
+<li>Reduces waiting time for drivers and enhances accuracy of vehicle position prediction</li>
+<li>Potential to significantly reduce installation costs and transform parking in smart cities</li>
+</ul></div><br/><div><a href='https://www.digitaltrends.com/cars/2023-hyundai-ioniq-6-review/' target='_blank'>2023 Hyundai Ioniq 6 first drive: welcome to the future | Digital Trends</a></div><div class="date">03.04.2023</div><div><ul>
+<li>Hyundai Ioniq 6 is a sedan that competes with Tesla Model 3 and Polestar 2.</li>
+<li>It has a distinctive design with a drag coefficient of 0.22, the best ever for a Hyundai production vehicle.</li>
+<li>The Ioniq 6 offers impressive range, well-executed tech, and a pleasant driving experience.</li>
+</ul></div><br/><div><a href='https://www.ingenieur.de/technik/fachbereiche/verkehr/weltpremiere-fahrerloses-parksystem-von-bosch-und-mercedes-benz-startet/' target='_blank'>Weltpremiere: Fahrerloses Parksystem von Bosch und Mercedes Benz startet - ingenieur.de</a></div><div class="date">01.12.2022</div><div><ul>
+<li>Fahrerloses Parksystem von Bosch und Mercedes Benz am Flughafen Stuttgart in Betrieb</li>
+<li>Automatisiertes Fahren als Schlüsseltechnologie in der Mobilität der Zukunft</li>
+<li>Fahrerloses Parken als wichtiger Baustein automatisierter Mobilität</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-2">Wireless Communication</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Wireless%20Communication%22%7C%22Wireless%20Transmitting%22%7C%22Wireless%20Messaging%22%7C%22Wireless%20Networking%22%7C%22Wireless%20Telecommunication%22%7C%22Wireless%20Data%20Transmission%22%7C%22Wireless%20Signal%20Transmission%22%7C%22Wireless%20Broadcasting%22%7C%22Wireless%20Information%20Transmission%22%7C%22Wireless%20Radio%20Communication%22%7C%22Wireless%20Telephony%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 42 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Wireless Communication'' for ''smart parking''</div><div><a href='http://arxiv.org/abs/2302.13343' target='_blank'>Adaptive Control of IoT/M2M Devices in Smart Buildings using
+  Heterogeneous Wireless Networks</a></div><div class="date">26.02.2023</div><div><ul>
+<li>Problem: Lack of integration of IoT/M2M in smart building systems</li>
+<li>Solution: Use of heterogeneous wireless networks for IoT/M2M smart building systems</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/14/16/10223' target='_blank'>Sustainability | Free Full-Text | Crosswalk Safety Warning System for Pedestrians to Cross the Street Intelligently</a></div><div class="date">17.08.2022</div><div><ul>
+<li>Problem: Pedestrian-vehicle clashes during signal transitions</li>
+<li>Solution: Crosswalk safety warning system for intelligent pedestrian crossing</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2079-9292/12/7/1628' target='_blank'>Electronics | Free Full-Text | A TDMA-Based Access Protocol for Dense Networks with Moving Nodes for IoT Applications</a></div><div class="date">30.03.2023</div><div><ul>
+<li>Problem: Developing a medium access protocol for IoT networks with moving nodes</li>
+<li>Solution: A TDMA-based protocol that utilizes wake up radio technology</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Wireless%20Communication%22%7C%22Wireless%20Transmitting%22%7C%22Wireless%20Messaging%22%7C%22Wireless%20Networking%22%7C%22Wireless%20Telecommunication%22%7C%22Wireless%20Data%20Transmission%22%7C%22Wireless%20Signal%20Transmission%22%7C%22Wireless%20Broadcasting%22%7C%22Wireless%20Information%20Transmission%22%7C%22Wireless%20Radio%20Communication%22%7C%22Wireless%20Telephony%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 45 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Wireless Communication'' for ''smart parking''</div><div><a href='http://www.businesswire.com/news/home/20230524005496/en/Global-and-China-Automotive-Intelligent-Cockpit-Platform-Research-Report-2023-To-Meet-Market-Demand-Players-Tend-to-Make-a-Multi-form-Layout-of-Intelligent-Cockpit-Platform-Products---ResearchAndMarkets.com/' target='_blank'>Global and China Automotive Intelligent Cockpit Platform Research Report 2023: To Meet Market Demand, Players Tend to Make a Multi-form Layout of Intelligent Cockpit Platform Products - ResearchAndMarkets.com | Business Wire</a></div><div class="date">24.05.2023</div><div><ul>
+<li>Intelligent cockpit platforms are evolving towards cross-domain integration and multi-functional layouts.</li>
+<li>Qualcomm 8295-based intelligent cockpit platforms support low-speed driving assistance and smart parking functions.</li>
+<li>Localized intelligent cockpit platform products are highly competitive in China's market.</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/01/25/2595401/0/en/The-Global-RF-Test-Equipment-Market-size-is-expected-to-reach-4-8-billion-by-2028-rising-at-a-market-growth-of-6-2-CAGR-during-the-forecast-period.html' target='_blank'>The Global RF Test Equipment Market size is expected to</a></div><div class="date">25.01.2023</div><div><ul>
+<li>RF test equipment market to reach $4.8 billion by 2028, driven by telecommunications industry's expansion.</li>
+<li>Increasing demand for 5G-capable smartphones and RF testing equipment in automotive applications.</li>
+<li>Asia Pacific holds the greatest market share for RF test equipment, with high growth anticipated.</li>
+</ul></div><br/><div><a href='https://semiengineering.com/the-future-of-connectivity-is-higher-data-rates-and-micro-positioning/' target='_blank'>The Future Of Connectivity Is Higher Data Rates And Micro-Positioning</a></div><div class="date">11.10.2022</div><div><ul>
+<li>Wi-Fi 7 promises extremely high throughput and new technologies like AFC, MLO, and 4K QAM.</li>
+<li>UWB is designed for short-range applications and micro-positioning with low latency and high precision.</li>
+<li>Tech companies like Teradyne are developing production-ready HVM solutions for Wi-Fi 7 and UWB.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Wireless%20Communication%22%7C%22Wireless%20Transmitting%22%7C%22Wireless%20Messaging%22%7C%22Wireless%20Networking%22%7C%22Wireless%20Telecommunication%22%7C%22Wireless%20Data%20Transmission%22%7C%22Wireless%20Signal%20Transmission%22%7C%22Wireless%20Broadcasting%22%7C%22Wireless%20Information%20Transmission%22%7C%22Wireless%20Radio%20Communication%22%7C%22Wireless%20Telephony%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 13 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Wireless Communication'' for ''smart parking''</div><div><a href='http://techon.nikkeibp.co.jp/atclen/news_en/15mk/120601005/?n_cid=nbptec_tecrs' target='_blank'>Softbank Tests 'Smart Parking' Using NB-IoT - Nikkei Technology Online</a></div><div class="date">07.12.2016</div><div><ul>
+<li>Smart parking uses NB-IoT LTE standard for wireless communication</li>
+<li>Communication module with low cost, low power consumption and wide coverage is suited for IoT</li>
+<li>NB-IoT LTE standard can support about 50,000 IoT devices per base station and about five billion devices in Japan</li>
+</ul></div><br/><div><a href='http://readwrite.com/2016/04/08/global-smart-cities-market-doubles-cc4/' target='_blank'>Smart cities market to double to $1.4 trillion by 2020</a></div><div class="date">08.04.2016</div><div><ul>
+<li>Smart cities market to reach $1.4 trillion by 2020 due to urbanization and industrialization.</li>
+<li>Smart transportation is the largest segment, expected to grow at 15.2% annually.</li>
+<li>Wireless communication and data analytics are critical technologies for the development of smart cities.</li>
+</ul></div><br/><div><a href='http://www.fastcompany.com/3021159/tech-forecast/the-intelligent-ihome-cometh-if-apples-patent-ideas-come-true?partner=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+fastcompany%2Fheadlines+(Fast+Company)' target='_blank'>The Intelligent iHome Cometh, If Apple's Patent Ideas Come True | Fast Company | Business + Innovation</a></div><div class="date">05.11.2013</div><div><ul>
+<li>Apple's patent aims to automate home systems using wireless communication devices and location data.</li>
+<li>The system can track user's location and movements to predict their next actions and react accordingly.</li>
+<li>The technology could monetize an iHome system and its data through the app ecosystem.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-3">Data Analytics</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div></div><div class="not-found">(No matching science publications found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22error&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 5805 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Data Analytics'' for ''smart parking''</div><div><a href='http://www.businesswire.com/news/home/20220711005619/en/Global-Ultrasonic-Parking-Sensors-for-Smart-Parking-Market-Research-Report-to-2027---Stringent-Government-Regulations-Towards-Passenger-Safety-Presents-Opportunities---ResearchAndMarkets.com/' target='_blank'>Global Ultrasonic Parking Sensors for Smart Parking Market Research Report to 2027 - Stringent Government Regulations Towards Passenger Safety Presents Opportunities - ResearchAndMarkets.com | Business Wire</a></div><div class="date">12.07.2022</div><div><ul>
+<li>Ultrasonic parking sensors market for smart parking projected to grow at 17.32% CAGR by 2027</li>
+<li>Report analyzes competitive landscape and offers insights on market penetration, development, and diversification</li>
+<li>Provides information on market size, inhibiting factors, technology trends, and leading vendors</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221216005351/en/China-Smart-Parking-Industry-Report-2022-4000-Players-and-City-Level-Parking-Platforms-have-Been-Established---ResearchAndMarkets.com/' target='_blank'>China Smart Parking Industry Report 2022: 4,000 Players and City-Level Parking Platforms have Been Established - ResearchAndMarkets.com | Business Wire</a></div><div class="date">16.12.2022</div><div><ul>
+<li>Over 4,000 companies in China are engaged in smart parking business with low market concentration.</li>
+<li>City-level parking platforms are the most promising segment, with over 300 cities launching smart parking platforms.</li>
+<li>Automakers are embedding smart parking functions in their telematics systems to improve parking experience for car owners.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20220922005774/en/Global-Smart-Parking-Market-Report-2022-A-Market-Valued-at-11.87-Billion-by-2027---Focus-on-Security-and-Surveillance-Smart-Payment-Systems-E-Parking-and-License-Plate-Recognition---ResearchAndMarkets.com/' target='_blank'>Global Smart Parking Market Report 2022: A Market Valued at $11.87 Billion by 2027 - Focus on Security and Surveillance, Smart Payment Systems, E-Parking, and License Plate Recognition - ResearchAndMarkets.com | Business Wire</a></div><div class="date">22.09.2022</div><div><ul>
+<li>Global Smart Parking Market to reach $11.87 billion by 2027, growing at a CAGR of 11.05%</li>
+<li>Market dynamics impact supply and demand curves, decision-makers use financial tools to reduce risks</li>
+<li>Market segmented by type, technology, application, end-user, hardware, service, and software outlook</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22error&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1489 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Data Analytics'' for ''smart parking''</div><div><a href='https://www.digitaltrends.com/cars/2023-nissan-ariya-review/' target='_blank'>2023 Nissan Ariya first drive review: making up lost ground | Digital Trends</a></div><div class="date">07.10.2022</div><div><ul>
+<li>Nissan Ariya is a new electric SUV with updated tech and better performance.</li>
+<li>The Ariya has a new EV-specific platform and a more SUV-like feel.</li>
+<li>The Ariya comes with a 12.3-inch touchscreen infotainment system and ProPilot Assist 2.0.</li>
+</ul></div><br/><div><a href='https://www.digitaltrends.com/cars/2023-kia-niro-ev-review/' target='_blank'>2023 Kia Niro EV first drive review: practical style | Digital Trends</a></div><div class="date">10.10.2022</div><div><ul>
+<li>2023 Kia Niro EV is a practical and affordable option in the electric car market.</li>
+<li>The car boasts sustainable materials and a well-integrated infotainment system.</li>
+<li>It has a decent amount of interior space and a range of 253 miles.</li>
+</ul></div><br/><div><a href='https://eandt.theiet.org/content/articles/2022/12/sicily-introduces-hybrid-train-that-can-run-on-electricity-battery-and-diesel/' target='_blank'>Sicily introduces hybrid train that can run on electricity, battery and diesel | E&ampT Magazine</a></div><div class="date">20.12.2022</div><div><ul>
+<li>Hitachi-built hybrid train can run on electricity, battery or diesel, reducing emissions and fuel consumption.</li>
+<li>Batteries improve power performance and allow the train to travel the last mile on non-electrified lines.</li>
+<li>The train is equipped with energy-saving technologies, including LED lighting and smart parking.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-4">Mobile App Development</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div></div><div class="not-found">(No matching science publications found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Mobile%20App%20Development%22%7C%22App%20Development%22%7C%22Mobile%20Application%20Development%22%7C%22Mobile%20App%20Design%22%7C%22iOS%20App%20Development%22%7C%22Android%20App%20Development%22%7C%22Hybrid%20App%20Development%22%7C%22Native%20App%20Development%22%7C%22Cross%20Platform%20App%20Development%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 9 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Mobile App Development'' for ''smart parking''</div><div><a href='https://www.prnewswire.com/news-releases/mwc-2018-faststream-technologies-lightening-the-way-to-ambient-intelligence-for-move-towards-intelligent-systems-674957873.html' target='_blank'>MWC 2018: Faststream Technologies Lightening the way to Ambient Intelligence for Move Towards</a></div><div class="date">23.02.2018</div><div><ul>
+<li>Faststream Technologies provides smart parking solutions for street side, indoor, and multi-level parking.</li>
+<li>They offer a comprehensive suite of smart city solutions, including traffic management and energy efficiency.</li>
+<li>Faststream Technologies develops wearable IoT apps and smart farming systems.</li>
+</ul></div><br/><div><a href='https://www.prnewswire.com/news-releases/sdsol-technologies-improves-lives-through-award-winning-apps-and-iot-products-301325275.html' target='_blank'>SDSol Technologies Improves Lives Through Award-Winning Apps and IoT Products</a></div><div class="date">06.07.2021</div><div><ul>
+<li>SDSol Technologies develops award-winning mobile apps and IoT products to improve people's lifestyles.</li>
+<li>SDSol's MyPark app and PADL system simplify paid parking and paddleboard rental.</li>
+<li>AllSola is an environment-friendly, sustainable, and cost-effective smart device running on solar power.</li>
+</ul></div><br/><div><a href='http://www.prnewswire.com/news-releases/faststream-technologies-to-spread-its-wings-on-iot-and-ev-charging-solutions-614875803.html' target='_blank'>Faststream Technologies to Spread its Wings on IoT and EV Charging Solutions</a></div><div class="date">27.02.2017</div><div><ul>
+<li>Faststream Technologies to showcase IoT solutions for smart parking technology at Mobile World Congress 2017.</li>
+<li>They will also showcase an EV charging solution using cloud and IoT, with mobile power source.</li>
+<li>Faststream Technologies offers customized solutions for Cloud/Web based Custom Application Development, Enterprise Mobility and Business Intelligence services.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-3-5">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>IoT</th><th>Wireless Communication</th><th>Data Analytics</th><th>Mobile App Development</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/379369' target='_blank'>Intelligent Automation</a></td><td>Error</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1310695' target='_blank'>RAPID FLOW TECHNOLOGIES</a></td><td><ul><li>Bluetooth AVI Sensor network for parking-cruising detection</li><li>Dynamic parking pricing evaluation</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/683510' target='_blank'>Pirouette Software Consulting</a></td><td><ul><li>Crowd-sourcing smart-phones for parking availability</li><li>Intelligent Parking Assistant (IPA) for parking navigation</li></ul></td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/366825' target='_blank'>Clad Christensen Potomac Photonics</a></td><td><ul><li>Miniaturization of wireless sensor nodes</li><li>Elimination of restrictions on their shape</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1875463' target='_blank'>SEA</a></td><td><ul><li>Automated Driving Systems Test Data Interface</li><li>Enabling manual control of autonomous vehicles</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/345361' target='_blank'>Vexcel Corporation</a></td><td><ul><li>Machine Vision for Pavement Surface Distress Data Gathering</li><li>Automated generation of pavement surface distress information</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1943855' target='_blank'>Solar Roadways</a></td><td><ul><li>Modular intelligent infrastructure for clean energy generation</li><li>Decentralized energy production for national security</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1498939' target='_blank'>MICROGRID LABS</a></td><td><ul><li>EV Charging Infrastructure Optimization</li><li>Optimal Design for EV Customer Satisfaction, Grid Stability and Financial Constraints</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1499841' target='_blank'>Mirada Technologies</a></td><td><ul><li>3D imaging system for autonomous vehicles</li><li>Improving ADAS and enabling delivery robots and drones</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr></table><h4 id="section-3-6">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>IoT</th><th>Wireless Communication</th><th>Data Analytics</th><th>Mobile App Development</th></tr><tr><td><a href='http://www.businesswire.com/news/home/20221020005562/en/Outsight-Raises-22-Million-to-Accelerate-the-Deployment-of-LiDAR-Across-All-Industries/' target='_blank'>Outsight</a></td><td><ul><li>LiDAR-based 3D software solutions</li><li>Enabling intelligent, efficient, and safe movement in various industries</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.chinamoneynetwork.com/2016/11/09/chinese-smart-parking-data-firm-ezparking-completes-13-3m-funding-round' target='_blank'>EZParking</a></td><td><ul><li>IoT-based smart parking solutions</li><li>Facilitates parking, online payments, and reservations</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2016/01/telensa-raises-18m-in-funding.html' target='_blank'>Telensa</a></td><td><ul><li>LPWA wireless technology for smart city solutions</li><li>Smart streetlight and parking solutions</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='http://venturebeat.com/2014/12/03/anagog-raises-1m-to-help-you-find-a-parking-space/' target='_blank'>Anagog</a></td><td><ul><li>Real-time and historical driving and parking data analysis</li><li>Predicting parking space availability</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.vcnewsdaily.com/streetline/venture-capital-funding/dbdmvzstyf' target='_blank'>Streetline</a></td><td><ul><li>Smart Parking Solutions</li><li>Efficient Parking Management</li></ul></td><td>x</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='http://www.vcnewsdaily.com/sensity-systems/venture-capital-funding/twbcnbxcwr' target='_blank'>Sensity Systems</a></td><td><ul><li>LSN using IoT and data analytics</li><li>Smart city, parking, retail, security, public safety, environmental monitoring</li></ul></td><td>x</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2021/09/phiar-technologies-raises-12m-in-series-a-funding.html' target='_blank'>Phiar Technologies</a></td><td><ul><li>AR navigation for driving</li><li>Enhanced safety and intuitive wayfinding</li></ul></td><td>x</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2021/05/hayden-ai-raises-4-5m-in-funding.html' target='_blank'>Hayden AI</a></td><td><ul><li>AI-powered mobile sensors</li><li>Automated traffic law enforcement</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.globes.co.il/en/article-1000920955' target='_blank'>Pango Mobile Parking Ltd.</a></td><td><ul><li>Mobile App Development for smart parking</li><li>Increased revenues, reduced costs, and real-time parking information</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.prnewswire.com/news-releases/proxyclick-raises-15m-to-expand-further-into-the-us-and-other-markets-300991821.html' target='_blank'>Proxyclick</a></td><td><ul><li>Visitor management software for enterprise</li><li>Physical security and compliance</li><li>IoT, Wireless Communication, Data Analytics, Mobile App Development</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr></table></div></div>
+        <h2 id="section-4">4. Applications</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Real-time parking availability</td>
+      <td>Using sensors and cameras to detect available parking spots and display them in real-time to drivers</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Parking reservation</td>
+      <td>Allowing drivers to reserve a parking spot in advance through a mobile app or website</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Automated payment</td>
+      <td>Enabling drivers to pay for parking automatically through a mobile app or connected vehicle technology</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Traffic management</td>
+      <td>Using parking data to optimize traffic flow and reduce congestion in urban areas</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Environmental monitoring</td>
+      <td>Monitoring air quality and noise levels in parking areas to improve the overall environmental impact</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-4-1">Real-time parking availability</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div></div><div class="not-found">(No matching science publications found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Real-time%20parking%20availability%22%7C%22Live%20parking%20availability%22%7C%22Parking%20availability%20in%20real-time%22%7C%22Parking%20availability%20live%22%7C%22Real-time%20parking%20space%20availability%22%7C%22Live%20parking%20space%20availability%22%7C%22Parking%20space%20availability%20in%20real-time%22%7C%22Parking%20space%20availability%20live%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 24 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Real-time parking availability'' for ''smart parking''</div><div><a href='http://www.prnewswire.com/news-releases/frost--sullivan-commends-streetline-for-developing-its-innovative-smart-parking-solution-the-hybrid-data-collection-platform-300385184.html' target='_blank'>Frost & Sullivan Commends Streetline for Developing its Innovative Smart Parking Solution, the</a></div><div class="date">04.01.2017</div><div><ul>
+<li>Streetline's Hybrid Data Collection Platform provides real-time parking availability guidance with high accuracy.</li>
+<li>Merchants can embed Streetline's parking data on their websites to be more accessible to customers.</li>
+<li>Streetline's platform is a cost-efficient solution that covers a larger area and is accessible to cities.</li>
+</ul></div><br/><div><a href='http://www.sys-con.com/node/3561088' target='_blank'>Smart Parking Systems | news.sys-con.com</a></div><div class="date">17.11.2015</div><div><ul>
+<li>Sensor networks detect vehicle occupancy for real-time parking availability information.</li>
+<li>Smart parking systems reduce congestion, air and noise pollution, and improve economic activity.</li>
+<li>Smart parking technology and services market is expected to grow steadily, with an installed base of 1 million by 2024.</li>
+</ul></div><br/><div><a href='http://www.prnewswire.com/news-releases/smart-parking-systems-300180415.html' target='_blank'>Smart Parking Systems Sensor and Communications Hardware, Software, Services, and Smart City Applications: Global Market Analysis and Forecasts</a></div><div class="date">17.11.2015</div><div><ul>
+<li>Smart parking systems use sensor networks to provide real-time parking availability information.</li>
+<li>Large cities have adopted smart parking systems to reduce congestion in city centers.</li>
+<li>Smart parking technology and services market is expected to grow steadily, with interest from cities and other organizations.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div><div class="section-container"><h3 id="section-4-2">Parking reservation</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Parking%20reservation%22%7C%22Parking%20booking%22%7C%22Reserved%20parking%22%7C%22Book%20a%20parking%20spot%22%7C%22Parking%20space%20reservation%22%7C%22Parking%20pre-booking%22%7C%22Parking%20advance%20booking%22%7C%22Parking%20reserving%22%7C%22Parking%20bookings%22%7C%22Reserve%20a%20parking%20space%22%7C%22Parking%20book%22%7C%22Parking%20reserve%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 6 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Parking reservation'' for ''smart parking''</div><div><a href='http://www.nature.com/news/the-circular-economy-1.19594' target='_blank'>The circular economy : Nature News & Comment</a></div><div class="date">24.03.2016</div><div><ul>
+<li>Problem: Linear economy's profligate use of resources and waste.</li>
+<li>Solution: Circular economy that promotes reuse, repair, and remanufacture.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Parking%20reservation%22%7C%22Parking%20booking%22%7C%22Reserved%20parking%22%7C%22Book%20a%20parking%20spot%22%7C%22Parking%20space%20reservation%22%7C%22Parking%20pre-booking%22%7C%22Parking%20advance%20booking%22%7C%22Parking%20reserving%22%7C%22Parking%20bookings%22%7C%22Reserve%20a%20parking%20space%22%7C%22Parking%20book%22%7C%22Parking%20reserve%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 123 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Parking reservation'' for ''smart parking''</div><div><a href='https://www.globenewswire.com/news-release/2023/01/05/2583607/0/en/Parking-Management-Market-Revenue-to-Cross-45-12-Billion-Globally-by-2028-Exclusive-Report-by-The-Insight-Partners.html' target='_blank'>Parking Management Market Revenue to Cross $45.12 Billion,</a></div><div class="date">05.01.2023</div><div><ul>
+<li>Rising adoption of smart technologies in parking management</li>
+<li>Increasing partnerships and mergers to stimulate parking management in urban areas</li>
+<li>Global parking management market revenue to cross $45.12 billion by 2028</li>
+</ul></div><br/><div><a href='https://news.cision.com/parkmobile/r/parkmobile-to-offer-oak-view-group-venue--liberty-park--digital-parking-reservations-services-in-mem,c3758047' target='_blank'>ParkMobile to Offer Oak View Group Venue, Liberty Park, Digital Parking Reservations Services in Memphis, Tennessee - ParkMobile</a></div><div class="date">25.04.2023</div><div><ul>
+<li>ParkMobile offers digital parking reservation services at Liberty Park's entertainment and sports venues in Memphis.</li>
+<li>Users can reserve parking ahead of an event at one of the 4,500 spaces across multiple venues.</li>
+<li>ParkMobile aims to create strategic partnerships with venues across the country to grow its reservation services.</li>
+</ul></div><br/><div><a href='https://news.cision.com/parkmobile/r/new-orleans-ernest-n--morial-convention-center-to-offer-parking-reservations-and-onsite-digital-paym,c3771773' target='_blank'>New Orleans Ernest N. Morial Convention Center to Offer Parking Reservations and Onsite Digital Payments with ParkMobile - ParkMobile</a></div><div class="date">19.05.2023</div><div><ul>
+<li>New Orleans Convention Center partners with ParkMobile for parking reservations and digital payments</li>
+<li>Event attendees can reserve and pay for parking in advance via ParkMobile app or web link</li>
+<li>ParkMobile's technology used in thousands of locations across the US, including 8 of the top 10 cities</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Parking%20reservation%22%7C%22Parking%20booking%22%7C%22Reserved%20parking%22%7C%22Book%20a%20parking%20spot%22%7C%22Parking%20space%20reservation%22%7C%22Parking%20pre-booking%22%7C%22Parking%20advance%20booking%22%7C%22Parking%20reserving%22%7C%22Parking%20bookings%22%7C%22Reserve%20a%20parking%20space%22%7C%22Parking%20book%22%7C%22Parking%20reserve%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 7 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Parking reservation'' for ''smart parking''</div><div><a href='http://www.trendhunter.com/slideshow/august-2022-autos' target='_blank'>Top 100 Autos Trends in August</a></div><div class="date">30.07.2022</div><div><ul>
+<li>Universal car rack 'Knotix' brings truck utility to small cars</li>
+<li>'ZiGGY' is an automated robotic charger for electric vehicles with parking reservation feature</li>
+<li>Auto innovations focus on sustainability, modularity, and multi-purposeness</li>
+</ul></div><br/><div><a href='https://www.pddnet.com/videos/2018/06/marilyn-vtt-car-practices-autonomous-parking' target='_blank'>Marilyn The VTT Car Practices Autonomous Parking</a></div><div class="date">20.06.2018</div><div><ul>
+<li>Automated parking allows for more vehicles, optimised logistics and reduced congestion in parking areas.</li>
+<li>The VTT Marilyn utilises UWB-based positioning technology by HERE for indoor parking.</li>
+<li>The AUTOPILOT project focuses on developing automated valet parking and other driving modes.</li>
+</ul></div><br/><div><a href='https://www.digitaltrends.com/cool-tech/lyon-airport-robot-parking-system/' target='_blank'>This Robot Valet Will Park Your Car at France’s Lyon Airport | Digital Trends</a></div><div class="date">18.03.2019</div><div><ul>
+<li>Automated robotic valet system at Lyon Airport by Stanley Robotics</li>
+<li>Passengers book parking spot in advance and robots park the car</li>
+<li>System optimizes space and creates 50% more available parking</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-3">Automated payment</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Automated%20payment%22%7C%22Automated%20pay%22%7C%22Automated%20transaction%22%7C%22Automated%20settlement%22%7C%22Automated%20clearing%22%7C%22Automated%20remittance%22%7C%22Automated%20transfer%22%7C%22Electronic%20payment%22%7C%22Electronic%20pay%22%7C%22Electronic%20transaction%22%7C%22Electronic%20settlement%22%7C%22Electronic%20clearing%22%7C%22Electronic%20remittance%22%7C%22Electronic%20transfer%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 4 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automated payment'' for ''smart parking''</div><div><a href='https://www.mdpi.com/2412-3811/8/1/14' target='_blank'>Infrastructures | Free Full-Text | Coexistence of Energy Harvesting Roads and Intelligent Transportation Systems (ITS)</a></div><div class="date">11.01.2023</div><div><ul>
+<li>Problem: Finding reliable energy sources for Intelligent Transportation Systems (ITS).</li>
+<li>Solution: Energy harvesting pavements that can supply electricity to ITS.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Automated%20payment%22%7C%22Automated%20pay%22%7C%22Automated%20transaction%22%7C%22Automated%20settlement%22%7C%22Automated%20clearing%22%7C%22Automated%20remittance%22%7C%22Automated%20transfer%22%7C%22Electronic%20payment%22%7C%22Electronic%20pay%22%7C%22Electronic%20transaction%22%7C%22Electronic%20settlement%22%7C%22Electronic%20clearing%22%7C%22Electronic%20remittance%22%7C%22Electronic%20transfer%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 44 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automated payment'' for ''smart parking''</div><div><a href='http://www.businesswire.com/news/home/20230217005127/en/World-Smart-Transportation-Market-Report-2023-A-213.4-Billion-Market-by-2028---Analysis-by-Technology-Solution-Type-Transport-Mode-Business-Model-and-Vehicle-Types---ResearchAndMarkets.com/' target='_blank'>World Smart Transportation Market Report 2023: A $213.4 Billion Market by 2028 - Analysis by Technology, Solution Type, Transport Mode, Business Model, and Vehicle Types - ResearchAndMarkets.com | Business Wire</a></div><div class="date">17.02.2023</div><div><ul>
+<li>Automated payment systems are a key technology in the smart transportation market.</li>
+<li>Smart transportation aims to minimize traffic problems and congestion in cities and travel routes.</li>
+<li>The market for smart transportation is expected to reach $213.4 billion by 2028.</li>
+</ul></div><br/><div><a href='http://www.sae.org/mags/AEI/15831' target='_blank'>ZF’s CES blitz underscores industry shifts - SAE International</a></div><div class="date">15.01.2018</div><div><ul>
+<li>ZF showcased automated payment technology for smart parking using blockchain and cloud computing.</li>
+<li>Partnerships with Microsoft, Baidu, IBM, and UBS are central to ZF's strategy for digital technologies.</li>
+<li>ZF is exploring disruptive technologies, including the cloud, IoT, and shared economy, to achieve zero accidents and emissions.</li>
+</ul></div><br/><div><a href='https://www.prweb.com/releases/media_payments_get_an_upgrade_with_csis_invoice_to_pay_solution/prweb19210275.htm' target='_blank'>Media Payments Get an Upgrade with CSI’s Invoice-To-Pay Solution</a></div><div class="date">09.03.2023</div><div><ul>
+<li>CSI and IPS offer an end-to-end automated invoice-to-pay solution for media agencies.</li>
+<li>The solution removes manual touchpoints, reduces errors, and speeds up the payment process.</li>
+<li>The solution provides centralized receipt of all invoices, intelligent data capture, and facilitates all payment methods.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Automated%20payment%22%7C%22Automated%20pay%22%7C%22Automated%20transaction%22%7C%22Automated%20settlement%22%7C%22Automated%20clearing%22%7C%22Automated%20remittance%22%7C%22Automated%20transfer%22%7C%22Electronic%20payment%22%7C%22Electronic%20pay%22%7C%22Electronic%20transaction%22%7C%22Electronic%20settlement%22%7C%22Electronic%20clearing%22%7C%22Electronic%20remittance%22%7C%22Electronic%20transfer%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 6 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automated payment'' for ''smart parking''</div><div><a href='https://www.scmp.com/tech/apps-social/article/2178772/wechat-pay-launches-auto-scan-and-pay-parking-chinas-shopping-malls' target='_blank'>WeChat Pay launches auto scan-and-pay for parking in China’s shopping malls</a></div><div class="date">19.12.2018</div><div><ul>
+<li>WeChat Pay launched an automated payment system for car parks across China, using AI and plate scanning.</li>
+<li>The system has been rolled out to over 1,000 car parks nationwide, including major shopping malls, railway stations, and airports.</li>
+<li>The new WeChat Pay service’s roll-out will be expanded to include parking sites in schools and around popular tourist areas.</li>
+</ul></div><br/><div><a href='http://feeds.gawker.com/~r/io9/full/~3/EItwrPpQHfo/+rtgonzalez' target='_blank'>Every Port On The Space Station Is Loaded With Spacecraft</a></div><div class="date">14.08.2014</div><div><ul>
+<li>Last Automated Transfer Vehicle mission is underway, bringing supplies to the International Space Station.</li>
+<li>Soyuz capsules are loitering around to bring their respective astronaut crews back to Earth.</li>
+<li>Cargo carriers are serving as storage pods and garbage disposal units.</li>
+</ul></div><br/><div><a href='https://eandt.theiet.org/content/articles/2018/10/view-from-india-future-cities-utopian-spaces-of-living/' target='_blank'>View from India: Smart cities - planning for utopia | E&ampT Magazine</a></div><div class="date">15.10.2018</div><div><ul>
+<li>Smart cities aim to provide energy-efficient infrastructure and generate local employment using technology.</li>
+<li>Smart parking management includes demarcating parking slots, camera surveillance, and electronic payment options.</li>
+<li>Urban planning requires a sensitive outlook, retaining cultural ethos, and designing the layout strategically.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-4">Traffic management</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Traffic%20management%22%7C%22Traffic%20control%22%7C%22Traffic%20regulation%22%7C%22Road%20management%22%7C%22Road%20traffic%20management%22%7C%22Transportation%20management%22%7C%22Mobility%20management%22%7C%22Intelligent%20transportation%20systems%22%7C%22ITS%22%7C%22Congestion%20management%22%7C%22Flow%20management%22%7C%22Traffic%20engineering%22%7C%22Traffic%20planning%22%7C%22Traffic%20operations%22%7C%22Traffic%20flow%22%7C%22Road%20network%20management%22%7C%22Road%20network%20operations%22%7C%22Road%20network%20control%22%7C%22Road%20network%20regulation%22%7C%22Road%20traffic%20control%22%7C%22Road%20traffic%20regulation%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 538 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Traffic management'' for ''smart parking''</div><div><a href='https://www.mdpi.com/2071-1050/15/4/3158' target='_blank'>Sustainability | Free Full-Text | Development of Smart Mobility Infrastructure in Saudi Arabia: A Benchmarking Approach</a></div><div class="date">09.02.2023</div><div><ul>
+<li>Problem: Lack of intelligent transportation infrastructure for smart mobility in Saudi Arabia.</li>
+<li>Solution: Benchmarking smart mobility systems in Japan, Singapore, and South Korea to develop a framework for evaluating and improving smart mobility in Saudi Arabia.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/15/4/3285' target='_blank'>Sustainability | Free Full-Text | Analysis of the Potential Use of Unmanned Aerial Vehicles and Image Processing Methods to Support Road and Parking Space Management in Urban Transport</a></div><div class="date">10.02.2023</div><div><ul>
+<li>Problem: Inefficient management of parking spaces in cities</li>
+<li>Solution: Use of unmanned aerial vehicles and image processing methods</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2227-7390/11/1/156' target='_blank'>Mathematics | Free Full-Text | Quantum Inspired Task Optimization for IoT Edge Fog Computing Environment</a></div><div class="date">28.12.2022</div><div><ul>
+<li>Problem: Inefficient task allocation among dispersed Edge Computing nodes for real-time IoT applications.</li>
+<li>Solution: Quantum Computing-inspired optimization technique for efficient task allocation in an Edge Computing environment.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Traffic%20management%22%7C%22Traffic%20control%22%7C%22Traffic%20regulation%22%7C%22Road%20management%22%7C%22Road%20traffic%20management%22%7C%22Transportation%20management%22%7C%22Mobility%20management%22%7C%22Intelligent%20transportation%20systems%22%7C%22ITS%22%7C%22Congestion%20management%22%7C%22Flow%20management%22%7C%22Traffic%20engineering%22%7C%22Traffic%20planning%22%7C%22Traffic%20operations%22%7C%22Traffic%20flow%22%7C%22Road%20network%20management%22%7C%22Road%20network%20operations%22%7C%22Road%20network%20control%22%7C%22Road%20network%20regulation%22%7C%22Road%20traffic%20control%22%7C%22Road%20traffic%20regulation%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 4224 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Traffic management'' for ''smart parking''</div><div><a href='http://www.businesswire.com/news/home/20220921005678/en/Worldwide-Intelligent-Transportation-Systems-and-Services-Industry-to-2030---The-Market-is-Growing-Steadily-With-Rising-Need-to-Reduce-Traffic-Congestion-Across-the-World---ResearchAndMarkets.com/' target='_blank'>Worldwide Intelligent Transportation Systems and Services Industry to 2030 - The Market is Growing Steadily With Rising Need to Reduce Traffic Congestion Across the World - ResearchAndMarkets.com | Business Wire</a></div><div class="date">21.09.2022</div><div><ul>
+<li>ITSS market to reach $127.5 Bn by 2030, growing at 6% CAGR</li>
+<li>Road traffic management is the largest application segment</li>
+<li>Public transport segment is expected to be the most attractive segment</li>
+</ul></div><br/><div><a href='https://www.rcrwireless.com/20230406/internet-of-things-4/why-iot-is-an-essential-element-in-managing-vehicle-traffic-reader-forum' target='_blank'>Why IoT is an essential element in managing vehicle traffic (Reader Forum)</a></div><div class="date">06.04.2023</div><div><ul>
+<li>IoT enables remote monitoring and integration for traffic cameras, improving road safety.</li>
+<li>IoT-connected road signage and devices provide instant updates to drivers on potential hazards.</li>
+<li>Automated parking management with license plate recognition reduces paper waste and improves convenience.</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/03/27/2635051/0/en/Smart-Transportation-Market-to-Reach-USD-274-1-Bn-by-2032-Europe-Dominates-with-33-8-of-the-Market-Share.html' target='_blank'>Smart Transportation Market to Reach USD 274.1 Bn by 2032,</a></div><div class="date">27.03.2023</div><div><ul>
+<li>Smart transportation market to reach USD 274.1 Bn by 2032, driven by technological advancements and autonomous vehicles.</li>
+<li>Europe dominates the market with 33.8% share, followed by APAC region.</li>
+<li>Smart transportation includes parking management, passenger information, and traffic management.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Traffic%20management%22%7C%22Traffic%20control%22%7C%22Traffic%20regulation%22%7C%22Road%20management%22%7C%22Road%20traffic%20management%22%7C%22Transportation%20management%22%7C%22Mobility%20management%22%7C%22Intelligent%20transportation%20systems%22%7C%22ITS%22%7C%22Congestion%20management%22%7C%22Flow%20management%22%7C%22Traffic%20engineering%22%7C%22Traffic%20planning%22%7C%22Traffic%20operations%22%7C%22Traffic%20flow%22%7C%22Road%20network%20management%22%7C%22Road%20network%20operations%22%7C%22Road%20network%20control%22%7C%22Road%20network%20regulation%22%7C%22Road%20traffic%20control%22%7C%22Road%20traffic%20regulation%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1188 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Traffic management'' for ''smart parking''</div><div><a href='https://www.wevolver.com/article/improving-emergency-response-in-the-era-of-adas-vehicles-in-the-smart-city' target='_blank'>Improving emergency response in the era of ADAS vehicles in the Smart City</a></div><div class="date">06.07.2022</div><div><ul>
+<li>Smart city infrastructure can improve emergency response time for accidents through V2V and V2I communication.</li>
+<li>ADAS-capable vehicles can communicate with the infrastructure to suggest rerouting plans during accidents.</li>
+<li>Simulation using MATSim can test and evaluate different mitigation strategies for traffic accidents in a smart city.</li>
+</ul></div><br/><div><a href='https://techxplore.com/news/2022-12-bolstering-safety-self-driving-cars-deep.html' target='_blank'>Bolstering the safety of self-driving cars with a deep learning-based object detection system</a></div><div class="date">12.12.2022</div><div><ul>
+<li>Autonomous vehicles require accurate and efficient monitoring of surroundings for safety and reliability.</li>
+<li>Researchers have developed a smart IoT-enabled system for 3D object detection in real-time based on deep learning.</li>
+<li>The system can be applied to autonomous vehicles, parking, delivery, and future robots for object and obstacle detection.</li>
+</ul></div><br/><div><a href='https://techxplore.com/news/2023-06-reframing-key-walking-friendly-towns-cities.html' target='_blank'>Report: Reframing active travel planning is key to creating more cycling and walking-friendly towns and cities</a></div><div class="date">22.06.2023</div><div><ul>
+<li>Opposition to active travel measures is often based on incompatible beliefs with national policies.</li>
+<li>Future active travel planning proposals should be communicated differently to emphasize the importance of cycling.</li>
+<li>Local authorities need to improve stakeholder engagement and consultation to expedite the delivery of active travel projects.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-5">Environmental monitoring</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Environmental%20monitoring%22%7C%22Ecological%20monitoring%22%7C%22Environmental%20surveillance%22%7C%22Ecological%20surveillance%22%7C%22Environmental%20assessment%22%7C%22Ecological%20assessment%22%7C%22Environmental%20observation%22%7C%22Ecological%20observation%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 11 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Environmental monitoring'' for ''smart parking''</div><div><a href='https://www.mdpi.com/2079-9292/12/12/2564' target='_blank'>Electronics | Free Full-Text | A Blockchain-Centric IoT Architecture for Effective Smart Contract-Based Management of IoT Data Communications</a></div><div class="date">07.06.2023</div><div><ul>
+<li>Problem: Complex and hard to manage IoT data communications.</li>
+<li>Solution: Lightweight blockchain-centric IoT architecture with event-driven smart contract.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2411-5134/7/4/109' target='_blank'>Blockchain and 6G-Enabled IoT</a></div><div class="date">28.11.2022</div><div><ul>
+<li>Problem: Security and privacy challenges in 6G-enabled IoT networks.</li>
+<li>Solution: Integration of blockchain technology for secure and distributed networks.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2072-4292/15/5/1436' target='_blank'>Remote Sensing | Free Full-Text | Urban Built Environment Assessment Based on Scene Understanding of High-Resolution Remote Sensing Imagery</a></div><div class="date">03.03.2023</div><div><ul>
+<li>Problem: Difficulty in assessing the quality of the urban built environment.</li>
+<li>Solution: Intelligent evaluation method based on scene understanding of remote-sensing images.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Environmental%20monitoring%22%7C%22Ecological%20monitoring%22%7C%22Environmental%20surveillance%22%7C%22Ecological%20surveillance%22%7C%22Environmental%20assessment%22%7C%22Ecological%20assessment%22%7C%22Environmental%20observation%22%7C%22Ecological%20observation%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 43 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Environmental monitoring'' for ''smart parking''</div><div><a href='https://www.globenewswire.com/news-release/2023/01/11/2586971/0/en/Smart-Building-Market-Size-Worth-USD-328-62-Billion-by-2029-Report-by-Fortune-Business-Insights.html' target='_blank'>Smart Building Market Size Worth USD 328.62 Billion by</a></div><div class="date">11.01.2023</div><div><ul>
+<li>Global smart building market size to reach USD 328.62 billion by 2029</li>
+<li>Smart city projects and 5G technology to boost technology adoption</li>
+<li>Collaborations between companies for intelligent building solutions and services</li>
+</ul></div><br/><div><a href='https://www.prnewswire.com/news-releases/cellular-iot-market-worth-15-4-billion-by-2027--exclusive-report-by-marketsandmarkets-301355020.html' target='_blank'>Cellular IoT Market worth $15.4 billion by 2027 - Exclusive Report by MarketsandMarkets™</a></div><div class="date">16.08.2021</div><div><ul>
+<li>Increasing demand for cellular IoT in environmental monitoring for smart city infrastructure</li>
+<li>Hardware segment, including cellular IoT modules and chipsets, projected to account for largest market share</li>
+<li>APAC region, including China, Japan, India, and South Korea, expected to have highest growth rate</li>
+</ul></div><br/><div><a href='http://www.prweb.com/releases/2016/02/prweb13197351.htm' target='_blank'>SensorInsight Offers Four New Unique Industrial Internet of Things (IIOT) Vertical Solutions Packages</a></div><div class="date">03.02.2016</div><div><ul>
+<li>Environmental monitoring for safety and regulatory compliance</li>
+<li>Smart transportation and parking for efficient traffic management and parking payment control</li>
+<li>Industry-specific data analytics software for tailored reports and analysis</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Environmental%20monitoring%22%7C%22Ecological%20monitoring%22%7C%22Environmental%20surveillance%22%7C%22Ecological%20surveillance%22%7C%22Environmental%20assessment%22%7C%22Ecological%20assessment%22%7C%22Environmental%20observation%22%7C%22Ecological%20observation%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 7 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Environmental monitoring'' for ''smart parking''</div><div><a href='http://www.zdnet.com/article/telstra-announces-smart-city-plans-for-western-australia/#ftag=RSSbaffb68' target='_blank'>Telstra announces smart city plans for Western Australia | ZDNet</a></div><div class="date">23.05.2017</div><div><ul>
+<li>Smart parking sensors, waste bins, and environmental monitoring to improve local governance efficiency.</li>
+<li>Real-time analytics to obtain information on the most used areas of the park and reduce traffic.</li>
+<li>Potential to connect roads, footpaths, and beach with similar sensors for data-driven insights.</li>
+</ul></div><br/><div><a href='http://readwrite.com/2016/10/04/ingenu-offers-new-program-for-creating-smart-cities-cl4/' target='_blank'>Ingenu offers new program for creating smart cities</a></div><div class="date">05.10.2016</div><div><ul>
+<li>Ingenu's Smarter City program offers a ready-to-use smart city platform for environmental monitoring.</li>
+<li>The program partners with IoT industry leaders to provide strong features and support for smart city applications.</li>
+<li>Cities can gain access to double digit ROI solutions and turnkey applications for long-term growth plans.</li>
+</ul></div><br/><div><a href='https://www.zdnet.com/article/labor-proposes-smart-cities-plan-under-resurrected-national-urban-policy/#ftag=RSSbaffb68' target='_blank'>​Labor proposes smart cities plan under resurrected National Urban Policy | ZDNet</a></div><div class="date">11.05.2018</div><div><ul>
+<li>Labor proposes smart cities plan under National Urban Policy</li>
+<li>Smart infrastructure to be provisioned in all projects submitted to Infrastructure Australia</li>
+<li>Smart cities plan to address climate change, urban congestion, public transport, and employment access</li>
+</ul></div><br/></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-4-6">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Real-time parking availability</th><th>Parking reservation</th><th>Automated payment</th><th>Traffic management</th><th>Environmental monitoring</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/379369' target='_blank'>Intelligent Automation</a></td><td><ul><li>Low-cost VIN identification system</li><li>Automated trailer sequencing</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1310695' target='_blank'>RAPID FLOW TECHNOLOGIES</a></td><td><ul><li>Bluetooth AVI Sensor network</li><li>Automated parking-cruising detection</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/683510' target='_blank'>Pirouette Software Consulting</a></td><td><ul><li>Crowd-sourcing smartphones for parking availability</li><li>Intelligent Parking Assistant (IPA) for parking guidance</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/366825' target='_blank'>Clad Christensen Potomac Photonics</a></td><td><ul><li>Laser-based conductor patterns and thin film batteries</li><li>Miniaturization of wireless sensors</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1875463' target='_blank'>SEA</a></td><td><ul><li>Standardized electronic command signal inputs</li><li>Manual control of autonomous vehicles</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/345361' target='_blank'>Vexcel Corporation</a></td><td><ul><li>Machine Vision</li><li>Pavement surface distress data gathering and processing</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1943855' target='_blank'>Solar Roadways</a></td><td><ul><li>Modular intelligent infrastructure product</li><li>Generation of clean, renewable energy on roadways and surfaces</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1498939' target='_blank'>MICROGRID LABS</a></td><td><ul><li>Stochastic optimization for EV infrastructure design</li><li>Optimal scheduling and pricing strategies for EV charging</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1499841' target='_blank'>MIRADA TECHNOLOGIES</a></td><td><ul><li>High speed laser beam steering technology</li><li>3D point cloud data for autonomous vehicles</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td><td>x</td></tr></table><h4 id="section-4-7">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>Real-time parking availability</th><th>Parking reservation</th><th>Automated payment</th><th>Traffic management</th><th>Environmental monitoring</th></tr><tr><td><a href='https://www.chinamoneynetwork.com/2016/11/09/chinese-smart-parking-data-firm-ezparking-completes-13-3m-funding-round' target='_blank'>EZParking</a></td><td><ul><li>Data mining technology for smart car parking</li><li>Facilitating parking, online payments, and reservations</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.finsmes.com/2016/01/telensa-raises-18m-in-funding.html' target='_blank'>Telensa</a></td><td><ul><li>LPWA wireless technology for smart city solutions</li><li>Smart streetlight and parking solutions</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='http://venturebeat.com/2014/12/03/anagog-raises-1m-to-help-you-find-a-parking-space/' target='_blank'>Anagog</a></td><td><ul><li>Crowdsourced parking data using phone sensors</li><li>Real-time and historical parking prediction</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.vcnewsdaily.com/streetline/venture-capital-funding/dbdmvzstyf' target='_blank'>Streetline</a></td><td><ul><li>Sensing technology for smart parking</li><li>Efficient parking management</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.vcnewsdaily.com/sensity-systems/venture-capital-funding/twbcnbxcwr' target='_blank'>Sensity Systems Inc.</a></td><td><ul><li>LSN technology for smart city, parking, retail, security, environmental monitoring</li><li>Optimizes operations, enhances security, reduces energy usage</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2021/09/phiar-technologies-raises-12m-in-series-a-funding.html' target='_blank'>Phiar Technologies</a></td><td><ul><li>Deep learning AI and AR technologies for driving navigation</li><li>Enhancing safety and intuitive wayfinding</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2021/05/hayden-ai-raises-4-5m-in-funding.html' target='_blank'>Hayden AI</a></td><td><ul><li>Mobile sensors with AI</li><li>Automated traffic law enforcement</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.globes.co.il/en/article-1000920955' target='_blank'>Pango Mobile Parking Ltd.</a></td><td><ul><li>Smart parking applications</li><li>Real-time parking availability</li><li>Parking reservation</li><li>Automated payment</li><li>Traffic management</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.prnewswire.com/news-releases/proxyclick-raises-15m-to-expand-further-into-the-us-and-other-markets-300991821.html' target='_blank'>Proxyclick</a></td><td><ul><li>Cloud-based visitor management platform</li><li>Minimizes security and compliance risks</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr></table></div></div>
+        <h2 id="section-5">5. Unsolved problems</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Optimal parking space allocation</td>
+      <td>Developing algorithms to efficiently allocate parking spaces based on real-time data, such as occupancy rates and traffic flow.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Integration with existing infrastructure</td>
+      <td>Integrating smart parking systems with existing parking infrastructure, such as parking garages and meters, to ensure seamless operation and user experience.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Data privacy and security</td>
+      <td>Ensuring the privacy and security of user data collected by smart parking systems, such as license plate numbers and payment information.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Affordability and accessibility</td>
+      <td>Ensuring that smart parking systems are affordable and accessible to all users, regardless of socioeconomic status or physical ability.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Legal and regulatory challenges</td>
+      <td>Navigating the complex legal and regulatory landscape surrounding smart parking systems, such as liability issues and data protection laws.</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-5-1">Data privacy and security</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div></div><div class="not-found">(No matching science publications found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Data%20privacy%20and%20security%22%7C%22Data%20protection%20and%20security%22%7C%22Information%20privacy%20and%20security%22%7C%22Information%20protection%20and%20security%22%7C%22Data%20security%20and%20confidentiality%22%7C%22Information%20security%20and%20confidentiality%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 3 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Data privacy and security'' for ''smart parking''</div><div><a href='http://electroiq.com/blog/2015/01/further-growth-seen-for-semiconductor-equipment-and-materials-at-semi-iss-2015/' target='_blank'>Further growth seen for semiconductor equipment and materials at SEMI ISS 2015 | Solid State Technology</a></div><div class="date">14.01.2015</div><div><ul>
+<li>IoT presents growth opportunities but raises stakes for data privacy and security</li>
+<li>Patent reform, interoperability and STEM education challenge industry growth</li>
+<li>Semiconductor equipment and materials market projected to grow, led by automotive and industrial segments</li>
+</ul></div><br/><div><a href='http://www.businessgreen.com/bg/news/2412846/cisco-sprint-see-the-future-of-smart-cities-in-kansas-city' target='_blank'>Cisco, Sprint see the future of smart cities in... Kansas City? - 12 Jun 2015 - News from BusinessGreen</a></div><div class="date">12.06.2015</div><div><ul>
+<li>Cisco and Sprint partner with Kansas City for a $15m IoT platform for smart city deployment.</li>
+<li>Smart lighting system by Sensity will collect real-time data for smart parking, lighting, and public safety.</li>
+<li>Data privacy and security concerns arise with the collection of anonymized data and potential revenue opportunities.</li>
+</ul></div><br/><div><a href='https://semiengineering.com/from-e-bikes-to-e-scooters/' target='_blank'>Semiconductor Engineering .:. Micro-Mobility Market Potential Widens</a></div><div class="date">13.03.2019</div><div><ul>
+<li>Micromobility market could be worth $300 billion to $500 billion by 2030</li>
+<li>Ride hailing is gaining in Latin America and South America</li>
+<li>Autonomous driving, electrification of the drive chain, and mobility are leading topics in the automotive industry</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Data%20privacy%20and%20security%22%7C%22Data%20protection%20and%20security%22%7C%22Information%20privacy%20and%20security%22%7C%22Information%20protection%20and%20security%22%7C%22Data%20security%20and%20confidentiality%22%7C%22Information%20security%20and%20confidentiality%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 4 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Data privacy and security'' for ''smart parking''</div><div><a href='http://www.pddnet.com/articles/2015/04/why-latency-management-will-decide-future-iot' target='_blank'>Why Latency Management Will Decide the Future of the IoT</a></div><div class="date">17.04.2015</div><div><ul>
+<li>Human perception of latency is crucial for IoT interactions</li>
+<li>Managing real-time performance in IoT poses new challenges</li>
+<li>Data-centric paradigm shift needed for effective IoT monitoring and optimization</li>
+</ul></div><br/><div><a href='https://techxplore.com/news/2021-09-vehicle.html' target='_blank'>Activity detection inside a vehicle</a></div><div class="date">01.09.2021</div><div><ul>
+<li>Interior cameras can monitor driver activity and analyze their ability to take control of the vehicle.</li>
+<li>Fraunhofer IOSB developed a system that uses image data to detect driver and passenger activities.</li>
+<li>The system respects privacy and can be used for numerous applications beyond activity detection.</li>
+</ul></div><br/><div><a href='https://www.innovationexcellence.com/blog/2019/09/24/scenarios-for-smart-sustainable-human-cities/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+business-strategy-innovation+(Innovation+Excellence)' target='_blank'>Scenarios for Smart, Sustainable, Human Cities – Innovation Excellence</a></div><div class="date">01.10.2019</div><div><ul>
+<li>Data, AI, and clean energy can deliver seamless mobility in smart, healthy, and livable cities.</li>
+<li>Transportation systems can be fully integrated and AI-based, using vast amounts of data and predictive analysis.</li>
+<li>Smart technologies can offer "Mobility as a Service" and transform the organization of people and physical objects.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-5-2">Legal and regulatory challenges</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Legal%20and%20regulatory%20challenges%22%7C%22Legal%20obstacles%22%7C%22Regulatory%20issues%22%7C%22Legal%20difficulties%22%7C%22Regulatory%20challenges%22%7C%22Legal%20challenges%22%7C%22Regulatory%20obstacles%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 4 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Legal and regulatory challenges'' for ''smart parking''</div><div><a href='https://www.mdpi.com/2071-1050/14/24/16386' target='_blank'>Sustainability | Free Full-Text | Vehicle Telematics for Safer, Cleaner and More Sustainable Urban Transport: A Review</a></div><div class="date">08.12.2022</div><div><ul>
+<li>Problem: Legal and regulatory challenges in the field of smart parking.</li>
+<li>Solution: The research proposes the potential for telematics to facilitate new-to-market urban mobility technologies, signalised intersections, vehicle-to-vehicle (V2V) communication networks and other internet-of-things (IoT) and internet-of-vehicles (IoV) technologies.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1996-1073/15/23/8903' target='_blank'>Energies | Free Full-Text | Selection of an Electric Scooter for Shared Mobility Services Using Multicriteria Decision Support Methods</a></div><div class="date">25.11.2022</div><div><ul>
+<li>Problem: Selection of appropriate electric scooters for scooter-sharing systems.</li>
+<li>Solution: Use of the ELECTRE III method for selecting electric scooters.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/15/4/3729' target='_blank'>Sustainability | Free Full-Text | Algae-Powered Buildings: A Review of an Innovative, Sustainable Approach in the Built Environment</a></div><div class="date">17.02.2023</div><div><ul>
+<li>Problem: High energy consumption and CO2 emissions in the construction sector.</li>
+<li>Solution: Bioactive façades with photobioreactors for energy efficiency and CO2 capture.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Legal%20and%20regulatory%20challenges%22%7C%22Legal%20obstacles%22%7C%22Regulatory%20issues%22%7C%22Legal%20difficulties%22%7C%22Regulatory%20challenges%22%7C%22Legal%20challenges%22%7C%22Regulatory%20obstacles%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 17 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Legal and regulatory challenges'' for ''smart parking''</div><div><a href='https://www.lelezard.com/en/news-20893124.html' target='_blank'>Global Transit Ticketing & Fare Collection Report 2023: Current Status and Opportunities in the Installation of Transit Ticketing and Fare Collection Systems - Forecasts to 2030</a></div><div class="date">10.05.2023</div><div><ul>
+<li>Legal and regulatory challenges in smart parking are not mentioned in the given text.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20210722005220/en/CenterPoint-Energy-Implements-Independent-Board-Leadership-and-Governance-Structure/' target='_blank'>CenterPoint Energy Implements Independent Board Leadership and Governance Structure | Business Wire</a></div><div class="date">22.07.2021</div><div><ul>
+<li>CenterPoint Energy implements new independent board leadership and governance structure</li>
+<li>Martin Nesbitt named independent board chairman, replacing Executive Chairman position</li>
+<li>Milton Carroll departs from Executive Chairman position and Board as part of leadership transition</li>
+</ul></div><br/><div><a href='https://bravenewcoin.com/news/blockchains-real-estate-disruption-off-to-a-slow-start/' target='_blank'>Blockchain’s real estate disruption off to a slow start » Brave New Coin</a></div><div class="date">26.02.2018</div><div><ul>
+<li>Blockchain can simplify and accelerate management processes in real estate, particularly in land register and rental management.</li>
+<li>Blockchain-based smart contracts can automate rental agreements and eliminate administrative expenses.</li>
+<li>Blockchain-based cryptocurrencies can be used as means of payment and crowd investing in real estate, but regulatory issues remain.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22smart%20parking%22%7Cintelligent%20parking%7Cautomated%20parking%7Csmart%20car%20parking%22%7C%22parking%20management%22%7C%22parking%20automation%22%7C%22parking%20optimization%22%7C%22smart%20city%20parking%22%7C%22intelligent%20parking%22%7C%22connected%20parking%22%7C%22smart%20parking%20system%22%7C%22smart%20parking%20technology%22%7C%22smart%20parking%20solution%22&q=%22Legal%20and%20regulatory%20challenges%22%7C%22Legal%20obstacles%22%7C%22Regulatory%20issues%22%7C%22Legal%20difficulties%22%7C%22Regulatory%20challenges%22%7C%22Legal%20challenges%22%7C%22Regulatory%20obstacles%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 9 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Legal and regulatory challenges'' for ''smart parking''</div><div><a href='http://feeds.washingtonpost.com/c/34656/f/636596/s/39b42fa8/sc/36/l/0L0Swashingtonpost0N0Cblogs0Cinnovations0Cwp0C20A140C0A40C240Cself0Edriving0Ecars0Eput0Ehype0Ein0Etheir0Erear0Eview0Emirror0Ethe0Epotential0Eis0Ereal0Enow0C/story01.htm' target='_blank'>Self-driving cars put hype in their rear-view mirror. The potential is real now.</a></div><div class="date">24.04.2014</div><div><ul>
+<li>Self-driving cars can reduce traffic congestion and optimize mobility networks in urban spaces.</li>
+<li>Driverless cars can result in cost savings from lower land, construction, maintenance, and operational costs.</li>
+<li>Regulatory obstacles such as ethics, privacy, security, and liability need to be overcome for mainstream adoption.</li>
+</ul></div><br/><div><a href='https://www.zdnet.com/article/musks-boring-co-bid-wins-chicago-rapid-link-like-to-try-150mph-on-electric-skates/#ftag=RSSbaffb68' target='_blank'>Musk's Boring Co bid wins Chicago rapid link: Like to try 150mph on electric 'skates'? | ZDNet</a></div><div class="date">14.06.2018</div><div><ul>
+<li>Elon Musk's Boring Company to build high-speed underground link between O'Hare Airport and downtown Chicago.</li>
+<li>The proposed link will shuttle passengers on electric vehicles in an underground loop at 150mph.</li>
+<li>The Boring Company's tunneling technology remains unproven, but Chicago is betting on Musk's reputation.</li>
+</ul></div><br/><div><a href='https://www.technologyreview.com/s/609450/autonomous-vehicles-are-you-ready-for-the-new-ride/' target='_blank'>Autonomous Vehicles: Are You Ready for the New Ride? - MIT Technology Review</a></div><div class="date">09.11.2017</div><div><ul>
+<li>Autonomous vehicles will alter roads, reduce congestion, and promote highway safety.</li>
+<li>Self-driving cars will advance the industry disruption set in motion by ride-sharing services.</li>
+<li>Regulatory challenges and technical problems are among the obstacles facing autonomous vehicle development.</li>
+</ul></div><br/></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-5-3">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Optimal parking space allocation</th><th>Integration with existing infrastructure</th><th>Data privacy and security</th><th>Affordability and accessibility</th><th>Legal and regulatory challenges</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/379369' target='_blank'>Intelligent Automation</a></td><td><ul><li>Automated VIN identification and sequencing system</li><li>Optimal parking space allocation</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1310695' target='_blank'>RAPID FLOW TECHNOLOGIES</a></td><td><ul><li>Bluetooth AVI Sensor network</li><li>Automated parking-cruising detection and measurement</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/683510' target='_blank'>Pirouette Software Consulting</a></td><td><ul><li>Smart-phone software application</li><li>Optimal parking space allocation</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/366825' target='_blank'>Clad Christensen Potomac Photonics</a></td><td><ul><li>Laser-based conductor patterns and thin film batteries</li><li>Miniaturization of wireless sensors</li></ul></td><td>-</td><td>x</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1875463' target='_blank'>SEA</a></td><td><ul><li>Automated Driving Systems Test Data Interface</li><li>Integration with existing infrastructure</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/345361' target='_blank'>Vexcel Corporation</a></td><td><ul><li>Machine Vision</li><li>Automated Pavement Distress Survey Systems</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1943855' target='_blank'>Solar Roadways</a></td><td><ul><li>Modular intelligent infrastructure product</li><li>Generation of clean, renewable energy on roadways and any other surface</li></ul></td><td>-</td><td>x</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1498939' target='_blank'>Microgrid Labs</a></td><td><ul><li>Stochastic optimization for EV infrastructure design</li><li>Optimal scheduling and pricing strategies for EV charging</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/199836' target='_blank'>National</a></td><td><ul><li>Retractable barricade system</li><li>Enhanced physical security and force protection</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1499841' target='_blank'>Mirada Technologies</a></td><td><ul><li>High speed laser beam steering technology</li><li>3D point cloud data for autonomous vehicles</li></ul></td><td>x</td><td>x</td><td>-</td><td>x</td><td>-</td></tr></table><h4 id="section-5-4">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>Optimal parking space allocation</th><th>Integration with existing infrastructure</th><th>Data privacy and security</th><th>Affordability and accessibility</th><th>Legal and regulatory challenges</th></tr><tr><td><a href='http://www.businesswire.com/news/home/20221020005562/en/Outsight-Raises-22-Million-to-Accelerate-the-Deployment-of-LiDAR-Across-All-Industries/' target='_blank'>Outsight</a></td><td><ul><li>LiDAR-based 3D software solutions</li><li>Integration with existing infrastructure</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.chinamoneynetwork.com/2016/11/09/chinese-smart-parking-data-firm-ezparking-completes-13-3m-funding-round' target='_blank'>EZParking</a></td><td><ul><li>Big data analytics for parking management</li><li>Optimal parking space allocation</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2016/01/telensa-raises-18m-in-funding.html' target='_blank'>Telensa</a></td><td><ul><li>LPWA wireless technology for smart city solutions</li><li>Optimal parking space allocation</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://venturebeat.com/2014/12/03/anagog-raises-1m-to-help-you-find-a-parking-space/' target='_blank'>Anagog</a></td><td><ul><li>Crowdsourced parking data using phone sensors</li><li>Optimal parking space allocation</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.vcnewsdaily.com/streetline/venture-capital-funding/dbdmvzstyf' target='_blank'>Streetline, Inc.</a></td><td><ul><li>Smart parking solutions</li><li>Optimal parking space allocation</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.venturecapitalupdate.com/funding/01/17/streetline-raises-25-m-of-series-c-funding.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+vcu+(Venture+Capital+Update)' target='_blank'>Streetline</a></td><td><ul><li>Parking management and optimization software</li><li>Optimal parking space allocation</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.vcnewsdaily.com/sensity-systems/venture-capital-funding/twbcnbxcwr' target='_blank'>Sensity Systems</a></td><td><ul><li>LSN technology embedded in LED lighting</li><li>Smart city, parking, retail, security, public safety, environmental monitoring</li></ul></td><td>-</td><td>x</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2021/09/phiar-technologies-raises-12m-in-series-a-funding.html' target='_blank'>Phiar Technologies</a></td><td><ul><li>AI-powered AR navigation technology</li><li>Optimal parking space allocation</li><li>Integration with existing infrastructure</li><li>Data privacy and security</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.globes.co.il/en/article-1000920955' target='_blank'>Pango Mobile Parking Ltd.</a></td><td><ul><li>Smart parking applications</li><li>Optimal parking space allocation</li><li>Integration with existing infrastructure</li><li>Data privacy and security</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.prnewswire.com/news-releases/proxyclick-raises-15m-to-expand-further-into-the-us-and-other-markets-300991821.html' target='_blank'>Proxyclick</a></td><td><ul><li>Cloud-based visitor management platform</li><li>Optimal parking space allocation</li><li>Integration with existing infrastructure</li><li>Data privacy and security</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>-</td></tr></table></div></div>
+        <h2 id="section-6">6. Future outlook</h2>
+        <div><div><div class="section-container"><h3>Future trends in smart parking</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1999-5903/14/8/219' target='_blank'>Future Internet | Free Full-Text | A Smart Parking Solution by Integrating NB-IoT Radio Communication Technology into the Core IoT Platform</a></div><div class="date">25.07.2022</div><div><ul>
+<li>Integration with autonomous vehicles</li>
+<li>Use of real-time data analytics for parking optimization</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in smart parking</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/35808345' target='_blank'>Enabling Fog-Blockchain Computing for Autonomous-Vehicle-Parking System: A Solution to Reinforce IoT-Cloud Platform for Future Smart Parking.</a></div><div class="date">10.07.2022</div><div><ul>
+<li>Integration of fog-computing and blockchain technologies for smart autonomous vehicle parking (SAVP) system</li>
+<li>Deployment of lightweight integrated blockchain and cryptography (LIBC) module for privacy and security</li>
+<li>Timeframe: No specific timeframe mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in efficient and secured data link for iot wsns</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2079-9292/12/2/458' target='_blank'>Electronics | Free Full-Text | Efficient and Secured Mechanisms for Data Link in IoT WSNs: A Literature Review</a></div><div class="date">16.01.2023</div><div><ul>
+<li>Development of suggested architecture for WSN-IoT to enhance energy and power consumption, mobility, information transmission, QoS, and security</li>
+<li>Practical solutions to data link layer difficulties for the future using machine learning</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Robot charging station</h3><div class="outer-container"><div class="content-container"><div><a href='https://eandt.theiet.org/content/articles/2022/07/ford-trials-robot-charging-station-to-give-disabled-drivers-a-helping-hand/' target='_blank'>Ford trials robot charging station to assist disabled drivers | E&ampT Magazine</a></div><div class="date">21.07.2022</div><div><ul>
+<li>Hands-free charging solutions for electric vehicles</li>
+<li>Fully automatic charging for autonomous vehicles</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Efficient automated garage system</h3><div class="outer-container"><div class="content-container"><div><a href='https://techxplore.com/news/2023-02-efficient-automated-garage.html' target='_blank'>Researchers design a new efficient automated garage system</a></div><div class="date">13.02.2023</div><div><ul>
+<li>Increased capacity of garages in urban areas</li>
+<li>Simplified parking processes in highly populated cities</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div></div></div>
+    </div>
+</body>
+</html>
