@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="starttime"
+          content="2023-09-15 13:19:00.801010" />
+    <meta name="endtime"
+          content="2023-09-15 13:35:33.039691" />
+    <meta name="duration"
+          content="0:16:32.238681" />
+    <meta name="query_count"
+          content="781" />
+    <meta name="token_count"
+          content="818218" />
+    <meta name="answer_time"
+          content="0:00:02.163427" />
+    <meta name="manual_synonyms"
+          content="['Vertical Agriculture', 'Vertical crop production', 'indoor farming']" />
+    <title>Mergeflow Technology Roadmap</title>
+    <script src="https://kit.fontawesome.com/e554370735.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: "Segoe UI","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        .single-section-container{
+                align-items: stretch;
+            }
+        .single-section-container > .content-container {
+                border-radius: 10px;
+                border: 1px solid #cccccc;
+            }
+        
+        .section-container {
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .outer-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+        }
+
+        ul {
+                 margin: 0px;
+             }
+
+
+        .content-container {
+            flex: 1 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 30px 10px 30px;
+            font-size: 16px;
+            text-align: left;
+            border: none;
+            
+        }
+
+        .container-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        a {
+            font-weight: bold;
+            color: green;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-top: 9px;
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+        }
+        table {
+            width: auto;
+            border-collapse: collapse;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        table th, table td {
+            padding: 8px;
+            border: 1px solid #cccccc;
+            text-align: left;
+        }
+
+        table a {
+            text-decoration: none;
+        }
+
+        .heading {
+                      font-weight: bold;
+                      margin-bottom: 10px;
+       }
+
+        .sub-heading{
+                         font-weight: normal;
+                     }
+        .heading-link,
+        .sub-heading-link {
+            color: #6a6b67;
+            text-decoration: none;
+        }
+        .heading-link {
+                           font-size: 18px
+                       }
+        .sub-heading-link {
+                               font-size: 15px;
+         }
+        .vc-table {
+            width: auto;
+        }
+        .date {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0px;
+        }
+        .explore-more {
+            text-decoration: none;
+        }
+        .total-hits {
+            font-size: 16px;
+            font-weight: normal;
+            color: #999;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 17%; 
+            height: 100%;
+            overflow-y: auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #pagecontent {
+            margin-left: 19%;
+        }
+        .not-found {
+            font-size: 14px;
+            color: #999;
+        }
+        .orientation-subheading{
+            margin-bottom: 10px;
+            color: #999;
+        }
+        .dataset-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Content</h2>
+        <ol>
+            <li class="heading">
+                <a href="#section-1" class="heading-link">Introduction</a>
+            </li>
+            <li class="heading">
+                <a href="#section-2" class="heading-link">Figures of Merit</a>
+            </li>
+            <li class="heading">
+                <a href="#section-3" class="heading-link">Key Technologies</a>
+                <ul><li><a class="sub-heading-link" href="#section-3-1">LED Lighting</a></li><li><a class="sub-heading-link" href="#section-3-2">Hydroponics</a></li><li><a class="sub-heading-link" href="#section-3-3">Climate Control Systems</a></li><li><a class="sub-heading-link" href="#section-3-4">Automation and Robotics</a></li><li><a class="sub-heading-link" href="#section-3-5">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-3-6">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-4" class="heading-link">Applications</a>
+                <ul><li><a class="sub-heading-link" href="#section-4-1">Year-round crop production</a></li><li><a class="sub-heading-link" href="#section-4-2">Reducing water usage</a></li><li><a class="sub-heading-link" href="#section-4-3">Reducing transportation costs</a></li><li><a class="sub-heading-link" href="#section-4-4">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-4-5">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-5" class="heading-link">Unsolved Problems</a>
+                <ul><li><a class="sub-heading-link" href="#section-5-1">Energy Consumption</a></li><li><a class="sub-heading-link" href="#section-5-2">Crop Yield</a></li><li><a class="sub-heading-link" href="#section-5-3">Cost</a></li><li><a class="sub-heading-link" href="#section-5-4">Limited Crop Variety</a></li><li><a class="sub-heading-link" href="#section-5-5">Market Demand</a></li><li><a class="sub-heading-link" href="#section-5-6">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-5-7">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-6" class="heading-link">Future Outlook</a>
+            </li>
+        </ol>
+    </div>
+    <div id="pagecontent">
+        <div class="logo-container">
+            <a href="https://mergeflow.com/">
+                <img src="https://mergeflow.net/Images/logo-text.png" class="logo" alt="Logo" width="200" height="100" class="logo">
+            </a>
+            <h1>Technology Roadmap on Vertical Farming</h1>
+        </div>
+
+        <h2 id="section-1">1. Introduction</h2>
+        <div><h3>Overview</h3>
+<p>Vertical farming is a method of growing crops in vertically stacked layers, using artificial lighting and controlled environment agriculture technology. This technique allows for year-round crop production, higher crop yields, and efficient use of space and resources.</p>
+
+<h3>Working Principle</h3>
+<p>Vertical farming involves growing crops in vertically stacked layers, using artificial lighting and controlled environment agriculture technology. The plants are grown in a soilless medium, such as hydroponics or aeroponics, and are fed with a nutrient-rich solution. The environment is carefully controlled to optimize plant growth, with factors such as temperature, humidity, and light intensity all carefully monitored and adjusted as needed. The use of LED lighting allows for precise control over the light spectrum, which can be tailored to the specific needs of the plants being grown. Vertical farming can be done indoors or outdoors, and can be used to grow a wide variety of crops, including leafy greens, herbs, and even fruiting crops like tomatoes and strawberries.</p></div>
+        <h2 id="section-2">2. Figures of Merit</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Crop Yield</td>
+      <td>[kg/m^2]</td>
+      <td>Amount of crop produced per unit area</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Energy Efficiency</td>
+      <td>[kWh/kg]</td>
+      <td>Amount of energy required to produce one kilogram of crop</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Water Use Efficiency</td>
+      <td>[L/kg]</td>
+      <td>Amount of water required to produce one kilogram of crop</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Labor Productivity</td>
+      <td>[kg/hr]</td>
+      <td>Amount of crop produced per hour of labor</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Land Use Efficiency</td>
+      <td>[m^2/kg]</td>
+      <td>Amount of land required to produce one kilogram of crop</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Crop Diversity</td>
+      <td>[-]</td>
+      <td>Number of different crops that can be grown in the vertical farm</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Carbon Footprint</td>
+      <td>[kg CO2/kg]</td>
+      <td>Amount of carbon dioxide emitted per kilogram of crop produced</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Food Safety</td>
+      <td>[-]</td>
+      <td>Level of food safety and security provided by the vertical farm</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Availability</td>
+      <td>[hrs/y]</td>
+      <td>Expected number of hours the vertical farm is available for crop production per year</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3>Crop Yield</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36246543' target='_blank'>How Much Food Can We Grow in Urban Areas? Food Production and Crop Yields of Urban Agriculture: A Meta-Analysis.</a></div><div class="date">18.10.2022</div><div><ul>
+<li>Problem: Lack of knowledge on crop yields in urban agriculture</li>
+<li>Solution: Global meta-analysis to quantify and compare crop yields</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36709025' target='_blank'>Comparative analysis of IoT-based controlled environment and uncontrolled environment plant growth monitoring system for hydroponic indoor vertical farm.</a></div><div class="date">29.01.2023</div><div><ul>
+<li>Problem: Low crop yield in vertical farming</li>
+<li>Solution: IoT-enabled smart vertical farming system with controlled environment</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/14620316.2022.2141666?af=R' target='_blank'>Full article: Vertical farming - smart urban agriculture for enhancing resilience and sustainability in food security</a></div><div class="date">12.11.2022</div><div><ul>
+<li>Problem: Reduction in arable land for crop production</li>
+<li>Solution: Vertical farming with advanced precision monitoring and controlling system</li>
+</ul></div></div></div></div><div class="section-container"><h3>Energy Efficiency</h3><div class="outer-container"><div class="content-container"><div><a href='http://arxiv.org/abs/2303.11931' target='_blank'>Soft robotics towards sustainable development goals and climate actions</a></div><div class="date">21.03.2023</div><div><ul>
+<li>Problem: Energy efficiency in vertical farming</li>
+<li>Solution: Soft robots for targeted productive applications in urban farming</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/4/3729' target='_blank'>Sustainability | Free Full-Text | Algae-Powered Buildings: A Review of an Innovative, Sustainable Approach in the Built Environment</a></div><div class="date">17.02.2023</div><div><ul>
+<li>Problem: Energy consumption and CO2 emissions in the construction sector.</li>
+<li>Solution: Integration of photobioreactors (PBRs) and microalgae in building design.</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37681756' target='_blank'>Identification and Characterization of Mercury Contamination in Vegetables and Herbs Cultivated on a Commercial Vertical Indoor Farming System with Light-Emitting Diode Lighting: Unveiling an Unusual Food Safety Risk of Some Improperly Manufactured High-Density Agricultural Production Systems.</a></div><div class="date">08.09.2023</div><div><ul>
+<li>Problem: Mercury contamination in vegetables due to LED polyurethane encapsulant</li>
+<li>Solution: Proper manufacturing of LED encapsulant to prevent contamination</li>
+</ul></div></div></div></div><div class="section-container"><h3>Water Use Efficiency</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/7/5975' target='_blank'>Sustainability | Free Full-Text | Technologies to Optimize the Water Consumption in Agriculture: A Systematic Review</a></div><div class="date">30.03.2023</div><div><ul>
+<li>Problem: Excessive water consumption in agriculture due to population growth and climate change.</li>
+<li>Solution: Innovative strategies such as controlled-environment agriculture and hydroponics to decrease water consumption.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2306-5338/10/3/57' target='_blank'>Hydrology | Free Full-Text | A Novel Multipurpose Self-Irrigated Green Roof with Innovative Drainage Layer</a></div><div class="date">25.02.2023</div><div><ul>
+<li>Problem: Limitations of conventional green roofs, including weight and water retention.</li>
+<li>Solution: A novel self-irrigated green roof with an innovative drainage layer.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2223-7747/12/12/2347' target='_blank'>Plants | Free Full-Text | Reflectance Spectroscopy for the Classification and Prediction of Pigments in Agronomic Crops</a></div><div class="date">16.06.2023</div><div><ul>
+<li>Problem: Water use efficiency in vertical farming</li>
+<li>Solution: Use of hyperspectral data and machine learning algorithms for precise evaluation of pigments in crops</li>
+</ul></div></div></div></div><div class="section-container"><h3>Labor Productivity</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/14/11251' target='_blank'>Sustainability | Free Full-Text | Exploring Trade-Offs between Potential Economic, Social and Environmental Outcomes of Urban Agriculture in Adelaide, Australia and the Kathmandu Valley, Nepal</a></div><div class="date">19.07.2023</div><div><ul>
+<li>Problem: Trade-offs between economic, social, and environmental outcomes of urban agriculture.</li>
+<li>Solution: An integrated modelling framework to explore optimal urban agriculture systems.</li>
+</ul></div></div><div class="content-container"><div><a href='https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0290747' target='_blank'>Contribution of peri-urban land use and agriculture to entropy and food of mega-cities: On sustainability, planning by control theory and recycling of organics | PLOS ONE</a></div><div class="date">26.08.2023</div><div><ul>
+<li>Problem: Negative externalities of urban growth on ecology and sustainability.</li>
+<li>Solution: Integrate peri-urban agriculture and recycling into spatial planning.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/2/1324' target='_blank'>Sustainability | Free Full-Text | Evaluating the Economic Feasibility of Plant Factory Scenarios That Produce Biomass for Biorefining Processes</a></div><div class="date">10.01.2023</div><div><ul>
+<li>Problem: Limited market potential of plant factories to food production.</li>
+<li>Solution: Use of plant factories to produce biomass for biorefining industry.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Land Use Efficiency</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/17/12681' target='_blank'>Sustainability | Free Full-Text | Preparing Urban Agriculture as a Tool for Food Security in a Municipality: A Case Study of the Huay Lan Subdistrict Municipality, Dok Khamtai District, Phayao Province, Thailand</a></div><div class="date">22.08.2023</div><div><ul>
+<li>Problem: Uncertainties in future food security due to low productivity and chemical use in agriculture.</li>
+<li>Solution: Formation of a farmer coalition to advocate, train, and engage in sustainable agriculture.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/3/2591' target='_blank'>Sustainability | Free Full-Text | How Urban Growth in the Global South Affects Agricultural Dynamics and Food Systems Outcomes in Rural Areas: A Review and Research Agenda</a></div><div class="date">01.02.2023</div><div><ul>
+<li>Problem: Competition for land around growing cities affects rural livelihoods.</li>
+<li>Solution: Integrate peri-urban agriculture into urban planning and management.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Crop Diversity</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/10/7858' target='_blank'>Creating a Virtuous Food Cycle in Monterrey, Mexico</a></div><div class="date">11.05.2023</div><div><ul>
+<li>Problem: Disintegrated solutions to food system problems</li>
+<li>Solution: Integrated model connecting traditional recipes, urban farming, and local restaurants</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1424-8220/23/1/403' target='_blank'>IoT-Based Systems for Soil Nutrients Assessment in Horticulture</a></div><div class="date">30.12.2022</div><div><ul>
+<li>Problem: Lack of efficient information systems for soil nutrient assessment in horticulture.</li>
+<li>Solution: Information system based on IoT, sensing capability, and mobile application.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Carbon Footprint</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37443192' target='_blank'>Life cycle assessment of microgreen production: effects of indoor vertical farm management on yield and environmental performance.</a></div><div class="date">14.07.2023</div><div><ul>
+<li>Problem: High greenhouse gas emissions in indoor vertical farming</li>
+<li>Solution: Adjusting operational conditions to minimize emissions and increase yield</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/8/6666' target='_blank'>Sustainability | Free Full-Text | Do Consumers Intend to Use Indoor Smart Farm Restaurants for a Sustainable Future? The Influence of Cognitive Drivers on Behavioral Intentions</a></div><div class="date">14.04.2023</div><div><ul>
+<li>Problem: Lack of research on consumer behavior in the context of indoor smart farm restaurants (ISFRs) for sustainable agriculture practices.</li>
+<li>Solution: Investigating cognitive drivers, such as biospheric value, environmental concern, problem awareness, and ascription of responsibility, to predict consumer behavior and identify demographic differences.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/6/5284' target='_blank'>Sustainability | Free Full-Text | AGRI|gen: Analysis and Design of a Parametric Modular System for Vertical Urban Agriculture</a></div><div class="date">16.03.2023</div><div><ul>
+<li>Problem: High costs associated with vertical farming buildings</li>
+<li>Solution: Modular design using parametric architecture to reduce costs</li>
+</ul></div></div></div></div><div class="section-container"><h3>Food Safety</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36746994' target='_blank'>A methodological tool for sustainability and feasibility assessment of indoor vertical farming with artificial lighting in Africa.</a></div><div class="date">07.02.2023</div><div><ul>
+<li>Problem: Ensuring sustainable and feasible indoor vertical farming in Africa</li>
+<li>Solution: Methodological tool for sustainability and feasibility assessment</li>
+</ul></div></div><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37416638' target='_blank'>Consumer reaction to indoor farming using LED lighting technology and the effects of providing information thereon.</a></div><div class="date">07.07.2023</div><div><ul>
+<li>Problem: Negative consumer perception of artificial environment in vertical farming</li>
+<li>Solution: Providing information on plant growth and artificial light to improve perception</li>
+</ul></div></div><div class="content-container"><div><a href='http://arxiv.org/abs/2309.07540' target='_blank'>Optimal Control for Indoor Vertical Farms Based on Crop Growth</a></div><div class="date">14.09.2023</div><div><ul>
+<li>Problem: High energy consumption in vertical farming</li>
+<li>Solution: Optimize wheat growth using optimal control approach</li>
+</ul></div></div></div></div><div class="section-container"><h3>Availability</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37050560' target='_blank'>Vertical Farming Monitoring: How Does It Work and How Much Does It Cost?</a></div><div class="date">14.04.2023</div><div><ul>
+<li>Problem: Higher consumption of water and light in vertical farming</li>
+<li>Solution: Sensorization to reduce water and energy consumption</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/25739638.2022.2133444?af=R' target='_blank'>From small-scale agriculture to urban agriculture: women, subsistence economy, and the question of the commons: Journal of Contemporary Central and Eastern Europe: Vol 0, No 0</a></div><div class="date">08.02.2023</div><div><ul>
+<li>Problem: Loss of the commons and subsistence farming</li>
+<li>Solution: Reclaiming and reintroducing the commons for urban farming</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.nature.com/articles/s43016-022-00622-8' target='_blank'>A systematic scoping review of the sustainability of vertical farming, plant-based alternatives, food delivery services and blockchain in food systems</a></div><div class="date">03.11.2022</div><div><ul>
+<li>Problem: Availability in Vertical Farming</li>
+<li>Solution: Sustainability assessment framework for FSTs</li>
+</ul></div></div></div></div></div>
+        <h2 id="section-3">3. Key Technologies</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LED Lighting</td>
+      <td>Efficient and customizable lighting for plant growth</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Hydroponics</td>
+      <td>Soilless method of growing plants using nutrient-rich water</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Climate Control Systems</td>
+      <td>Maintains optimal temperature, humidity, and CO2 levels for plant growth</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Automation and Robotics</td>
+      <td>Automates tasks such as planting, harvesting, and monitoring plant growth</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-3-1">LED Lighting</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22LED%20Lighting%22%7C%22Light-Emitting%20Diode%20Lighting%22%7C%22LED%20Lights%22%7C%22LED%20Lamps%22%7C%22LED%20Bulbs%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 36 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''LED Lighting'' for ''Vertical Farming''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37575942' target='_blank'>Close-canopy lighting, an effective energy-saving strategy for overhead sole-source LED lighting in indoor farming.</a></div><div class="date">14.08.2023</div><div><ul>
+<li>Problem: Wasted photon emissions from improved LEDs in vertical farming</li>
+<li>Solution: Close-canopy lighting strategy to enhance photon capture efficiency</li>
+</ul></div><br/><div><a href='http://dx.doi.org/10.3389/fpls.2023.1215919' target='_blank'>Close-canopy lighting, an effective energy-saving strategy for overhead sole-source LED lighting in indoor farming</a></div><div class="date">27.07.2023</div><div><ul>
+<li>Problem: Wasted photon emissions from improved LEDs in vertical farming</li>
+<li>Solution: Close-canopy lighting strategy to enhance photon capture efficiency</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1424-8220/23/13/5790' target='_blank'>Sensors | Free Full-Text | Detection of Defective Lettuce Seedlings Grown in an Indoor Environment under Different Lighting Conditions Using Deep Learning Algorithms</a></div><div class="date">22.06.2023</div><div><ul>
+<li>Problem: Sorting defective lettuce seedlings manually is laborious and time-consuming, particularly under complex lighting conditions in indoor farming systems.</li>
+<li>Solution: The research proposes a defective-lettuce-seedling-detection system using deep learning algorithms, specifically YOLOv7, to automate the seedling sorting process under different indoor cultivation lighting systems.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22LED%20Lighting%22%7C%22Light-Emitting%20Diode%20Lighting%22%7C%22LED%20Lights%22%7C%22LED%20Lamps%22%7C%22LED%20Bulbs%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 413 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''LED Lighting'' for ''Vertical Farming''</div><div><a href='https://www.lelezard.com/en/news-20983971.html' target='_blank'>UV Lamp Market to grow at a CAGR of 20.41% from 2022 to 202| AlphaCure Ltd., Atlantic Ultraviolet Corp., Broadcom Inc., and more to emerge as key players - Technavio</a></div><div class="date">17.07.2023</div><div><ul>
+<li>UV LED lamps are increasingly adopted due to their eco-friendliness and energy-saving features in vertical farming.</li>
+<li>The transition from mercury-based UV lamps to UV LED lamps is an emerging trend in the UV lamp market.</li>
+<li>Health hazards associated with UV lamps, such as skin cancer, are a significant challenge hindering the UV lamp market growth.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230427005490/en/Indoor-Farming-Technology-Markets-2027---ResearchAndMarkets.com/' target='_blank'>Indoor Farming Technology Markets, 2027 - ResearchAndMarkets.com | Business Wire</a></div><div class="date">27.04.2023</div><div><ul>
+<li>LED lights are utilized in indoor farming methods such as aquaponics, aeroponics, and hydroponics.</li>
+<li>Vertical farming reduces the area required to grow plants and helps in reducing water and labor costs.</li>
+<li>COVID-19 has increased the demand for rapid pharmaceutical development, and vertical indoor farming can provide high-quality monoclonal antibodies, bio-inks, vaccines, and other proteins efficiently and quickly.</li>
+</ul></div><br/><div><a href='https://www.prnewswire.com/news-releases/global-horticulture-lighting-market-report-2022-widespread-use-of-automated-and-energy-efficient-lighting-fixtures-to-minimize-energy-costs-and-regulate-plant-growth-bolsters-sector-301702815.html' target='_blank'>Global Horticulture Lighting Market Report 2022: Widespread Use of Automated and Energy-Efficient Lighting Fixtures to Minimize Energy Costs and Regulate Plant Growth Bolsters Sector</a></div><div class="date">14.12.2022</div><div><ul>
+<li>LED technology's energy efficiency, long lifespan, and controllability drive its adoption in horticulture lighting.</li>
+<li>Fruits and vegetables hold the largest market share due to increasing demand for fresh produce and vertical farming.</li>
+<li>Asia Pacific is the fastest-growing market due to rising demand for food and adoption of advanced farming technologies.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22LED%20Lighting%22%7C%22Light-Emitting%20Diode%20Lighting%22%7C%22LED%20Lights%22%7C%22LED%20Lamps%22%7C%22LED%20Bulbs%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 126 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''LED Lighting'' for ''Vertical Farming''</div><div><a href='https://phys.org/news/2023-02-strategies-vertical-farming-productive.html' target='_blank'>New LED strategies could make vertical farming more productive, less costly</a></div><div class="date">21.02.2023</div><div><ul>
+<li>LED lighting strategies increase yield and reduce energy costs in vertical farming</li>
+<li>Close-canopy lighting and focused-lighting approaches capitalize on LED lighting's special properties</li>
+<li>Improved LED photon efficacy and correct placement can improve canopy photon capture efficiency</li>
+</ul></div><br/><div><a href='https://interestingengineering.com/innovation/taiwan-underground-metro-station-vertical-farm' target='_blank'>Taiwan transforms underground metro station into an organic vertical farm</a></div><div class="date">06.10.2022</div><div><ul>
+<li>LED lighting used in hydroponic farming at Nanjing Fuxing Metro station in Taipei, Taiwan</li>
+<li>Vertical farming growing in popularity in Taiwan due to limited land area and youth disinterest in agriculture</li>
+<li>Vertical farming touted as a solution to feed growing population and expected to reach USD 25.1 billion by 2030</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/applying-single-board-computers-sbcs-in-indoor-agriculture-applications' target='_blank'>Applying Single Board Computers (SBCs) in Indoor Agriculture Applications</a></div><div class="date">03.06.2023</div><div><ul>
+<li>SBCs optimize environmental conditions, automate irrigation, and control LED lighting in indoor agriculture.</li>
+<li>SBCs collect and analyze data to improve crop yields and resource utilization in indoor agriculture.</li>
+<li>AI and ML offer data-driven insights, predictive maintenance, and crop health monitoring in indoor agriculture.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-2">Hydroponics</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Hydroponics%22%7CAquaculture%7CAeroponics%7CSoilless%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 121 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Hydroponics'' for ''Vertical Farming''</div><div><a href='https://www.mdpi.com/1996-1073/15/21/8076' target='_blank'>Energies | Free Full-Text | Evaluation of the Effectiveness of Different LED Irradiators When Growing Red Mustard (Brassica juncea L.) in Indoor Farming</a></div><div class="date">31.10.2022</div><div><ul>
+<li>Problem: Optimization of light spectrum and intensity for red mustard growth</li>
+<li>Solution: Blue-red LED spectrum for efficient biomass conversion and growth</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36850471' target='_blank'>Evaluation of Growth Responses of Lettuce and Energy Efficiency of the Substrate and Smart Hydroponics Cropping System.</a></div><div class="date">01.03.2023</div><div><ul>
+<li>Problem: High energy consumption in hydroponics</li>
+<li>Solution: Smart sensing devices for real-time monitoring of agronomical variables</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1424-8220/23/7/3706' target='_blank'>Sensors | Free Full-Text | Development of an Embedded Software and Control Kit to Be Used in Soilless Agriculture Production Systems</a></div><div class="date">03.04.2023</div><div><ul>
+<li>Problem: No device can simultaneously control the electrical conductivity, pH, dissolved oxygen, and temperature of the solution in systems cultivated with soilless farming techniques.</li>
+<li>Solution: Development of an automatic control system using a microcontroller and various sensors.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Hydroponics%22%7CAquaculture%7CAeroponics%7CSoilless%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 616 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Hydroponics'' for ''Vertical Farming''</div><div><a href='http://www.businesswire.com/news/home/20220921005752/en/South-Korea-Indoor-Farming-Market-Overview-2022-2027-Popularity-in-Large-Cities-Fueling-Growth---ResearchAndMarkets.com/' target='_blank'>South Korea Indoor Farming Market Overview 2022-2027: Popularity in Large Cities Fueling Growth - ResearchAndMarkets.com | Business Wire</a></div><div class="date">21.09.2022</div><div><ul>
+<li>Indoor farming is a solution to food shortages, land scarcity, and unpredictable weather conditions.</li>
+<li>Indoor farming uses less water, soil, and pesticides, produces organic food, and has higher yields.</li>
+<li>South Korea's indoor farming market is growing rapidly, with hydroponics and aeroponics being the fastest-growing technologies.</li>
+</ul></div><br/><div><a href='https://www.lelezard.com/en/news-20904215.html' target='_blank'>Global Indoor Farming Market Report 2023: Sector is Expected to Reach $72.2 Billion by 2032 at a CAGR of 11.5%</a></div><div class="date">17.05.2023</div><div><ul>
+<li>Vertical farming and hydroponics are driving the growth of the indoor farming market.</li>
+<li>The market is expected to reach $72.2 billion by 2032 due to increasing food requirements and decreasing arable land.</li>
+<li>The COVID-19 pandemic has also contributed to the rising adoption of controlled growing environments and health consciousness.</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/01/06/2584243/28124/en/46-Billion-Worldwide-Indoor-Farming-Technology-Industry-to-2031-Rising-Adoption-of-Vertical-Farming-of-Agriculture-Drives-Growth.html' target='_blank'>$46+ Billion Worldwide Indoor Farming Technology Industry</a></div><div class="date">06.01.2023</div><div><ul>
+<li>Indoor farming technology market to reach $46.16 billion by 2026 with a CAGR of 12.2%</li>
+<li>Vertical farming adoption drives growth with optimized crop growth, reduced water usage, and energy conservation</li>
+<li>Strategic partnerships shaping the market, such as Sananbio and Hode AgTech for indoor farming projects in Qatar</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Hydroponics%22%7CAquaculture%7CAeroponics%7CSoilless%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 166 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Hydroponics'' for ''Vertical Farming''</div><div><a href='http://www.trendhunter.com/trends/re-nuble' target='_blank'>Vegan Hydroponic Nutrients : re nuble</a></div><div class="date">15.12.2022</div><div><ul>
+<li>Re-Nuble produces vegan, organic, water-soluble hydroponic nutrients using food by-products.</li>
+<li>The company's closed-loop system creates sustainable nutrient supply chains and reduces waste.</li>
+<li>Re-Nuble aims to empower communities to grow organic food using local waste streams for sustainability.</li>
+</ul></div><br/><div><a href='https://phys.org/news/2023-03-farms-cities-planners-growers-food.html' target='_blank'>Farms in cities: New study offers planners and growers food for thought</a></div><div class="date">14.03.2023</div><div><ul>
+<li>Urban agriculture is diverse in form and application, requiring appropriate technologies in poorer cities.</li>
+<li>Eight farm types emerged, ranging from low-tech to sophisticated solutions, using space and resources differently.</li>
+<li>Zero-acreage farms, such as hydroponics and vertical agriculture, may impede sustainable development and social impact.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/winners-aim-to-build-a-smarter-sustainable-world-with-bluetooth-le' target='_blank'>Winners aim to build a smarter sustainable world with Bluetooth LE</a></div><div class="date">23.12.2022</div><div><ul>
+<li>Developers use sensors and wireless connectivity to create solutions for smarter sustainability.</li>
+<li>Winning projects include a smart water tap leakage controller, a vertical self-regulating soilless farm, and a sustainable irrigation automation platform.</li>
+<li>Nordic Semiconductor supports the UN's Sustainable Development Goals through its commitment to sustainability innovation.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-3">Climate Control Systems</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Climate%20Control%20Systems%22%7C%22Climate%20Control%20Units%22%7C%22Climate%20Regulation%20Systems%22%7C%22Climate%20Regulation%20Units%22%7C%22HVAC%20Systems%22%7C%22HVAC%20Units%22%7C%22Heating%20and%20Cooling%20Systems%22%7C%22Heating%20and%20Cooling%20Units%22%7C%22Air%20Conditioning%20Systems%22%7C%22Air%20Conditioning%20Units%22%7C%22Temperature%20Control%20Systems%22%7C%22Temperature%20Control%20Units%22%7C%22Thermal%20Control%20Systems%22%7C%22Thermal%20Control%20Units%22%7C%22Environmental%20Control%20Systems%22%7C%22Environmental%20Control%20Units%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 7 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Climate Control Systems'' for ''Vertical Farming''</div><div><a href='https://www.mdpi.com/2223-7747/12/12/2316' target='_blank'>Plants | Free Full-Text | Performance Analysis of Time Series Deep Learning Models for Climate Prediction in Indoor Hydroponic Greenhouses at Different Time Intervals</a></div><div class="date">14.06.2023</div><div><ul>
+<li>Problem: Precise control of climate conditions in indoor hydroponic greenhouses is crucial for crop success.</li>
+<li>Solution: Time series deep learning models, specifically LSTM, can accurately predict climate conditions.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/15/9/7714' target='_blank'>Sustainability | Free Full-Text | Green Roof Development in ASEAN Countries: The Challenges and Perspectives</a></div><div class="date">08.05.2023</div><div><ul>
+<li>Problem: Lack of green roof development and implementation in ASEAN countries.</li>
+<li>Solution: Promoting the use of green roofs to mitigate environmental issues.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Climate%20Control%20Systems%22%7C%22Climate%20Control%20Units%22%7C%22Climate%20Regulation%20Systems%22%7C%22Climate%20Regulation%20Units%22%7C%22HVAC%20Systems%22%7C%22HVAC%20Units%22%7C%22Heating%20and%20Cooling%20Systems%22%7C%22Heating%20and%20Cooling%20Units%22%7C%22Air%20Conditioning%20Systems%22%7C%22Air%20Conditioning%20Units%22%7C%22Temperature%20Control%20Systems%22%7C%22Temperature%20Control%20Units%22%7C%22Thermal%20Control%20Systems%22%7C%22Thermal%20Control%20Units%22%7C%22Environmental%20Control%20Systems%22%7C%22Environmental%20Control%20Units%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 68 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Climate Control Systems'' for ''Vertical Farming''</div><div><a href='https://www.lelezard.com/en/news-21042352.html' target='_blank'>Hydroponics technologies market to Grow by USD 558.97 million from 2022 to 2027 | Facilitation in soil and space-saving drives the market - Technavio</a></div><div class="date">31.08.2023</div><div><ul>
+<li>Hydroponic technology promotes land and space efficiency in vertical farming</li>
+<li>Climate control systems, such as environmental monitoring equipment, are important for crop health</li>
+<li>APAC and Europe are significant regions for hydroponics technologies market growth</li>
+</ul></div><br/><div><a href='https://www.lelezard.com/en/news-21006360.html' target='_blank'>Hydroponics Technologies Market to grow by USD 558.97 million from 2022 to 2027|Facilitation in soil and space-saving drives the market - Technavio</a></div><div class="date">02.08.2023</div><div><ul>
+<li>Hydroponics technologies market to grow at 15.4% CAGR from 2022-2027</li>
+<li>Vertical and indoor farming promote soil and space efficiency</li>
+<li>High investment cost of hydroponics technologies is a major challenge hindering market growth</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/08/01/2716269/0/en/Environment-Controllers-Market-For-Agricultural-Greenhouse-Global-Market-Report-2023.html' target='_blank'>Environment Controllers Market For Agricultural Greenhouse</a></div><div class="date">01.08.2023</div><div><ul>
+<li>Major players in the market include Smart Bee Technologies, TrolMaster Agro Instruments, and Climate Control Systems Inc.</li>
+<li>Hydroponics and vertical farming are key types of farming in the environment controllers market for agricultural greenhouses.</li>
+<li>Increasing investment in vertical farming and technological advancements are driving the growth of the market.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Climate%20Control%20Systems%22%7C%22Climate%20Control%20Units%22%7C%22Climate%20Regulation%20Systems%22%7C%22Climate%20Regulation%20Units%22%7C%22HVAC%20Systems%22%7C%22HVAC%20Units%22%7C%22Heating%20and%20Cooling%20Systems%22%7C%22Heating%20and%20Cooling%20Units%22%7C%22Air%20Conditioning%20Systems%22%7C%22Air%20Conditioning%20Units%22%7C%22Temperature%20Control%20Systems%22%7C%22Temperature%20Control%20Units%22%7C%22Thermal%20Control%20Systems%22%7C%22Thermal%20Control%20Units%22%7C%22Environmental%20Control%20Systems%22%7C%22Environmental%20Control%20Units%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 5 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Climate Control Systems'' for ''Vertical Farming''</div><div><a href='https://www.euronews.com/green/2023/07/11/here-are-all-the-positive-environmental-stories-from-2023-so-far' target='_blank'>Here are all the positive environmental stories from 2023 so far | Euronews</a></div><div class="date">11.07.2023</div><div><ul>
+<li>Seals are making a comeback in Belgium</li>
+<li>Phosphate deposits discovered in Norway could supply green technologies for 50 years</li>
+<li>Wind and solar produced more energy than all fossil fuels combined in the EU in May</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-4">Automation and Robotics</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Automation%20and%20Robotics%22%7C%22Automated%20Systems%20and%20Robotics%22%7C%22Robotics%20and%20Automation%22%7C%22Robotic%20Automation%22%7C%22Industrial%20Automation%22%7C%22Automated%20Machines%22%7C%22Robotic%20Systems%22%7C%22Automated%20Robotics%22%7C%22Robotics%20Technology%22%7C%22Automated%20Control%20Systems%22%7C%22Robotics%20Engineering%22%7C%22Automated%20Manufacturing%22%7C%22Robotic%20Machinery%22%7C%22Automation%20Technology%22%7C%22Robotic%20Control%20Systems%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 10 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automation and Robotics'' for ''Vertical Farming''</div><div><a href='https://www.mdpi.com/1424-8220/23/7/3576' target='_blank'>Sensors | Free Full-Text | Mushroom Detection and Three Dimensional Pose Estimation from Multi-View Point Clouds</a></div><div class="date">29.03.2023</div><div><ul>
+<li>Problem: Lack of annotated data for 3D pose estimation of mushrooms.</li>
+<li>Solution: Template-based approach using a 3D model of a mushroom.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/15/8/6843' target='_blank'>Sustainability | Free Full-Text | Analysis of Development Strategy for Ecological Agriculture Based on a Neural Network in the Environmental Economy</a></div><div class="date">18.04.2023</div><div><ul>
+<li>Problem: Environmental issues caused by traditional agriculture practices.</li>
+<li>Solution: Ecological agriculture based on neural network technology.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Automation%20and%20Robotics%22%7C%22Automated%20Systems%20and%20Robotics%22%7C%22Robotics%20and%20Automation%22%7C%22Robotic%20Automation%22%7C%22Industrial%20Automation%22%7C%22Automated%20Machines%22%7C%22Robotic%20Systems%22%7C%22Automated%20Robotics%22%7C%22Robotics%20Technology%22%7C%22Automated%20Control%20Systems%22%7C%22Robotics%20Engineering%22%7C%22Automated%20Manufacturing%22%7C%22Robotic%20Machinery%22%7C%22Automation%20Technology%22%7C%22Robotic%20Control%20Systems%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 60 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automation and Robotics'' for ''Vertical Farming''</div><div><a href='https://www.businessgreen.com/news/4057815/government-announces-farming-technology-funding-boost' target='_blank'>Government announces farming technology funding boost | BusinessGreen News</a></div><div class="date">11.10.2022</div><div><ul>
+<li>£12.5m funding for automation and robotics projects to boost UK's horticulture sector</li>
+<li>Previous projects include fruit scouting robots and automated vegetable harvesters</li>
+<li>Environment Secretary visited the Netherlands to learn about high-tech greenhouse and vertical growing approaches</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/05/05/2662468/28124/en/24-Billion-Agricultural-Robots-Market-by-Type-Applications-Component-Farming-Type-and-End-Use-Global-Opportunity-Analysis-and-Industry-Forecast-2022-2030.html' target='_blank'>$24 Billion Agricultural Robots Market by Type,</a></div><div class="date">05.05.2023</div><div><ul>
+<li>Vertical farming is driving the demand for agriculture robots, which can assist with planting, watering, fertilizing, monitoring, and harvesting crops.</li>
+<li>The use of robotic sensors in vertical farming is growing in popularity, providing precise data about crop conditions and automating many farming processes.</li>
+<li>The rising demand for aerial drones and driverless tractors is expected to drive the adoption of agricultural robots, fueling market growth.</li>
+</ul></div><br/><div><a href='https://www.intelligence360.news/plenty-unlimited-to-occupy-60000-square-feet-of-space-in-laramie-wyoming/' target='_blank'>Plenty Unlimited to occupy 60,000 square feet of space in Laramie Wyoming.</a></div><div class="date">19.05.2023</div><div><ul>
+<li>Plenty Unlimited plans to expand in Laramie, using automation and robotics for skilled jobs.</li>
+<li>Vertical farming allows pesticide-free, non-GMO produce to be grown locally, reducing transportation emissions.</li>
+<li>Plenty builds farms in communities needing better access to food and jobs, promoting food justice as social justice.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Automation%20and%20Robotics%22%7C%22Automated%20Systems%20and%20Robotics%22%7C%22Robotics%20and%20Automation%22%7C%22Robotic%20Automation%22%7C%22Industrial%20Automation%22%7C%22Automated%20Machines%22%7C%22Robotic%20Systems%22%7C%22Automated%20Robotics%22%7C%22Robotics%20Technology%22%7C%22Automated%20Control%20Systems%22%7C%22Robotics%20Engineering%22%7C%22Automated%20Manufacturing%22%7C%22Robotic%20Machinery%22%7C%22Automation%20Technology%22%7C%22Robotic%20Control%20Systems%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 13 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automation and Robotics'' for ''Vertical Farming''</div><div><a href='https://eandt.theiet.org/content/articles/2023/01/vertical-farming-gets-boost-with-siemens-80-acres-collaboration/' target='_blank'>Vertical farming gets boost with Siemens’ 80 Acres collaboration | E&ampT Magazine</a></div><div class="date">09.01.2023</div><div><ul>
+<li>Siemens collaborates with 80 Acres Farms to optimize and standardize indoor farming operations.</li>
+<li>Siemens provides software and hardware solutions for automation, control, and energy management systems.</li>
+<li>Siemens Digital Industries Software is developing a digital twin to simulate plant growth and optimize future farms.</li>
+</ul></div><br/><div><a href='http://www.cmu.edu/news/stories/archives/2017/april/mcginnis-venture-competition.html' target='_blank'>Student Startups Earn Investments in McGinnis Venture Competition-CMU News - Carnegie Mellon University</a></div><div class="date">04.04.2017</div><div><ul>
+<li>RoBotany uses automated robotics and software analytics for indoor vertical farming in modern agriculture.</li>
+<li>Inventory Connection provides real-time inventory and point of sale data for better supermarket shelf stocking.</li>
+<li>McGinnis Venture Competition showcases student startups' potential to real-world investors.</li>
+</ul></div><br/><div><a href='https://futurism.com/a-new-type-of-farm-is-letting-us-grow-100-times-more-food/' target='_blank'>A New Type of Farm Is Letting Us Grow 100 Times More Food</a></div><div class="date">22.03.2017</div><div><ul>
+<li>Vertical farming allows for increased automation, reduced emissions, and all-around reduced costs.</li>
+<li>Indoor LEDs and nutrient-rich waterbeds allow for growing over 80 different types of produce.</li>
+<li>Traditional farming is becoming unsustainable due to urbanization and reduced land availability.</li>
+</ul></div><br/></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-3-5">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>LED Lighting</th><th>Hydroponics</th><th>Climate Control Systems</th><th>Automation and Robotics</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1521735' target='_blank'>Transaera</a></td><td><ul><li>Developing sustainable indoor farming with compact cooling and dehumidification systems</li><li>Novel MOF material with high water adsorption capacity</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1406687' target='_blank'>Vecna</a></td><td><ul><li>Addressing food security, labor, climate change, and access to wholesome food in urban areas</li><li>Introducing an innovative pallet-based growing solution that lends itself to robotic automation</li></ul></td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/node/2276619' target='_blank'>AIL RESEARCH</a></td><td><ul><li>High energy costs in CEA</li><li>CHP system for energy efficiency</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/373838' target='_blank'>EngenNano Technology</a></td><td><ul><li>Development of an efficient solid state grow-light for Greenhouse/Urban agriculture based on a novel growth process and device architecture</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/15519' target='_blank'>Pharaoh Industries</a></td><td><ul><li>High unemployment and vacant lots in Detroit</li><li>Collaborative urban agriculture for economic and ecological benefits</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr></table><h4 id="section-3-6">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>LED Lighting</th><th>Hydroponics</th><th>Climate Control Systems</th><th>Automation and Robotics</th></tr><tr><td><a href='https://vcnewsdaily.com/soli-organic/venture-capital-funding/gspyqsnwkm' target='_blank'>Soli Organic</a></td><td><ul><li>Vertical Farming</li><li>Indoor farming delivering 100% USDA certified organic produce</li></ul></td><td>-</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/04/voltserver-raises-17-5m-in-series-b-funding.html' target='_blank'>VoltServer</a></td><td><ul><li>Digital ElectricityTM</li><li>Rapid, lower-cost, data-enabled electricity distribution</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2023/07/boxhub-raises-12-4m-in-series-a-funding.html' target='_blank'>Boxhub</a></td><td><ul><li>Logistics platform for shipping containers</li><li>Introduces retired containers to secondary market</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2018/08/indoor-farming-robotics-startup-root-ai-raises-2-3m.html' target='_blank'>Root AI</a></td><td><ul><li>Automation and Robotics</li><li>Indoor farming efficiency and quality</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2020/10/brightfarms-secures-100m-in-series-e-funding.html' target='_blank'>BrightFarms</a></td><td><ul><li>Hydroponics</li><li>Indoor farming for packaged salads</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://techcrunch.com/2021/05/25/indoor-farming-company-bowery-raises-300m/' target='_blank'>Bowery Farming</a></td><td><ul><li>Vertical Farming</li><li>Indoor farming for sustainable agriculture</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2019/06/moleaer-raises-5m-in-funding.html' target='_blank'>Moleaer</a></td><td><ul><li>Industrial-scale nanobubble generators</li><li>Enables efficient water treatment, indoor farming, oil recovery</li></ul></td><td>-</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://venturebeat.com/2017/06/14/bowery-secures-20-million-to-grow-indoor-farming/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+venturebeat%2FSZYF+(VentureBeat)' target='_blank'>Bowery</a></td><td><ul><li>Vertical Farming</li><li>Optimizing plant growth in controlled indoor environment</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://vcnewsdaily.com/rise-gardens/venture-capital-funding/mslwsznbhy' target='_blank'>Rise Gardens</a></td><td><ul><li>Smart indoor hydroponic gardening system</li><li>Improves nutrition by growing food at home year-round</li></ul></td><td>-</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2021/10/acecann-closes-15m-seed-financing-round.html' target='_blank'>AceCann</a></td><td><ul><li>Medical cannabis cultivation, processing, extraction and R&D</li><li>Precise indoor farming for premium quality products</li></ul></td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2018/06/gotham-greens-raises-29m-in-growth-equity-funding.html' target='_blank'>Gotham Greens</a></td><td><ul><li>Hydroponics</li><li>Climate Control Systems</li></ul></td><td>-</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://vcnewsdaily.com/freight-farms/venture-capital-funding/ylkqznzbvm' target='_blank'>Freight Farms</a></td><td><ul><li>Containerized vertical farming</li><li>Decentralizing local production of fresh, healthy food</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://venturebeat.com/2020/09/09/iron-ox-raises-20-million-to-grow-robotic-greenhouse-operations/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+venturebeat%2FSZYF+(VentureBeat)' target='_blank'>Iron Ox</a></td><td><ul><li>Robotic greenhouse farming</li><li>Lowering energy costs and increasing yields</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='http://blogs.wsj.com/venturecapital/2015/12/10/aerofarms-raises-20-million-for-high-tech-urban-agriculture/?mod=WSJBlog' target='_blank'>AeroFarms Inc.</a></td><td><ul><li>Vertical Farming</li><li>High-tech indoor farms using 95% less water</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr></table></div></div>
+        <h2 id="section-4">4. Applications</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Year-round crop production</td>
+      <td>Vertical farming allows for year-round crop production in a controlled environment, independent of weather conditions.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Maximizing space utilization</td>
+      <td>Vertical farming maximizes space utilization by growing crops in stacked layers, allowing for higher crop yields per square foot of land.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Reducing water usage</td>
+      <td>Vertical farming reduces water usage by up to 70% compared to traditional farming methods, as water is recycled and reused within the system.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Reducing transportation costs</td>
+      <td>Vertical farming reduces transportation costs and carbon emissions by bringing food production closer to urban areas, reducing the need for long-distance transportation.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Reducing pesticide use</td>
+      <td>Vertical farming reduces the need for pesticides and herbicides, as the controlled environment minimizes the risk of pests and diseases.</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-4-1">Year-round crop production</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div></div><div class="not-found">(No matching science publications found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Year-round%20crop%20production%22%7C%22All-year%20crop%20production%22%7C%22Continuous%20crop%20production%22%7C%22Perennial%20crop%20production%22%7C%22Sustainable%20crop%20production%22%7C%22Uninterrupted%20crop%20production%22%7C%22Yearlong%20crop%20production%22%7C%22Year%20round%20agriculture%22%7C%22Year%20round%20crop%20farming%22%7C%22Year%20round%20crop%20harvest%22%7C%22Year%20round%20crop%20yield%22%7C%22Year%20round%20food%20production%22%7C%22Year%20round%20harvest%22%7C%22Year%20round%20plant%20production%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 8 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Year-round crop production'' for ''Vertical Farming''</div><div><a href='https://www.prnewswire.com/news-releases/global-vertical-farming-market-report-2023-a-15-3-billion-industry-by-2028-with-hardware-dominating-301891816.html' target='_blank'>Global Vertical Farming Market Report 2023: A $15.3+ Billion Industry by 2028 with Hardware Dominating</a></div><div class="date">02.08.2023</div><div><ul>
+<li>Year-round crop production irrespective of weather conditions</li>
+<li>Hardware, including LED lighting and sensors, dominates the market</li>
+<li>Aquaponics growth mechanism offers lucrative growth opportunities</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/08/01/2715899/0/en/The-Global-Agricultural-Lighting-Market-size-is-expected-to-reach-26-7-billion-by-2030-rising-at-a-market-growth-of-12-5-CAGR-during-the-forecast-period.html' target='_blank'>The Global Agricultural Lighting Market size is expected to</a></div><div class="date">01.08.2023</div><div><ul>
+<li>Year-round crop production without consideration to weather conditions</li>
+<li>Increasing adoption of Controlled Environment-Agriculture technology</li>
+<li>Significant need for diverse light wavelengths for various crops</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div><div class="section-container"><h3 id="section-4-2">Reducing water usage</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Reducing%20water%20usage%22%7C%22Water%20conservation%22%7C%22Water%20efficiency%22%7C%22Water%20saving%22%7C%22Reducing%20water%20consumption%22%7C%22Water%20management%22%7C%22Water%20preservation%22%7C%22Water%20reduction%22%7C%22Water%20stewardship%22%7C%22Water%20scarcity%22%7C%22Water%20footprint%22%7C%22Sustainable%20water%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 36 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Reducing water usage'' for ''Vertical Farming''</div><div><a href='https://www.mdpi.com/2071-1050/15/10/7814' target='_blank'>Sustainability | Free Full-Text | Study on the Efficiency of a Hydroponic Treatment for Removing Organic Loading from Wastewater and Its Application as a Nutrient for the &ldquo;Amaranthus campestris&rdquo; Plant for Sustainability</a></div><div class="date">10.05.2023</div><div><ul>
+<li>Problem: Reducing water usage in agriculture due to increasing demand</li>
+<li>Solution: Using partially treated wastewater as a nutrient source for hydroponic cultivation</li>
+</ul></div><br/><div><a href='https://www.informahealthcare.com/doi/full/10.1080/19463138.2023.2207523?af=R' target='_blank'>Full article: Urban agriculture, local economic development and climate change: conceptual linkages</a></div><div class="date">28.08.2023</div><div><ul>
+<li>Problem: Reducing the negative impact of climate change on urban areas</li>
+<li>Solution: Implementing urban agriculture as a nature-based solution for climate change adaptation and mitigation, while also promoting local economic development</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2076-3417/13/1/168' target='_blank'>Nature-Based Solutions in Urban Areas: A European Analysis</a></div><div class="date">23.12.2022</div><div><ul>
+<li>Problem: Lack of effective monitoring of the effects of NbS in buildings and their surroundings.</li>
+<li>Solution: Implementing NbS in buildings and their surroundings.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Reducing%20water%20usage%22%7C%22Water%20conservation%22%7C%22Water%20efficiency%22%7C%22Water%20saving%22%7C%22Reducing%20water%20consumption%22%7C%22Water%20management%22%7C%22Water%20preservation%22%7C%22Water%20reduction%22%7C%22Water%20stewardship%22%7C%22Water%20scarcity%22%7C%22Water%20footprint%22%7C%22Sustainable%20water%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 88 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Reducing water usage'' for ''Vertical Farming''</div><div><a href='https://www.lelezard.com/en/news-20772872.html' target='_blank'>Global Vertical Farming Markets Report, 2022-2023 & 2030: Rising Need to Address Water Scarcity, Food Security, and Carbon Emissions will Drive Adoption of Indoor Agriculture Techniques</a></div><div class="date">10.02.2023</div><div><ul>
+<li>Vertical farming can address water scarcity and reduce unsustainable land and water use in traditional agriculture.</li>
+<li>Hydroponics is a key technology used in vertical farming to reduce water usage.</li>
+<li>North America is currently the largest market for vertical farming components due to rapid expansion in vertical farms.</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/03/28/2635422/28124/en/Global-Vertical-Farming-Market-Report-2023-Reduction-in-Environmental-Impact-in-Vertical-Farming-Boosts-Adoption.html' target='_blank'>Global Vertical Farming Market Report 2023: Reduction in</a></div><div class="date">28.03.2023</div><div><ul>
+<li>Reduction in environmental impact boosts adoption of vertical farming</li>
+<li>Hydroponics dominates the market due to pesticide-free food production</li>
+<li>Water scarcity and deforestation drive growth, but maintenance and investment costs are challenges</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230328005512/en/Global-Vertical-Farming-Market-Report-2023-Accelerating-Investment-into-Vertical-Farming-Bolsters-Growth---ResearchAndMarkets.com/' target='_blank'>Global Vertical Farming Market Report 2023: Accelerating Investment into Vertical Farming Bolsters Growth - ResearchAndMarkets.com | Business Wire</a></div><div class="date">28.03.2023</div><div><ul>
+<li>Accelerating investment into vertical farming due to water scarcity and decline in agriculture land area</li>
+<li>Hydroponics dominates the market due to production of pesticides free food</li>
+<li>North America is the fastest growing regional market due to alarming rate of water level depletion</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Reducing%20water%20usage%22%7C%22Water%20conservation%22%7C%22Water%20efficiency%22%7C%22Water%20saving%22%7C%22Reducing%20water%20consumption%22%7C%22Water%20management%22%7C%22Water%20preservation%22%7C%22Water%20reduction%22%7C%22Water%20stewardship%22%7C%22Water%20scarcity%22%7C%22Water%20footprint%22%7C%22Sustainable%20water%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 20 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Reducing water usage'' for ''Vertical Farming''</div><div><a href='https://phys.org/news/2022-10-reuse.html' target='_blank'>It is not enough to save water. We must also reuse it</a></div><div class="date">28.10.2022</div><div><ul>
+<li>Treated wastewater can be used for irrigation in urban green spaces and agricultural land.</li>
+<li>Obstacles to water reuse are mainly rooted in existing regulations and a lack of business models.</li>
+<li>WIDER UPTAKE project aims to identify how best to exploit available water resources and develop sustainable business models.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/wasting-away-wireless-iot-tackles-global-food-waste-crisis' target='_blank'>Wasting away: Wireless IoT tackles global food waste crisis</a></div><div class="date">12.07.2023</div><div><ul>
+<li>Vertical farming uses sensor networks to automate control and monitor key parameters, resulting in ten times the yield.</li>
+<li>Bluetooth LE and cellular IoT-connected sensors can continuously monitor temperature and humidity to prevent distribution losses.</li>
+<li>Consumers can use Wi-Fi-powered fridge cams and connected apps to avoid doubling up on items and reduce waste.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-3">Reducing transportation costs</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div></div><div class="not-found">(No matching science publications found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Reducing%20transportation%20costs%22%7C%22Minimizing%20transportation%20expenses%22%7C%22Cutting%20transportation%20costs%22%7C%22Lowering%20transportation%20expenses%22%7C%22Decreasing%20transportation%20costs%22%7C%22Reducing%20shipping%20costs%22%7C%22Minimizing%20shipping%20expenses%22%7C%22Cutting%20shipping%20costs%22%7C%22Lowering%20shipping%20expenses%22%7C%22Decreasing%20shipping%20costs%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 2 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Reducing transportation costs'' for ''Vertical Farming''</div><div><a href='https://www.farms.com/news/climate-change-to-push-food-prices-higher-report-predicts-up-to-4-hike-in-2020-152001.aspx' target='_blank'>Climate change to push food prices higher, report predicts up to 4% hike in 2020 | Farms.com</a></div><div class="date">07.12.2019</div><div><ul>
+<li>Climate change causing unpredictable weather patterns leading to higher food prices, especially in produce department.</li>
+<li>Expected rise in food prices in all eight categories, with meat, seafood, and vegetables seeing the biggest jump.</li>
+<li>Vertical and indoor farming could reduce transportation costs and bacterial outbreaks, improving food security and reducing prices.</li>
+</ul></div><br/><div><a href='http://www.prnewswire.com/news-releases/growth-in-vertical-farming-market-analyzed-by-functional-devices-revenue-competitive-landscape-2021-602422845.html' target='_blank'>Growth in Vertical Farming Market Analyzed by Functional Devices, Revenue, Competitive Landscape</a></div><div class="date">22.11.2016</div><div><ul>
+<li>Reducing energy costs with solid state electronics for grow lights in vertical farming</li>
+<li>Eliminating chemical contaminants in food supply and decreasing transportation costs for food production</li>
+<li>Grow lights finding larger markets among greenhouse operators as people become more health conscious</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-4-4">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Year-round crop production</th><th>Maximizing space utilization</th><th>Reducing water usage</th><th>Reducing transportation costs</th><th>Reducing pesticide use</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1521735' target='_blank'>Transaera</a></td><td><ul><li>Developing energy-efficient cooling and dehumidification systems for greenhouses</li><li>Commercializing a novel metal organic framework material</li></ul></td><td>x</td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1406687' target='_blank'>Vecna</a></td><td><ul><li>Addressing food security, labor, climate change, and access to wholesome food in urban areas</li><li>Introducing a pallet-based growing solution for robotic automation</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/node/2289557' target='_blank'>HELIPONIX</a></td><td><ul><li>Developing a rotary aeroponic cultivation chamber for household use</li><li>Maximizing space utilization, reducing water usage, reducing pesticide use</li></ul></td><td>x</td><td>-</td><td>x</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/node/2276619' target='_blank'>AIL RESEARCH</a></td><td><ul><li>Reduce energy use for CEA crops by 50%</li><li>Integrate Combined Heat and Power into Controlled Environment Agriculture</li></ul></td><td>x</td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/373838' target='_blank'>EngenNano Technology</a></td><td><ul><li>Development of an efficient solid state grow-light for Greenhouse/Urban agriculture based on a novel growth process and device architecture</li><li>Customize glow-lights for Canadian market</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1643509' target='_blank'>Babylon Micro Farms</a></td><td><ul><li>Addressing food insecurity and obesity in urban environments</li><li>Fully-automated precision farming platform for hydroponic farming</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>x</td></tr></table><h4 id="section-4-5">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>Year-round crop production</th><th>Maximizing space utilization</th><th>Reducing water usage</th><th>Reducing transportation costs</th><th>Reducing pesticide use</th></tr><tr><td><a href='https://vcnewsdaily.com/soli-organic/venture-capital-funding/gspyqsnwkm' target='_blank'>Soli Organic</a></td><td><ul><li>Soil-based indoor farming technology</li><li>Year-round crop production</li><li>Reducing water usage</li><li>Reducing pesticide use</li><li>Reducing transportation costs</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2023/04/voltserver-raises-17-5m-in-series-b-funding.html' target='_blank'>VoltServer</a></td><td><ul><li>Digital ElectricityTM technology for electricity transmission</li><li>Faster, safer, and lower-cost electricity distribution</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/07/boxhub-raises-12-4m-in-series-a-funding.html' target='_blank'>Boxhub</a></td><td><ul><li>Online marketplace for shipping containers</li><li>Enables purchase, sale, and delivery of shipping containers</li></ul></td><td>-</td><td>x</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='http://www.finsmes.com/2018/08/indoor-farming-robotics-startup-root-ai-raises-2-3m.html' target='_blank'>Root AI</a></td><td><ul><li>AI-powered robotics for indoor farming</li><li>Maximizing space utilization, reducing transportation costs, reducing pesticide use</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2020/10/brightfarms-secures-100m-in-series-e-funding.html' target='_blank'>BrightFarms</a></td><td><ul><li>Vertical Farming Hydroponics</li><li>Year-round crop production, Maximizing space utilization, Reducing water usage, Reducing transportation costs, Reducing pesticide use</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://techcrunch.com/2021/05/25/indoor-farming-company-bowery-raises-300m/' target='_blank'>Bowery Farming</a></td><td><ul><li>Vertical Farming</li><li>Year-round crop production, Maximizing space utilization, Reducing water usage, Reducing transportation costs, Reducing pesticide use</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2019/06/moleaer-raises-5m-in-funding.html' target='_blank'>Moleaer</a></td><td><ul><li>Industrial-scale nanobubble generators</li><li>Enables year-round crop production, maximizing space utilization, reducing water usage, reducing transportation costs, and reducing pesticide use</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20220125005517/en/Plenty-Secures-400-Million-Series-E/' target='_blank'>Plenty Unlimited Inc.</a></td><td><ul><li>Vertical farming technology</li><li>Year-round, sustainable crop production</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://venturebeat.com/2017/06/14/bowery-secures-20-million-to-grow-indoor-farming/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+venturebeat%2FSZYF+(VentureBeat)' target='_blank'>Bowery</a></td><td><ul>
+<li>Proprietary operating system tracks and optimizes plant growth</li>
+<li>Reduces water usage by 95% and eliminates pesticide use</li>
+</ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2021/10/acecann-closes-15m-seed-financing-round.html' target='_blank'>AceCann</a></td><td><ul><li>Medical cannabis vertical farming</li><li>Premium medical cannabis cultivation, processing, and extraction</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2018/06/gotham-greens-raises-29m-in-growth-equity-funding.html' target='_blank'>Gotham Greens</a></td><td><ul><li>Hydroponic vertical farming technology</li><li>Year-round crop production, maximizing space utilization, reducing transportation costs, reducing water usage, reducing pesticide use</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://vcnewsdaily.com/freight-farms/venture-capital-funding/ylkqznzbvm' target='_blank'>Freight Farms</a></td><td><ul><li>Containerized vertical farming technology</li><li>Year-round crop production, maximizing space utilization, reducing water usage, reducing transportation costs, reducing pesticide use</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://blogs.wsj.com/venturecapital/2015/12/10/aerofarms-raises-20-million-for-high-tech-urban-agriculture/?mod=WSJBlog' target='_blank'>AeroFarms Inc.</a></td><td><ul><li>Vertical Farming</li><li>Year-round crop production, Maximizing space utilization, Reducing water usage, Reducing pesticide use</li></ul></td><td>x</td><td>x</td><td>x</td><td>-</td><td>x</td></tr></table></div></div>
+        <h2 id="section-5">5. Unsolved Problems</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Energy Consumption</td>
+      <td>Vertical farming requires a lot of energy to power the LED lights and climate control systems, making it expensive and environmentally unsustainable.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Crop Yield</td>
+      <td>Despite the potential for high crop yields, vertical farming still struggles to match the productivity of traditional farming methods.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Cost</td>
+      <td>The initial investment required to set up a vertical farm is very high, making it difficult for small-scale farmers to enter the market.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Limited Crop Variety</td>
+      <td>Vertical farming is currently limited to growing certain types of crops, such as leafy greens and herbs, and cannot yet support the growth of larger crops like corn or wheat.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Market Demand</td>
+      <td>There is still limited consumer demand for vertical farming products, making it difficult for farmers to sell their produce at a profitable price.</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-5-1">Energy Consumption</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Energy%20Consumption%22%7C%22Energy%20Usage%22%7C%22Power%20Consumption%22%7C%22Electricity%20Consumption%22%7C%22Energy%20Expenditure%22%7C%22Energy%20Spending%22%7C%22Energy%20Utilization%22%7C%22Energy%20Depletion%22%7C%22Energy%20Drain%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 57 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Energy Consumption'' for ''Vertical Farming''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36844909' target='_blank'>Performance evaluation of a novel adjustable lampshade-type reflector (ALR) in indoor farming practice using choy sum (Brassica rapa var. parachinensis).</a></div><div class="date">28.02.2023</div><div><ul>
+<li>Problem: Retrieval of lost light energy in indoor farming</li>
+<li>Solution: Use of adjustable lampshade-type reflector (ALR)</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2076-3417/13/12/7326' target='_blank'>Applied Sciences | Free Full-Text | Temporal Variations Dataset for Indoor Environmental Parameters in Northern Saudi Arabia</a></div><div class="date">20.06.2023</div><div><ul>
+<li>Problem: Lack of indoor environmental datasets in Saudi Arabia.</li>
+<li>Solution: Generating an environmental dataset for indoor environments in Saudi Arabia.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Energy%20Consumption%22%7C%22Energy%20Usage%22%7C%22Power%20Consumption%22%7C%22Electricity%20Consumption%22%7C%22Energy%20Expenditure%22%7C%22Energy%20Spending%22%7C%22Energy%20Utilization%22%7C%22Energy%20Depletion%22%7C%22Energy%20Drain%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 132 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Energy Consumption'' for ''Vertical Farming''</div><div><a href='https://www.globenewswire.com/news-release/2023/01/30/2597897/0/en/Global-Horticulture-Lighting-Market-Size-To-Grow-USD-19-Billion-By-2030-CAGR-19.html' target='_blank'>Global Horticulture Lighting Market Size To Grow USD 19</a></div><div class="date">30.01.2023</div><div><ul>
+<li>Global horticulture lighting market to reach USD 19 billion by 2030, with a CAGR of 19%.</li>
+<li>Increasing adoption of horticulture by different industries is the key driving factor.</li>
+<li>Demand for horticulture lighting systems is expanding in greenhouse, vertical, and indoor farming applications.</li>
+</ul></div><br/><div><a href='https://www.cleantech.com/recent-deals-7-march-2/' target='_blank'>Recent Deals – 7 March | Cleantech Group</a></div><div class="date">07.03.2023</div><div><ul>
+<li>Vertical farming systems optimize energy consumption and reduce food wastage.</li>
+<li>Skydio's AI-powered drones meet the growing demand for drones beyond entertainment.</li>
+<li>Persiskin transforms persimmon waste into leather alternatives without using toxic chemicals.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230613378470/en/ams-OSRAM-Extends-Success-in-Horticulture-Lighting-With-Hyper-Red-Innovation-%E2%80%93-Reinforces-Market-Leadership-and-Unrivaled-Performance-in-Horticulture-Lighting/' target='_blank'>ams OSRAM Extends Success in Horticulture Lighting With Hyper Red Innovation – Reinforces Market Leadership and Unrivaled Performance in Horticulture Lighting | Business Wire</a></div><div class="date">13.06.2023</div><div><ul>
+<li>LED solutions with high PPF and efficacy reduce energy costs in vertical farming.</li>
+<li>OSLON® Square Hyper Red LED has high tolerances against harsh indoor farming conditions.</li>
+<li>New GH CSSRM6.24 LED has a long Q90 lifetime of 102,000 hours enabling stable harvesting results.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div><div class="section-container"><h3 id="section-5-2">Crop Yield</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Crop%20Yield%22%7C%22Harvest%20Yield%22%7C%22Agricultural%20Productivity%22%7C%22Farm%20Output%22%7C%22Crop%20Productivity%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 46 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Crop Yield'' for ''Vertical Farming''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36771547' target='_blank'>The Effect of LED Light Spectra on the Growth, Yield and Nutritional Value of Red and Green Lettuce (Lactuca sativa).</a></div><div class="date">12.02.2023</div><div><ul>
+<li>Problem: Limiting crop yield in vertical farming due to light</li>
+<li>Solution: Testing different LED light spectra to optimize yield</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2076-2607/11/4/1088' target='_blank'>Plant Growth-Promoting Rhizobacteria for Sustainable Agricultural Production</a></div><div class="date">21.04.2023</div><div><ul>
+<li>Problem: Increasing demand for agricultural production and the need to reduce synthetic fertilizers and pesticides.</li>
+<li>Solution: Use of plant growth-promoting rhizobacteria (PGPR) for sustainable production.</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/14/22/15468' target='_blank'>Sustainability | Free Full-Text | Effects of Air Anions on Growth and Economic Feasibility of Lettuce: A Plant Factory Experiment Approach</a></div><div class="date">21.11.2022</div><div><ul>
+<li>Problem: Low crop yield in plant factories due to high starting costs.</li>
+<li>Solution: Application of air anions to lettuce to increase crop production and profitability.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Crop%20Yield%22%7C%22Harvest%20Yield%22%7C%22Agricultural%20Productivity%22%7C%22Farm%20Output%22%7C%22Crop%20Productivity%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 115 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Crop Yield'' for ''Vertical Farming''</div><div><a href='https://www.prnewswire.com/news-releases/vertical-farming-market-size-will-grow-by-usd-6-49-billion-from-2021-to-2026need-to-meet-the-rising-demand-for-food-products-is-one-of-the-key-drivers---technavio-301869147.html' target='_blank'>Vertical Farming Market size will grow by USD 6.49 Billion from 2021 to 2026|Need to meet the rising demand for food products is one of the key drivers - Technavio</a></div><div class="date">04.07.2023</div><div><ul>
+<li>Vertical farming offers a revolutionary approach to meet the rising demand for food products and increase crop yield.</li>
+<li>The limitations of vertical farming, such as growing only a few varieties of fruits and vegetables, can influence market growth.</li>
+<li>Tomatoes are a significant crop for vertical farming due to their economic viability and high demand in the food and beverage industry.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20220923005245/en/Global-Agricultural-Robots-Market-Report-2022-Rising-Penetration-of-Indoor-Farming-Driving-Sector-Growth---ResearchAndMarkets.com/' target='_blank'>Global Agricultural Robots Market Report 2022: Rising Penetration of Indoor Farming Driving Sector Growth - ResearchAndMarkets.com | Business Wire</a></div><div class="date">23.09.2022</div><div><ul>
+<li>Vertical farming with agricultural robots can increase crop yield and quality.</li>
+<li>Technological advancements in IoT, robotics, and AI are driving the growth of the agricultural robots market.</li>
+<li>The high installation cost of agricultural robots and lack of awareness among farmers are potential challenges.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230503005539/en/Global-Autonomous-Agriculture-Equipment-Markets-Report-2022-2023-2027-Market-to-Grow-by-17.83-Billion---Increasing-Demand-from-Co-Operative-Farmers-Opportunities-in-ATaaS-Market---ResearchAndMarkets.com/' target='_blank'>Global Autonomous Agriculture Equipment Markets Report 2022-2023 & 2027: Market to Grow by $17.83 Billion - Increasing Demand from Co-Operative Farmers & Opportunities in ATaaS Market - ResearchAndMarkets.com | Business Wire</a></div><div class="date">03.05.2023</div><div><ul>
+<li>Autonomous agriculture equipment market to grow by $17.83 billion by 2027</li>
+<li>Increase in adoption of automated farming technologies to optimize crop yield and reduce waste</li>
+<li>Robot segment estimated to capture the highest market share in the autonomous agriculture equipment market</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Crop%20Yield%22%7C%22Harvest%20Yield%22%7C%22Agricultural%20Productivity%22%7C%22Farm%20Output%22%7C%22Crop%20Productivity%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 18 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Crop Yield'' for ''Vertical Farming''</div><div><a href='https://phys.org/news/2022-09-hair-roots-urban-farming-growth.html' target='_blank'>Hair finds new roots as urban farming growth medium</a></div><div class="date">21.09.2022</div><div><ul>
+<li>Scientists from NTU Singapore have created a sustainable hydroponic substrate using keratin extracted from human hair.</li>
+<li>The keratin-based substrate can hold water up to 40 times its original weight and has a highly interconnected pore structure.</li>
+<li>The substrate offers a renewable alternative to current commercial offerings and has great potential to enhance the productivity of urban farming.</li>
+</ul></div><br/><div><a href='https://techxplore.com/news/2021-04-3d-geoinformation-urban-farming-sites.html' target='_blank'>Novel use of 3D geoinformation to identify urban farming sites</a></div><div class="date">16.04.2021</div><div><ul>
+<li>3D city models used to assess sunlight availability for urban farming in high-rise buildings</li>
+<li>Predicting PAR conditions to determine suitable crops and locations for farming</li>
+<li>Potential for scalability to cover entire cities and aid in sustainable development</li>
+</ul></div><br/><div><a href='https://phys.org/news/2021-02-analytical-tools-smart-key-next-generation.html' target='_blank'>Novel analytical tools developed by SMART key to next-generation agriculture</a></div><div class="date">10.02.2021</div><div><ul>
+<li>SMART DiSTAP developed plant nanosensors and portable Raman spectroscopy for stress detection and crop health monitoring.</li>
+<li>Real-time feedback control schemes can improve plant growth, yield, nutrition, and culinary properties in urban farming.</li>
+<li>Collaboration among engineers, plant biologists, and data scientists is important for sustainable implementation of technologies in agriculture.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-5-3">Cost</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Cost%22%7C%22Price%22%7C%22Expense%22%7C%22Expenditure%22%7C%22Outlay%22%7C%22Charge%22%7C%22Fee%22%7C%22Tariff%22%7C%22Rate%22%7C%22Value%22%7C%22Worth%22%7C%22Estimate%22%7C%22Budget%22%7C%22Spending%22%7C%22Investment%22%7C%22Overhead%22%7C%22Costliness%22%7C%22Damages%22%7C%22Loss%22%7C%22Debt%22%7C%22Liability%22%7C%22Obligation%22%7C%22Payment%22%7C%22Remuneration%22%7C%22Compensation%22%7C%22Reward%22%7C%22Wages%22%7C%22Salary%22%7C%22Earnings%22%7C%22Income%22%22Cost%22%20%22Price%22%20%22Expense%22%20%22Expenditure%22%20%22Outlay%22%20%22Charge%22%20%22Fee%22%20%22Tariff%22%20%22Rate%22%20%22Value%22%20%22Worth%22%20%22Estimate%22%20%22Budget%22%20%22Spending%22%20%22Investment%22%20%22Overhead%22%20%22Costliness%22%20%22Damages%22%20%22Loss%22%20%22Debt%22%20%22Liability%22%20%22Obligation%22%20%22Payment%22%20%22Remuneration%22%20%22Compensation%22%20%22Reward%22%20%22Wages%22%20%22Salary%22%20%22Earnings%22%20%22Income%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 296 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Cost'' for ''Vertical Farming''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37447645' target='_blank'>Detection of Defective Lettuce Seedlings Grown in an Indoor Environment under Different Lighting Conditions Using Deep Learning Algorithms.</a></div><div class="date">14.07.2023</div><div><ul>
+<li>Problem: Laborious and time-consuming seedling sorting in indoor farming</li>
+<li>Solution: Automated seedling sorting using deep learning algorithms</li>
+</ul></div><br/><div><a href='http://dx.doi.org/10.3389/fpls.2023.1162435' target='_blank'>Mobile robotics platform for strawberry temporal–spatial yield monitoring within precision indoor farming systems</a></div><div class="date">25.04.2023</div><div><ul>
+<li>Problem: Cost of production in vertical farming</li>
+<li>Solution: Mobile robotics platform for yield monitoring</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37180389' target='_blank'>Mobile robotics platform for strawberry temporal-spatial yield monitoring within precision indoor farming systems.</a></div><div class="date">14.05.2023</div><div><ul>
+<li>Problem: Cost of production management in vertical farming</li>
+<li>Solution: Mobile robotics platform for yield monitoring in plant factories</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Cost%22%7C%22Price%22%7C%22Expense%22%7C%22Expenditure%22%7C%22Outlay%22%7C%22Charge%22%7C%22Fee%22%7C%22Tariff%22%7C%22Rate%22%7C%22Value%22%7C%22Worth%22%7C%22Estimate%22%7C%22Budget%22%7C%22Spending%22%7C%22Investment%22%7C%22Overhead%22%7C%22Costliness%22%7C%22Damages%22%7C%22Loss%22%7C%22Debt%22%7C%22Liability%22%7C%22Obligation%22%7C%22Payment%22%7C%22Remuneration%22%7C%22Compensation%22%7C%22Reward%22%7C%22Wages%22%7C%22Salary%22%7C%22Earnings%22%7C%22Income%22%22Cost%22%20%22Price%22%20%22Expense%22%20%22Expenditure%22%20%22Outlay%22%20%22Charge%22%20%22Fee%22%20%22Tariff%22%20%22Rate%22%20%22Value%22%20%22Worth%22%20%22Estimate%22%20%22Budget%22%20%22Spending%22%20%22Investment%22%20%22Overhead%22%20%22Costliness%22%20%22Damages%22%20%22Loss%22%20%22Debt%22%20%22Liability%22%20%22Obligation%22%20%22Payment%22%20%22Remuneration%22%20%22Compensation%22%20%22Reward%22%20%22Wages%22%20%22Salary%22%20%22Earnings%22%20%22Income%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 1653 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Cost'' for ''Vertical Farming''</div><div><a href='https://www.lelezard.com/en/news-20816699.html' target='_blank'>Local Bounti Amends Credit Agreement to Provide Additional Flexibility and Provides Select Preliminary and Unaudited Fiscal 2022 Performance</a></div><div class="date">17.03.2023</div><div><ul>
+<li>Local Bounti announced an amendment to its credit agreement to meet near-term capital needs.</li>
+<li>The company generated sales of $19.5 million, with a net loss of $111.1 million for 2022.</li>
+<li>Local Bounti's sustainable growing methods use 90% less land and water than conventional farming.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230106005220/en/Global-Indoor-Farming-Technology-Market-2022-to-2031---Featuring-American-Hydroponics-BrightFarms-General-Hydroponics-and-Hydrodynamics-International-Among-Others---ResearchAndMarkets.com/' target='_blank'>Global Indoor Farming Technology Market 2022 to 2031 - Featuring American Hydroponics, BrightFarms, General Hydroponics and Hydrodynamics International Among Others - ResearchAndMarkets.com | Business Wire</a></div><div class="date">06.01.2023</div><div><ul>
+<li>Indoor farming technology market expected to grow to $46.16 billion in 2026 at a CAGR of 12.2%</li>
+<li>Adoption of vertical farming driving growth for indoor farming technology</li>
+<li>Strategic partnerships shaping the indoor farming technology market</li>
+</ul></div><br/><div><a href='https://news.cision.com/led-ibond/r/revised-financial-outlook-due-to-challenging-market-conditions---pipeline-remains-strong-and-still-g,c3797565' target='_blank'>Revised financial outlook due to challenging market conditions - Pipeline remains strong and still growing. - LED iBond</a></div><div class="date">30.06.2023</div><div><ul>
+<li>Revenue outlook for 2023 revised downwards due to challenging market conditions</li>
+<li>Focus on selected smart building market segments for short-term revenue growth and indoor farming for longer-term growth</li>
+<li>Management and Board of directors evaluating relevant opportunities for raising capital to support the business going forward</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Cost%22%7C%22Price%22%7C%22Expense%22%7C%22Expenditure%22%7C%22Outlay%22%7C%22Charge%22%7C%22Fee%22%7C%22Tariff%22%7C%22Rate%22%7C%22Value%22%7C%22Worth%22%7C%22Estimate%22%7C%22Budget%22%7C%22Spending%22%7C%22Investment%22%7C%22Overhead%22%7C%22Costliness%22%7C%22Damages%22%7C%22Loss%22%7C%22Debt%22%7C%22Liability%22%7C%22Obligation%22%7C%22Payment%22%7C%22Remuneration%22%7C%22Compensation%22%7C%22Reward%22%7C%22Wages%22%7C%22Salary%22%7C%22Earnings%22%7C%22Income%22%22Cost%22%20%22Price%22%20%22Expense%22%20%22Expenditure%22%20%22Outlay%22%20%22Charge%22%20%22Fee%22%20%22Tariff%22%20%22Rate%22%20%22Value%22%20%22Worth%22%20%22Estimate%22%20%22Budget%22%20%22Spending%22%20%22Investment%22%20%22Overhead%22%20%22Costliness%22%20%22Damages%22%20%22Loss%22%20%22Debt%22%20%22Liability%22%20%22Obligation%22%20%22Payment%22%20%22Remuneration%22%20%22Compensation%22%20%22Reward%22%20%22Wages%22%20%22Salary%22%20%22Earnings%22%20%22Income%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 366 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Cost'' for ''Vertical Farming''</div><div><a href='https://nocamels.com/2022/11/indoor-farming-revolution-for-worlds-priciest-spice/' target='_blank'>Indoor Farming Revolution For World’s Priciest Spice</a></div><div class="date">23.11.2022</div><div><ul>
+<li>Israeli startup Saffron-Tech uses AI-controlled vertical farming to produce 4 saffron harvests a year.</li>
+<li>It aims to provide a reliable supply chain for the spice industry, which is currently riddled with problems.</li>
+<li>The company plans to focus on the health industry and increase the market for saffron rather than reduce its price.</li>
+</ul></div><br/><div><a href='https://www.bbc.co.uk/news/business-66173872?at_medium=RSS&at_campaign=KARANGA' target='_blank'>Lean times hit the vertical farming business - BBC News</a></div><div class="date">18.07.2023</div><div><ul>
+<li>Vertical farming companies, including AeroFarms, have faced economic challenges and filed for bankruptcy protection.</li>
+<li>Some companies may have set themselves up for failure by growing the wrong crops and designing their own technology.</li>
+<li>An ability to care for plants is more important than technology in vertical farming.</li>
+</ul></div><br/><div><a href='https://www.technologyreview.com/2022/10/19/1061958/bill-gates-energy-venture-fund-is-expanding-into-climate-adaptation-and-later-stage-investments/' target='_blank'>Bill Gates’ energy venture fund is expanding into climate adaptation and later-stage investments | MIT Technology Review</a></div><div class="date">20.10.2022</div><div><ul>
+<li>Breakthrough Energy Ventures expands to include climate adaptation and later-stage investments</li>
+<li>Investment areas include indoor farming, desalination technology, and infrastructure for global ports</li>
+<li>Later-stage fund, Select, will provide large-scale follow-on funds for demonstration projects</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-5-4">Limited Crop Variety</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div></div><div class="not-found">(No matching science publications found)</div></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22&q=%22Limited%20Crop%20Variety%22%7C%22Restricted%20Agricultural%20Diversity%22%7C%22Narrow%20Range%20of%20Cultivars%22%7C%22Reduced%20Plant%20Variety%22%7C%22Scarce%20Crop%20Assortment%22%7C%22Constrained%20Farming%20Selection%22%7C%22Inadequate%20Plant%20Diversity%22%7C%22Deficient%20Cultivar%20Range%22%7C%22Short%20Crop%20Type%20Variety%22%7C%22Insufficient%20Agricultural%20Assortment%22%7C%22Fewer%20Plant%20Kinds%22%7C%22Scanty%20Cultivar%20Diversity%22%7C%22Limited%20Variety%20of%20Crops%22%7C%22Inferior%20Crop%20Range%22%7C%22Meager%20Agricultural%20Diversity%22%7C%22Sparse%20Plant%20Assortment%22%7C%22Inadequate%20Cultivar%20Diversity%22%7C%22Reduced%20Agricultural%20Variety%22%7C%22Restricted%20Plant%20Selection%22%7C%22Narrow%20Crop%20Diversity%22%7C%22Constrained%20Cultivar%20Assortment%22%7C%22Deficient%20Plant%20Range%22%7C%22Short%20Agricultural%20Variety%22%7C%22Insufficient%20Crop%20Diversity%22%7C%22Fewer%20Plant%20Varieties%22%7C%22Scanty%20Agricultural%20Assortment%22%7C%22Limited%20Cultivar%20Diversity%22%7C%22Inferior%20Plant%20Variety%22%7C%22Meager%20Crop%20Assortment%22%7C%22Sparse%20Agricultural%20Diversity%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 5 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Limited Crop Variety'' for ''Vertical Farming''</div><div><a href='http://www.businesswire.com/news/home/20200904005406/en/Global-Horticulture-Lighting-Market-Research-Report-2020/' target='_blank'>Global Horticulture Lighting Market Research Report (2020 to 2030) - by Type, Technology, Cultivation, & Application - ResearchAndMarkets.com | Business Wire</a></div><div class="date">04.09.2020</div><div><ul>
+<li>Indoor/vertical farming is growing due to shrinking cultivable land and financial support from companies.</li>
+<li>LED technology dominates horticulture lighting market due to cost-effectiveness and light intensity control.</li>
+<li>Asia-Pacific expected to experience highest CAGR in horticulture lighting market due to increasing population and reducing arable area.</li>
+</ul></div><br/><div><a href='https://www.prnewswire.com/news-releases/worldwide-horticulture-lighting-industry-to-2030---growing-demand-from-developing-countries-301127746.html' target='_blank'>Worldwide Horticulture Lighting Industry to 2030 - Growing Demand from Developing Countries</a></div><div class="date">11.09.2020</div><div><ul>
+<li>Indoor/vertical farming is projected to experience the fastest growth in the horticulture lighting market.</li>
+<li>LED technology is cost-effective and lets farmers control light intensity, making it the dominant market technology.</li>
+<li>The shrinking of cultivable land is forcing the agrarian community to adopt indoor farming methods.</li>
+</ul></div><br/><div><a href='https://industrytoday.co.uk/agriculture/global-vertical-farming-market-2018-share--trend--segmentation-and-forecast-to-2022/159925/159925?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+IndustryToday+(Industry+Today+All+Feeds)' target='_blank'>Global Vertical Farming Market 2018 Share, Trend, Segmentation And Forecast To 2022</a></div><div class="date">19.10.2018</div><div><ul>
+<li>Limited crop variety is a restraining factor for vertical farming market.</li>
+<li>Energy-efficient LEDs dominate the vertical farming market due to traditional lighting systems replacement.</li>
+<li>Asia-Pacific region holds the largest share of global vertical farming market due to increasing demand for high quality food.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div><div class="section-container"><h3 id="section-5-5">Market Demand</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22error&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 653 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Market Demand'' for ''Vertical Farming''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36340373' target='_blank'>Development of a fuzzy logic-controlled system for home cultivation of sweet basil.</a></div><div class="date">08.11.2022</div><div><ul>
+<li>Problem: Lack of household-scale research in vertical farming</li>
+<li>Solution: Design of a fuzzy logic-controlled system for home cultivation</li>
+</ul></div><br/><div><a href='https://www.biorxiv.org/content/10.1101/2022.04.09.487754v2' target='_blank'>Integrated Systems-Level Proteomics and Metabolomics Reveals the Diel Molecular Landscape of Diverse Kale Cultivars</a></div><div class="date">26.02.2023</div><div><ul>
+<li>Problem: Lack of foundational, systems-level analyses of kale for vertical farming</li>
+<li>Solution: Multi-cultivar, multi-omic analysis of kale's diel molecular landscape</li>
+</ul></div><br/><div><a href='https://www.tandfonline.com/doi/full/10.1080/00368121.2022.2138249?af=R' target='_blank'>Applying concepts of plant nutrition in the real-world: Designing vertical farming systems: Science Activities: Vol 0, No 0</a></div><div class="date">01.11.2022</div><div><ul>
+<li>Problem: Market demand for efficient vertical farming systems</li>
+<li>Solution: Designing optimal vertical farming systems for optimal yield</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22error&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 2435 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Market Demand'' for ''Vertical Farming''</div><div><a href='http://www.businesswire.com/news/home/20220920005482/en/GrowGeneration-Announces-Planned-Opening-of-New-Hydroponic-Garden-Center-in-Richmond-Virginia/' target='_blank'>GrowGeneration Announces Planned Opening of New Hydroponic Garden Center in Richmond, Virginia | Business Wire</a></div><div class="date">20.09.2022</div><div><ul>
+<li>GrowGen's new store in Richmond, VA will capture emerging markets in the Southeastern US.</li>
+<li>Virginia's unlimited medical cultivation licenses and home growing make it an ideal market for GrowGen.</li>
+<li>New stores will feature vertical farming demonstrations and educational support for new growers.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221005005869/en/Global-Fertilizer-Sticks-Market-Report-to-2027---by-Type-Application-Nutrient-Distribution-Channel-and-Region---ResearchAndMarkets.com/' target='_blank'>Global Fertilizer Sticks Market Report to 2027 - by Type, Application, Nutrient, Distribution Channel and Region - ResearchAndMarkets.com | Business Wire</a></div><div class="date">06.10.2022</div><div><ul>
+<li>Growing demand for high yield from plants using fertilizers in vertical farming</li>
+<li>Fertilizer sticks emerging as innovative agri-products for effective plant growth</li>
+<li>Rising trend of home agriculture and horticulture practices propelling global fertilizer market growth</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221122005185/en/GrowGeneration-Announces-60th-Location-Mount-Holly-New-Jersey-Store-Opening/' target='_blank'>GrowGeneration Announces 60th Location, Mount Holly, New Jersey Store Opening | Business Wire</a></div><div class="date">22.11.2022</div><div><ul>
+<li>GrowGen opens 60th store in Mount Holly, NJ, expanding operations into 16 states.</li>
+<li>New store includes vertical farming demos and educational support for growers.</li>
+<li>GrowGen focuses on delivering top-notch support and solutions to operators and their communities.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/carolabiller/search?&q=%22Vertical%20Farming%22%7CVertical%20Gardening%7CVertical%20Cultivation%22%7C%22Vertical%20Agriculture%22%7C%22Vertical%20crop%20production%22%7C%22indoor%20farming%22error&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 665 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Market Demand'' for ''Vertical Farming''</div><div><a href='https://phys.org/news/2023-01-biological-factories.html' target='_blank'>Turning plants into biological factories</a></div><div class="date">06.01.2023</div><div><ul>
+<li>Genetic editing can create plants as biological factories for high-value molecules and climate-proofing.</li>
+<li>Research on designing plants for off-Earth environments can help establish colonies on the moon or Mars.</li>
+<li>Genetic manipulation can improve productivity and versatility in vertical farming for efficient indoor controlled environments.</li>
+</ul></div><br/><div><a href='https://phys.org/news/2022-11-sustainability-booming-food-technologies-lack.html' target='_blank'>Sustainability claims behind booming food technologies lack evidence, study finds</a></div><div class="date">03.11.2022</div><div><ul>
+<li>Vertical farming has mixed sustainability performance, with little research on socioeconomic implications of scaling.</li>
+<li>Blockchain technology lacks tangible sustainability improvements in the food industry.</li>
+<li>Plant-based substitutes have lower environmental impacts, but research on their long-term nutritional aspects is limited.</li>
+</ul></div><br/><div><a href='https://www.wired.com/story/wired-impact-infarm-vertical-farming/' target='_blank'>Vertical Farming Needs to Grow More Than Salad | WIRED</a></div><div class="date">18.11.2022</div><div><ul>
+<li>Vertical farming reduces environmental impact but only works for a small percentage of foods.</li>
+<li>Staple crops like wheat, soy, and maize need to be made more efficient in vertical farming.</li>
+<li>Vertical farming needs to move towards the center of the plate to solve food system challenges.</li>
+</ul></div><br/></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-5-6">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Energy Consumption</th><th>Crop Yield</th><th>Cost</th><th>Limited Crop Variety</th><th>Market Demand</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1521735' target='_blank'>Transaera</a></td><td><ul><li>Energy Consumption</li><li>Proposes MOF material for energy-efficient cooling and dehumidification systems for greenhouses</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1406687' target='_blank'>Vecna</a></td><td><ul><li>Limited Crop Variety, Cost, Energy Consumption, Market Demand</li><li>Introduce a pallet-based growing solution for urban food production</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/node/2276619' target='_blank'>AIL RESEARCH</a></td><td><ul><li>Cost of CEA crops due to energy consumption</li><li>Use of Combined Heat and Power (CHP) system to reduce energy use by 50%</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td><td>-</td></tr></table><h4 id="section-5-7">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>Energy Consumption</th><th>Crop Yield</th><th>Cost</th><th>Limited Crop Variety</th><th>Market Demand</th></tr><tr><td><a href='https://vcnewsdaily.com/soli-organic/venture-capital-funding/gspyqsnwkm' target='_blank'>Soli Organic</a></td><td><ul><li>Vertical Farming</li><li>Limited Crop Variety</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/04/voltserver-raises-17-5m-in-series-b-funding.html' target='_blank'>VoltServer</a></td><td><ul><li>Digital ElectricityTM technology for electricity transmission</li><li>Rapid, lower-cost, data-enabled electricity distribution</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/07/boxhub-raises-12-4m-in-series-a-funding.html' target='_blank'>Boxhub</a></td><td><ul><li>Online marketplace for shipping containers in the United States</li><li>Enables the purchase, sale, and delivery of shipping containers</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.finsmes.com/2018/08/indoor-farming-robotics-startup-root-ai-raises-2-3m.html' target='_blank'>Root AI</a></td><td><ul><li>AI-powered robotics for indoor farming</li><li>Solves limited crop variety and market demand problems</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2020/10/brightfarms-secures-100m-in-series-e-funding.html' target='_blank'>BrightFarms</a></td><td><ul><li>Vertical Farming Hydroponics</li><li>Limited Crop Variety</li><li>Cost</li><li>Market Demand</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://techcrunch.com/2021/05/25/indoor-farming-company-bowery-raises-300m/' target='_blank'>Bowery Farming</a></td><td><ul><li>Vertical Farming</li><li>Limited Crop Variety</li><li>Cost</li><li>Market Demand</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.finsmes.com/2019/06/moleaer-raises-5m-in-funding.html' target='_blank'>Moleaer</a></td><td><ul><li>Industrial-scale nanobubble generators</li><li>Energy consumption, crop yield, limited crop variety, market demand</li></ul></td><td>x</td><td>x</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20220125005517/en/Plenty-Secures-400-Million-Series-E/' target='_blank'>Plenty Unlimited Inc.</a></td><td><ul><li>Vertical Farming technology</li><li>Providing fresh, sustainable produce year-round</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://venturebeat.com/2017/06/14/bowery-secures-20-million-to-grow-indoor-farming/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+venturebeat%2FSZYF+(VentureBeat)' target='_blank'>Bowery</a></td><td><ul><li>Vertical Farming</li><li>Reduced water usage and zero pesticides</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://vcnewsdaily.com/rise-gardens/venture-capital-funding/mslwsznbhy' target='_blank'>Rise Gardens</a></td><td><ul><li>Smart indoor hydroponic gardening system</li><li>Improves nutrition by growing a variety of vegetables and herbs</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2021/10/acecann-closes-15m-seed-financing-round.html' target='_blank'>AceCann</a></td><td><ul><li>Medical cannabis vertical farming</li><li>Organic cultivation, processing and extraction of premium medical cannabis products</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='http://www.finsmes.com/2018/06/gotham-greens-raises-29m-in-growth-equity-funding.html' target='_blank'>Gotham Greens</a></td><td><ul><li>Hydroponic urban greenhouses for year-round fresh produce</li><li>Cost, Limited Crop Variety, Energy Consumption</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td><td>-</td></tr><tr><td><a href='https://vcnewsdaily.com/freight-farms/venture-capital-funding/ylkqznzbvm' target='_blank'>Freight Farms</a></td><td><ul><li>Containerized vertical farming technology</li><li>Solves limited crop variety and energy consumption problems</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://venturebeat.com/2020/09/09/iron-ox-raises-20-million-to-grow-robotic-greenhouse-operations/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+venturebeat%2FSZYF+(VentureBeat)' target='_blank'>Iron Ox</a></td><td><ul><li>Robotic greenhouse operations</li><li>Lowering energy costs in greenhouse farming</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='http://blogs.wsj.com/venturecapital/2015/12/10/aerofarms-raises-20-million-for-high-tech-urban-agriculture/?mod=WSJBlog' target='_blank'>AeroFarms Inc.</a></td><td><ul><li>Vertical Farming</li><li>Energy Consumption</li><li>Crop Yield</li><li>Cost</li><li>Limited Crop Variety</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>-</td></tr></table></div></div>
+        <h2 id="section-6">6. Future Outlook</h2>
+        <div><div><div class="section-container"><h3>Future trends for vertical farming monitoring</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1424-8220/23/7/3502' target='_blank'>Sensors | Free Full-Text | Vertical Farming Monitoring: How Does It Work and How Much Does It Cost?</a></div><div class="date">27.03.2023</div><div><ul>
+<li>Development of more advanced monitoring techniques</li>
+<li>Integration of artificial intelligence for data analysis</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Light-dependent control of plant metabolism</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1422-0067/24/18/13861' target='_blank'>Light-Dependent Control of Metabolism in Plants</a></div><div class="date">08.09.2023</div><div><ul>
+<li>Optimizing spectral conditions for indoor farming</li>
+<li>Modulating metabolism for phytoremediation</li>
+<li>Timeframe: not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Environmental sustainability of aeroponic farm container system</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36435240' target='_blank'>The role of aeroponic container farms in sustainable food systems - The environmental credentials.</a></div><div class="date">27.11.2022</div><div><ul>
+<li>Renewable powered systems reduce climate change impact by up to 80%</li>
+<li>Aeroponic container farms offer lower impact food than imported equivalents</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in microgreens as a sustainable food source</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37608870' target='_blank'>Comprehensive Analysis of Physicochemical, Functional, Thermal, and Morphological Properties of Microgreens from Different Botanical Sources.</a></div><div class="date">23.08.2023</div><div><ul>
+<li>Increased utilization of microgreens in food processing industry</li>
+<li>Further research to fully harness the potential of microgreens</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends for signal crafting</h3><div class="outer-container"><div class="content-container"><div><a href='https://bradenkelley.com/2023/03/signal-crafting/' target='_blank'>Signal Crafting</a></div><div class="date">12.03.2023</div><div><ul>
+<li>Using signal crafting to anticipate future scenarios of global events</li>
+<li>Combining different factors to envision potential outcomes and make strategic decisions</li>
+<li>Periodically repeating the exercise to adapt to new signals of change and remain future-ready</li>
+<li>Timeframe: Long-term planning for future scenarios</li>
+</ul></div></div></div></div><div class="section-container"><h3> circular economy in urban farming </h3><div class="outer-container"><div class="content-container"><div><a href='https://www.euronews.com/culture/2023/08/28/meet-the-urban-farmer-sprouting-mushrooms-from-coffee-waste-in-portugal' target='_blank'>Meet the urban farmer sprouting mushrooms from coffee waste in Portugal | Euronews</a></div><div class="date">28.08.2023</div><div><ul>
+<li>Scaling up urban farming projects</li>
+<li>Reducing food mileage by being local</li>
+<li>Timeframe: Next year for expanding the business model in other cities</li>
+</ul></div></div></div></div><div class="section-container"><h3>Early detection of foodborne pathogens</h3><div class="outer-container"><div class="content-container"><div><a href='https://phys.org/news/2023-05-foodborne-illness-early.html' target='_blank'>Catching foodborne illness early</a></div><div class="date">18.05.2023</div><div><ul>
+<li>Rapid testing of foodborne pathogens in 3-6 hours</li>
+<li>Development of a real-time imaging sensor to inspect plants for disease</li>
+<li>Timeframe: Biospection was awarded a National Science Foundation Small Business Innovation Research grant in 2022 to develop and commercialize the technology</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future of vertical farming</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.technologyreview.com/2022/11/21/1063581/download-resurrecting-mammoths-climate-bill-big-flaw/' target='_blank'>Resurrecting mammoths, and the climate bill's big flaw | MIT Technology Review</a></div><div class="date">21.11.2022</div><div><ul>
+<li>Vertical farming needs to widen its repertoire</li>
+<li>Vegetables and crops would be more useful than salad</li>
+</ul></div></div></div></div></div></div>
+    </div>
+</body>
+</html>
