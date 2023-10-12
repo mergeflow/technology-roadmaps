@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="starttime"
+          content="2023-10-12 15:59:21.901566" />
+    <meta name="endtime"
+          content="2023-10-12 16:28:51.451971" />
+    <meta name="duration"
+          content="0:29:29.550405" />
+    <meta name="query_count"
+          content="484" />
+    <meta name="token_count"
+          content="617921" />
+    <meta name="answer_time"
+          content="0:00:02.885539" />
+    <meta name="manual_synonyms"
+          content="['factory automation', 'smart factories', 'smart factory', 'digital factory', 'digital factories']" />
+    <title>Mergeflow Technology Roadmap</title>
+    <script src="https://kit.fontawesome.com/e554370735.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: "Segoe UI","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        .single-section-container{
+                align-items: stretch;
+            }
+        .single-section-container > .content-container {
+                border-radius: 10px;
+                border: 1px solid #cccccc;
+            }
+        
+        .section-container {
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .outer-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+        }
+
+        ul {
+                 margin: 0px;
+             }
+
+
+        .content-container {
+            flex: 1 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 30px 10px 30px;
+            font-size: 16px;
+            text-align: left;
+            border: none;
+            
+        }
+
+        .container-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        a {
+            font-weight: bold;
+            color: green;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-top: 9px;
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+        }
+        table {
+            width: auto;
+            border-collapse: collapse;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        table th, table td {
+            padding: 8px;
+            border: 1px solid #cccccc;
+            text-align: left;
+        }
+
+        table a {
+            text-decoration: none;
+        }
+
+        .heading {
+                      font-weight: bold;
+                      margin-bottom: 10px;
+       }
+
+        .sub-heading{
+                         font-weight: normal;
+                     }
+        .heading-link,
+        .sub-heading-link {
+            color: #6a6b67;
+            text-decoration: none;
+        }
+        .heading-link {
+                           font-size: 18px
+                       }
+        .sub-heading-link {
+                               font-size: 15px;
+         }
+        .vc-table {
+            width: auto;
+        }
+        .date {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0px;
+        }
+        .explore-more {
+            text-decoration: none;
+        }
+        .total-hits {
+            font-size: 16px;
+            font-weight: normal;
+            color: #999;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 17%; 
+            height: 100%;
+            overflow-y: auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #pagecontent {
+            margin-left: 19%;
+        }
+        .not-found {
+            font-size: 14px;
+            color: #999;
+        }
+        .orientation-subheading{
+            margin-bottom: 10px;
+            color: #999;
+        }
+        .dataset-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Content</h2>
+        <ol>
+            <li class="heading">
+                <a href="#section-1" class="heading-link">Introduction</a>
+            </li>
+            <li class="heading">
+                <a href="#section-2" class="heading-link">Figures of Merit</a>
+            </li>
+            <li class="heading">
+                <a href="#section-3" class="heading-link">Key Technologies</a>
+                <ul><li><a class="sub-heading-link" href="#section-3-1">PLC (Programmable Logic Controller)</a></li><li><a class="sub-heading-link" href="#section-3-2">SCADA (Supervisory Control and Data Acquisition)</a></li><li><a class="sub-heading-link" href="#section-3-3">Robotics</a></li><li><a class="sub-heading-link" href="#section-3-4">Sensors</a></li><li><a class="sub-heading-link" href="#section-3-5">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-3-6">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-4" class="heading-link">Applications</a>
+                <ul><li><a class="sub-heading-link" href="#section-4-1">Automated Assembly</a></li><li><a class="sub-heading-link" href="#section-4-2">Material Handling</a></li><li><a class="sub-heading-link" href="#section-4-3">Quality Control</a></li><li><a class="sub-heading-link" href="#section-4-4">Packaging and Labeling</a></li><li><a class="sub-heading-link" href="#section-4-5">Inventory Management</a></li><li><a class="sub-heading-link" href="#section-4-6">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-4-7">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-5" class="heading-link">Unsolved Problems</a>
+                <ul><li><a class="sub-heading-link" href="#section-5-1">Human-Robot Collaboration</a></li><li><a class="sub-heading-link" href="#section-5-2">Flexible Manufacturing</a></li><li><a class="sub-heading-link" href="#section-5-3">Cybersecurity</a></li><li><a class="sub-heading-link" href="#section-5-4">Interoperability</a></li><li><a class="sub-heading-link" href="#section-5-5">Maintenance and Repair</a></li><li><a class="sub-heading-link" href="#section-5-6">SBIR Projects</a></li><li><a class="sub-heading-link" href="#section-5-7">Venture Capital Companies</a></li></ul>
+            </li>
+            <li class="heading">
+                <a href="#section-6" class="heading-link">Future Outlook</a>
+            </li>
+        </ol>
+    </div>
+    <div id="pagecontent">
+        <div class="logo-container">
+            <a href="https://mergeflow.com/">
+                <img src="https://mergeflow.net/Images/logo-text.png" class="logo" alt="Logo" width="200" height="100" class="logo">
+            </a>
+            <h1>Technology Roadmap on Factory Automation</h1>
+        </div>
+
+        <h2 id="section-1">1. Introduction</h2>
+        <div><h3>Overview</h3>
+<p>Factory automation refers to the use of technology and control systems to automate manufacturing processes and improve efficiency, productivity, and safety in a factory setting. It involves the integration of various hardware and software components to create a seamless and efficient production line.</p>
+
+<h3>Working Principle</h3>
+<p>The working principle of factory automation involves the use of various technologies such as sensors, actuators, programmable logic controllers (PLCs), human-machine interfaces (HMIs), and robotics to automate the manufacturing process. These components work together to monitor and control the production line, ensuring that each step is executed accurately and efficiently.</p>
+
+<p>Sensors are used to detect changes in the environment, such as the presence of a product or the level of a material in a container. Actuators are used to control the movement of machines and equipment, such as opening and closing valves or moving conveyor belts. PLCs are used to control the overall operation of the production line, including the sequencing of machines and the monitoring of sensors and actuators. HMIs provide a graphical interface for operators to monitor and control the production line, while robotics are used to automate tasks such as assembly, packaging, and material handling.</p>
+
+<p>By automating the manufacturing process, factory automation can improve efficiency, reduce costs, and increase safety in the factory setting. It can also enable manufacturers to produce higher quality products at a faster rate, leading to increased competitiveness in the market.</p></div>
+        <h2 id="section-2">2. Figures of Merit</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Cycle Time</td>
+      <td>[s]</td>
+      <td>Time required to complete one production cycle</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Throughput</td>
+      <td>[units/hr]</td>
+      <td>Number of units produced per hour</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Overall Equipment Effectiveness (OEE)</td>
+      <td>[%]</td>
+      <td>Measure of how well a manufacturing operation is utilized (availability, performance, quality)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Scrap Rate</td>
+      <td>[%]</td>
+      <td>Percentage of defective products produced</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Mean Time Between Failures (MTBF)</td>
+      <td>[hrs]</td>
+      <td>Average time between equipment failures</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Mean Time to Repair (MTTR)</td>
+      <td>[hrs]</td>
+      <td>Average time required to repair equipment</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Energy Consumption</td>
+      <td>[kWh/unit]</td>
+      <td>Energy consumed per unit of production</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Labor Productivity</td>
+      <td>[units/hr/worker]</td>
+      <td>Number of units produced per hour per worker</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Flexibility</td>
+      <td>[# of product types]</td>
+      <td>Number of different product types that can be produced on the same equipment</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3>Cycle Time</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2076-3417/13/8/5118' target='_blank'>Applied Sciences | Free Full-Text | Simulating a Digital Factory and Improving Production Efficiency by Using Virtual Reality Technology</a></div><div class="date">20.04.2023</div><div><ul>
+<li>Problem: Efficient use of Digital Factory in Factory Automation</li>
+<li>Solution: Simulating a Digital Factory using Virtual Reality technology</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2075-1702/11/1/72' target='_blank'>Machines | Free Full-Text | Lean Manufacturing in Industry 4.0: A Smart and Sustainable Manufacturing System</a></div><div class="date">06.01.2023</div><div><ul>
+<li>Problem: Improving cycle time in vacuum degassing equipment fabrication.</li>
+<li>Solution: Implementing Digital Poka-Yoke with Dynamic Lean 4.0 tools.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/9/7382' target='_blank'>Sustainability | Free Full-Text | Resilient Supply Chain Framework for Semiconductor Distribution and an Empirical Study of Demand Risk Inference</a></div><div class="date">28.04.2023</div><div><ul>
+<li>Problem: Supply chain resilience in semiconductor distribution</li>
+<li>Solution: Smart resilient supply chain framework with decision-making schema</li>
+</ul></div></div></div></div><div class="section-container"><h3>Throughput</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36365957' target='_blank'>Autoencoder-Ensemble-Based Unsupervised Selection of Production-Relevant Variables for Context-Aware Fault Diagnosis.</a></div><div class="date">12.11.2022</div><div><ul>
+<li>Problem: Limited network capabilities causing faults in fault diagnosis</li>
+<li>Solution: Autoencoder ensemble to select production-relevant variables for diagnosis</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1424-8220/22/21/8259' target='_blank'>Sensors | Free Full-Text | Autoencoder-Ensemble-Based Unsupervised Selection of Production-Relevant Variables for Context-Aware Fault Diagnosis</a></div><div class="date">28.10.2022</div><div><ul>
+<li>Problem: Limited network capabilities affecting fault diagnosis and production</li>
+<li>Solution: Autoencoder-ensemble-based selection of production-relevant variables</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2076-3417/13/8/4945' target='_blank'>Applied Sciences | Free Full-Text | Industrial Internet Identity Resolution+5G Full Connection Digital Factory Research</a></div><div class="date">14.04.2023</div><div><ul>
+<li>Problem: Increased bandwidth and low latency requirements for fully connected digital factories.</li>
+<li>Solution: Integration of 5G, edge computing, and identity resolution technology.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Overall Equipment Effectiveness (OEE)</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2076-0825/12/7/302' target='_blank'>Augmented Reality Based Distant Maintenance Approach</a></div><div class="date">24.07.2023</div><div><ul>
+<li>Problem: Implementing Industry 4.0-based maintenance approaches using AR technology.</li>
+<li>Solution: AR can assist maintenance personnel in performing maintenance tasks more efficiently.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/14/23/15900' target='_blank'>Sustainability | Free Full-Text | Replay-Attack Detection and Prevention Mechanism in Industry 4.0 Landscape for Secure SECS/GEM Communications</a></div><div class="date">29.11.2022</div><div><ul>
+<li>Problem: Vulnerability of SECS/GEM communication to replay attacks.</li>
+<li>Solution: Design and implement a detection mechanism to prevent replay attacks.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/5/3899' target='_blank'>Sustainability | Free Full-Text | Task Classification Framework and Job-Task Analysis Method for Understanding the Impact of Smart and Digital Technologies on the Operators 4.0 Job Profiles</a></div><div class="date">21.02.2023</div><div><ul>
+<li>Problem: Lack of methods to understand how Industry 4.0 technologies impact human tasks.</li>
+<li>Solution: Proposed task classification framework and job-task analysis method.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Scrap Rate</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/12/9784' target='_blank'>Sustainability | Free Full-Text | Technologies Associated with Industry 4.0 in Green Supply Chains: A Systematic Literature Review</a></div><div class="date">19.06.2023</div><div><ul>
+<li>Problem: Challenges of implementing Industry 4.0 in GSCs</li>
+<li>Solution: Enabling technologies for Industry 4.0 to improve GSC practices</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/09537287.2022.2163936?af=R' target='_blank'>Managing the powder coat waste stream: an industrial experimentation approach: Production Planning & Control: Vol 0, No 0</a></div><div class="date">04.01.2023</div><div><ul>
+<li>Problem: Landfilling of powder coat waste stream</li>
+<li>Solution: Industrial experimentation methodology for reducing process parameters</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/16/12589' target='_blank'>Sustainability | Free Full-Text | Six-Sigma Reference Model for Industry 4.0 Implementations in Textile SMEs</a></div><div class="date">19.08.2023</div><div><ul>
+<li>Problem: Scrap rate in textile supply chain</li>
+<li>Solution: Six Sigma Reference Model for Industry 4.0 implementation</li>
+</ul></div></div></div></div><div class="section-container"><h3>Mean Time Between Failures (MTBF)</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/08956308.2023.2188018?af=R' target='_blank'>Full article: Why Manufacturers Need to Engage Employees When Implementing a Smart Factory</a></div><div class="date">21.04.2023</div><div><ul>
+<li>Problem: Staff perceptions about advantages, disadvantages, and barriers to smart factory implementation</li>
+<li>Solution: Engaging with employees to learn about their thoughts and concerns</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/08982112.2023.2193895?af=R' target='_blank'>Full article: Mutual combination of selected principles and technologies of Industry 4.0 and quality management methods - case study</a></div><div class="date">14.04.2023</div><div><ul>
+<li>Problem: Feasibility and applicability of FMEA on complex technical systems</li>
+<li>Solution: Integration of Industry 4.0 principles and technologies with FMEA</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2076-3417/13/19/10937' target='_blank'>Applied Sciences | Free Full-Text | Production Improvement Rate with Time Series Data on Standard Time at Manufacturing Sites</a></div><div class="date">03.10.2023</div><div><ul>
+<li>Problem: MTBF in Factory Automation</li>
+<li>Solution: Automating production planning and prediction using data mining technology</li>
+</ul></div></div></div></div><div class="section-container"><h3>Mean Time to Repair (MTTR)</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36984218' target='_blank'>Integration of Discrete Simulation, Prediction, and Optimization Methods for a Production Line Digital Twin Design.</a></div><div class="date">30.03.2023</div><div><ul>
+<li>Problem: Mean Time to Repair (MTTR) in Factory Automation</li>
+<li>Solution: Integration of discrete simulations, prediction, and optimization methods</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1996-1944/16/6/2339' target='_blank'>Materials | Free Full-Text | Integration of Discrete Simulation, Prediction, and Optimization Methods for a Production Line Digital Twin Design</a></div><div class="date">14.03.2023</div><div><ul>
+<li>Problem: MTTR in Factory Automation</li>
+<li>Solution: Integration of discrete simulation, prediction, and optimization methods</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/0951192X.2023.2189308?af=R' target='_blank'>Full article: Guidelines to develop demonstration models on industry 4.0 for engineering training</a></div><div class="date">18.03.2023</div><div><ul>
+<li>Problem: Lack of realistic training environments for Industry 4.0 technologies.</li>
+<li>Solution: Guidelines for developing integrated Industry 4.0 demonstration models.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Energy Consumption</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/1996-1073/16/11/4446' target='_blank'>Energies | Free Full-Text | A Review of the Energy Sector as a Key Factor in Industry 4.0: The Case of Spain</a></div><div class="date">31.05.2023</div><div><ul>
+<li>Problem: Energy consumption in Industry 4.0</li>
+<li>Solution: Adoption of renewable energy sources and energy efficiency measures.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.nature.com/articles/s41377-023-01120-7' target='_blank'>Deep-learning-based gas identification by time-variant illumination of a single micro-LED-embedded gas sensor</a></div><div class="date">18.04.2023</div><div><ul>
+<li>Problem: Cross-reactivity of chemoresistive sensors to various gas species</li>
+<li>Solution: Single micro-LED-embedded photoactivated gas sensor with deep neural network</li>
+</ul></div></div><div class="content-container"><div><a href='http://arxiv.org/abs/2307.13415' target='_blank'>Communication-Efficient Orchestrations for URLLC Service via
+  Hierarchical Reinforcement Learning</a></div><div class="date">25.07.2023</div><div><ul>
+<li>Problem: Excessive signaling and energy consumption in URLLC service</li>
+<li>Solution: Multi-agent Hierarchical RL framework for resource allocation</li>
+</ul></div></div></div></div><div class="section-container"><h3>Labor Productivity</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2071-1050/15/12/9641' target='_blank'>Sustainability | Free Full-Text | Investigating the Readiness Factors for Industry 4.0 Implementation for Manufacturing Industry in Egypt</a></div><div class="date">16.06.2023</div><div><ul>
+<li>Problem: Lack of readiness assessments for Industry 4.0 implementation in developing economies.</li>
+<li>Solution: Identify and rank readiness factors for Industry 4.0 implementation in Egypt's manufacturing industry.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2076-3417/13/16/9120' target='_blank'>Applied Sciences | Free Full-Text | Augmented Reality in a Lean Workplace at Smart Factories: A Case Study</a></div><div class="date">10.08.2023</div><div><ul>
+<li>Problem: Ergonomic risks and Musculoskeletal Disorders (MSD) in logistics activities.</li>
+<li>Solution: Implementation of Augmented Reality (AR) to improve ergonomic conditions and mitigate risks.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/1996-1073/16/5/2124' target='_blank'>Energies | Free Full-Text | The Contribution of Lean Management&mdash;Industry 4.0 Technologies to Improving Energy Efficiency</a></div><div class="date">22.02.2023</div><div><ul>
+<li>Problem: How to improve energy efficiency in industrial production processes</li>
+<li>Solution: Integration of Industry 4.0 technologies and improvement of quality management variables</li>
+</ul></div></div></div></div><div class="section-container"><h3>Flexibility</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36530498' target='_blank'>A review of the applications of multi-agent reinforcement learning in smart factories.</a></div><div class="date">01.12.2022</div><div><ul>
+<li>Problem: Uncertainty in dynamic and complex smart factory environments</li>
+<li>Solution: Multi-agent reinforcement learning for intelligent control processes</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.mdpi.com/2076-3417/13/4/2156' target='_blank'>Applied Sciences | Free Full-Text | Design of a Smart Factory Based on Cyber-Physical Systems and Internet of Things towards Industry 4.0</a></div><div class="date">08.02.2023</div><div><ul>
+<li>Problem: Improving agility and versatility in production for Industry 4.0.</li>
+<li>Solution: Designing a smart cyber-physical system for a smart factory.</li>
+</ul></div></div><div class="content-container"><div><a href='https://www.tandfonline.com/doi/full/10.1080/0951192X.2023.2177735?af=R' target='_blank'>Appraisal of smart factory design for advance manufacturing plants based on transition strategies by using an integrated fuzzy decision-making methodology: International Journal of Computer Integrated Manufacturing: Vol 0, No 0</a></div><div class="date">02.03.2023</div><div><ul>
+<li>Problem: Flexibility in smart factory design for transition process</li>
+<li>Solution: Framework for SFD and road map with strategic priorities</li>
+</ul></div></div></div></div></div>
+        <h2 id="section-3">3. Key Technologies</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>PLC (Programmable Logic Controller)</td>
+      <td>A digital computer used for automation of electromechanical processes</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SCADA (Supervisory Control and Data Acquisition)</td>
+      <td>A control system architecture comprising computers, networked data communications and graphical user interfaces</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Robotics</td>
+      <td>The branch of technology that deals with the design, construction, operation, and application of robots</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sensors</td>
+      <td>A device that detects and responds to some type of input from the physical environment</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-3-1">PLC (Programmable Logic Controller)</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22PLC%22%7C%22Programmable%20Logic%20Controller%22%7C%22Programmable%20Controller%22%7C%22Logic%20Controller%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 135 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''PLC (Programmable Logic Controller)'' for ''Factory Automation''</div><div><a href='http://arxiv.org/abs/2212.09475' target='_blank'>A Model Driven Approach on Object Oriented PLC Programming for
+  Manufacturing Systems with regard to Usability</a></div><div class="date">09.12.2022</div><div><ul>
+<li>Problem: Modular object-oriented programming of PLC software</li>
+<li>Solution: Model-driven approach with modAT4rMS notations</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37050575' target='_blank'>Transformers for Multi-Horizon Forecasting in an Industry 4.0 Use Case.</a></div><div class="date">14.04.2023</div><div><ul>
+<li>Problem: Communication disruptions in 5G network for remotely controlled AGVs</li>
+<li>Solution: Multi-horizon forecasting techniques based on transformer architecture</li>
+</ul></div><br/><div><a href='https://www.tandfonline.com/doi/full/10.1080/15325008.2022.2136787?af=R' target='_blank'>Electricity Consumption Behaviors and Clustering of Distribution Grids in Terms of Demand Response: Electric Power Components and Systems: Vol 0, No 0</a></div><div class="date">03.11.2022</div><div><ul>
+<li>Problem: Understanding consumption behaviors and similarities among different distribution grids</li>
+<li>Solution: Clustering analysis to group distribution grids by consumption similarity</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22PLC%22%7C%22Programmable%20Logic%20Controller%22%7C%22Programmable%20Controller%22%7C%22Logic%20Controller%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 1707 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''PLC (Programmable Logic Controller)'' for ''Factory Automation''</div><div><a href='https://www.globenewswire.com/news-release/2023/04/05/2641711/0/en/Programmable-Logic-Controller-PLC-Market-Growth-Trends-COVID-19-Impact-and-Forecasts-2023-2028.html' target='_blank'>Programmable Logic Controller (PLC) Market - Growth,</a></div><div class="date">05.04.2023</div><div><ul>
+<li>PLC systems detect errors and flaws, alert technicians, and enable rapid responses without human intervention.</li>
+<li>PLCs are preferred over traditional systems due to their compact size and multi-functionality.</li>
+<li>The automotive industry is the fastest-growing end-user industry for PLCs, driven by automation and the need for better production facilities.</li>
+</ul></div><br/><div><a href='https://www.prnewswire.com/news-releases/smart-factory-market-worth-245-2-billion-by-2030-market-sizes-shares-forecasts-trends-and-covid-19-impact-analysis---report-by-meticulous-research-301737388.html' target='_blank'>Smart Factory Market Worth $245.2 Billion by 2030: Market Sizes, Shares, Forecasts, Trends, and COVID-19 Impact Analysis - Report by Meticulous Research®</a></div><div class="date">02.02.2023</div><div><ul>
+<li>Smart factories market to reach $245.2 billion by 2030 with a CAGR of 15.5%.</li>
+<li>Smart factory solutions automate and integrate machines, systems, and processes using advanced technologies.</li>
+<li>Asia-Pacific is expected to account for the largest share of the smart factories market in 2023.</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/06/02/2681222/0/en/Programmable-Logic-Controller-Market-is-expected-to-hit-USD-17-57-Bn-by-2029-at-a-CAGR-of-5-percent-says-Maximize-Market-Research.html' target='_blank'>Programmable Logic Controller Market is expected to hit USD</a></div><div class="date">02.06.2023</div><div><ul>
+<li>PLC market expected to reach USD 17.57 Bn by 2029 with a CAGR of 5%</li>
+<li>Increasing need for automation in various industries driving the PLC market</li>
+<li>Technological advancements leading to compact size and fast processing of PLCs</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22PLC%22%7C%22Programmable%20Logic%20Controller%22%7C%22Programmable%20Controller%22%7C%22Logic%20Controller%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 36 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''PLC (Programmable Logic Controller)'' for ''Factory Automation''</div><div><a href='https://eandt.theiet.org/content/sponsored/intelligent-remote-and-programmable-power-supplies-will-accelerate-the-smart-factory/' target='_blank'>Sponsored: Intelligent power supplies will accelerate the smart factory | E&ampT Magazine</a></div><div class="date">09.11.2022</div><div><ul>
+<li>Intelligent and programmable digital power supplies are essential for reliable communications and operation in smart factories.</li>
+<li>The AD-1500 ac-dc converter series is equipped with an intelligent GUI and can be operated in constant voltage or constant current modes.</li>
+<li>The AD-1500 series offers a choice of communication interfaces and industry protocols, including Ethernet, and is fully protected against over-current and over-voltage situations.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/what-is-a-plc-programmable-logic-controllers-a-comprehensive-guide' target='_blank'>What is a PLC (Programmable Logic Controllers): A Comprehensive Guide</a></div><div class="date">06.06.2023</div><div><ul>
+<li>PLCs are digital computers designed for industrial applications, controlling machinery and processes.</li>
+<li>PLCs are programmable and can handle many input and output signals, allowing for flexibility and networking.</li>
+<li>PLCs are highly reliable and capable of operating non-stop for years on end, tailored to industrial control.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/mastering-distributed-control-systems-a-comprehensive-guide-to-dcs-architecture-components-and-applications' target='_blank'>Mastering Distributed Control Systems: A Comprehensive Guide to DCS Architecture, Components, and Applications</a></div><div class="date">13.05.2023</div><div><ul>
+<li>Distributed Control Systems (DCS) are used in various industries for process automation, providing improved efficiency, safety, and reduced operational costs.</li>
+<li>DCS architecture includes controllers, I/O modules, communication networks, and HMIs, working together to provide an integrated solution for industrial control and automation.</li>
+<li>DCS implementation and maintenance require careful planning, design, integration, training, and support to ensure optimal performance, reliability, and longevity.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-2">SCADA (Supervisory Control and Data Acquisition)</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 9150 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''SCADA (Supervisory Control and Data Acquisition)'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2079-9292/11/23/3942' target='_blank'>Electronics | Free Full-Text | Evaluation of the Flourish Dashboard for Context-Aware Fault Diagnosis in Industry 4.0 Smart Factories</a></div><div class="date">28.11.2022</div><div><ul>
+<li>Problem: Difficulty in incident reasoning due to unknown data dependencies</li>
+<li>Solution: Flourish dashboard for context-aware fault diagnosis</li>
+</ul></div><br/><div><a href='http://arxiv.org/abs/2212.06288' target='_blank'>Agnostic Learning for Packing Machine Stoppage Prediction in Smart
+  Factories</a></div><div class="date">12.12.2022</div><div><ul>
+<li>Problem: Data-driven process monitoring in Industry 4.0</li>
+<li>Solution: Time series forecasting and machine learning for predictive maintenance</li>
+</ul></div><br/><div><a href='http://dx.doi.org/10.3390/s23104852' target='_blank'>Secure and Reliable Big-Data-Based Decision Making Using Quantum Approach in IIoT Systems</a></div><div class="date">18.05.2023</div><div><ul>
+<li>Problem: Computation and data processing challenges in IIoT-based smart factories</li>
+<li>Solution: Implementation of quantum solutions for reliable and sustainable development</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 32456 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''SCADA (Supervisory Control and Data Acquisition)'' for ''Factory Automation''</div><div><a href='https://www.globenewswire.com/news-release/2023/01/18/2590587/0/en/Smart-Factory-Market-Size-to-Expand-Around-USD-321-98-Bn-by-2032.html' target='_blank'>Smart Factory Market Size to Expand Around USD 321.98 Bn by</a></div><div class="date">18.01.2023</div><div><ul>
+<li>Smart factory market predicted to reach USD 321.98 billion by 2032, growing at a CAGR of 9.52%.</li>
+<li>Smart factory concept is a fully networked and computerized production plant using smart technologies.</li>
+<li>Market growth driven by rapid digitalization, rising demand for industrial automation, and use of MES and RFID systems.</li>
+</ul></div><br/><div><a href='https://www.med-technews.com/medtech-insights/medtech-materials-and-assembly-insights/the-rule-of-six-tackling-industry-4-0-challenges/' target='_blank'>The rule of six: Tackling industry 4.0 challenges - Med-Tech Innovation</a></div><div class="date">09.03.2023</div><div><ul>
+<li>SCADA enables flexible, automated manufacturing but raises new machinery safety risk issues.</li>
+<li>Industry 4.0 Maturity Index provides a step-by-step approach to introducing Industry 4.0.</li>
+<li>The Maturity Index covers six successive stages, five functional areas, and four structural areas.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221110005894/en/Global-Smart-Manufacturing-Market-Forecast-to-2028---Surging-Adoption-of-RTLS-Presents-Opportunities---ResearchAndMarkets.com/' target='_blank'>Global Smart Manufacturing Market Forecast to 2028 - Surging Adoption of RTLS Presents Opportunities - ResearchAndMarkets.com | Business Wire</a></div><div class="date">10.11.2022</div><div><ul>
+<li>Digitization and Industry 4.0 are driving the growth of smart manufacturing in various industries.</li>
+<li>North America and Europe are significant markets, while APAC is expected to grow at the highest CAGR.</li>
+<li>Smart manufacturing initiatives by governments and the rise of Big Data analytics are fueling market growth.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1948 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''SCADA (Supervisory Control and Data Acquisition)'' for ''Factory Automation''</div><div><a href='https://www.wevolver.com/article/smart-factory-when-digitization-meets-connectivity' target='_blank'>Smart Factory: When Digitization Meets Connectivity</a></div><div class="date">21.01.2023</div><div><ul>
+<li>SCADA optimizes smart manufacturing processes through data collection and analysis.</li>
+<li>Smart factories use AI, big data analytics, cloud computing, and IoT to monitor and adjust production.</li>
+<li>To become a smart factory, companies need digital and business maturity, clear benefits, and a pain point to mitigate.</li>
+</ul></div><br/><div><a href='https://phys.org/news/2019-05-siemens-track-power-gas-spinoff.html' target='_blank'>Siemens on track for 2019 ahead of power and gas spinoff</a></div><div class="date">17.11.2022</div><div><ul>
+<li>Siemens plans to spin off its power and gas unit for a potential stock market listing in 2019.</li>
+<li>The company aims for moderate growth in revenue and a profit margin of 11-12% in its core industrial businesses.</li>
+<li>The digital factory automation business had an operating profit margin of 19.6% on revenues of 3.4 billion euros.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/smart-factories-giving-form-to-digital-transformation-in-the-manufacturing-industry' target='_blank'>Smart Factories: Giving Form to Digital Transformation in the Manufacturing Industry</a></div><div class="date">14.06.2023</div><div><ul>
+<li>AGVs and AMRs improve transportation efficiency and flexibility in factories</li>
+<li>AMRs are used in cell production lines and have potential for transportation outside factories</li>
+<li>IoT and AI enable just-in-time transportation and optimal operation method in factories</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-3">Robotics</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Robotics%22%7CRobots%7CAutomation%7CMechatronics%7CRobotic%20technology%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 3348 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Robotics'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2075-1702/10/11/1093' target='_blank'>Digitising a Machine Tool for Smart Factories</a></div><div class="date">18.11.2022</div><div><ul>
+<li>Problem: Expensive replacement of conventional CNC machine tools</li>
+<li>Solution: Inexpensive digitalisation of Machine Tool 3.0 to 4.0</li>
+</ul></div><br/><div><a href='http://publica.fraunhofer.de/documents/N-532003.html' target='_blank'>Cloud-based Plug and Work architecture of the IIC Testbed Smart Factory Web</a></div><div class="date">08.02.2019</div><div><ul>
+<li>Problem: Simplifying the setup of cloud connection in factory automation</li>
+<li>Solution: Cloud coupler and plug-and-work techniques for Smart Factory Web</li>
+</ul></div><br/><div><a href='https://onlinelibrary.wiley.com/doi/abs/10.1002/sres.2657?af=R' target='_blank'>Transformation towards smart factory system: Examining new job profiles and competencies</a></div><div class="date">11.12.2019</div><div><ul>
+<li>Problem: Necessary changes in job profiles and competencies for smart factories</li>
+<li>Solution: Emphasis on technical and soft competencies for optimal performance</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Robotics%22%7CRobots%7CAutomation%7CMechatronics%7CRobotic%20technology%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 20215 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Robotics'' for ''Factory Automation''</div><div><a href='https://www.intelligence360.news/kuka-systems-to-spend-460000-00-to-occupy-new-space-in-livonia-michigan/' target='_blank'>KUKA Systems to spend $460,000.00 to occupy new space in Livonia Michigan. - intelligence360</a></div><div class="date">13.04.2023</div><div><ul>
+<li>KUKA Systems to invest $460,000 in new space in Livonia, Michigan</li>
+<li>KUKA is a global automation corporation with a wide range of automation solutions</li>
+<li>KUKA serves various markets including automotive, electronics, healthcare, and retail</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230511005359/en/Investment-in-Clearpath-Robotics-supports-full-factory-automation/' target='_blank'>Investment in Clearpath Robotics supports full factory automation | Business Wire</a></div><div class="date">12.05.2023</div><div><ul>
+<li>Mitsubishi Electric invests in Clearpath Robotics to support complete factory automation</li>
+<li>Mobile robots are becoming indispensable for factory-wide optimization and complete automation</li>
+<li>Clearpath Robotics is a global leader in the development of autonomous mobile robot technology</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/10/08/2756388/0/en/Smart-Factory-Market-Size-To-Reach-USD-256-5-Billion-By-2032.html' target='_blank'>Smart Factory Market Size To Reach USD 256.5 Billion By</a></div><div class="date">08.10.2023</div><div><ul>
+<li>Smart factories use advanced technology like robotics, data analytics, AI, and IoT to operate automatically, improving efficiency and reducing waste.</li>
+<li>Industrial sensors are crucial for modern manufacturing operations, enabling connectivity and intercommunication of machines.</li>
+<li>The automotive industry is a leading adopter of smart manufacturing to reduce waste and costs while maintaining worker safety and product consistency.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Robotics%22%7CRobots%7CAutomation%7CMechatronics%7CRobotic%20technology%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1305 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Robotics'' for ''Factory Automation''</div><div><a href='https://techxplore.com/news/2023-07-leveraging-role-dynamic-reconfigurable-antennas.html' target='_blank'>Leveraging the role of dynamic reconfigurable antennas</a></div><div class="date">27.07.2023</div><div><ul>
+<li>Wireless connectivity is crucial for Industry 4.0, with smart antennas improving signal quality and network performance.</li>
+<li>Dynamic reconfigurable antennas enable effective beamforming and beam steering, promoting flexible and changeable wireless communication systems.</li>
+<li>Smart antennas have potential applications in intelligent industrial logistics, fault detection, surveillance, and remote monitoring and control.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/what-are-articulated-robots-anatomy-control-systems-advantages-selection-criteria-and-applications' target='_blank'>What are Articulated Robots? Anatomy, Control Systems, Advantages, Selection Criteria, and Applications</a></div><div class="date">28.03.2023</div><div><ul>
+<li>Articulated robots have multiple links and joints, allowing for high flexibility and precision.</li>
+<li>Control systems use sensors and actuators to monitor and adjust movements in real-time.</li>
+<li>Articulated robots offer advantages in flexibility, precision, efficiency, and safety, but have limitations in cost and programming complexity.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/robots-in-the-manufacturing-industry-types-and-applications' target='_blank'>Robots in the Manufacturing Industry: Types and Applications</a></div><div class="date">05.05.2023</div><div><ul>
+<li>Robotics plays a pivotal role in Industry 4.0, enabling automation and smart manufacturing in the era of digital transformation.</li>
+<li>Manufacturing robots come in various types, including articulated, SCARA, delta, cartesian, polar, and collaborative robots, each with unique features and applications.</li>
+<li>Collaborative robots, or cobots, are designed to work safely alongside humans, while mobile robots provide a flexible solution for material handling, transport, and inspection tasks.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-3-4">Sensors</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Sensors%22%7C%22Detectors%22%7C%22Transducers%22%7C%22Probes%22%7C%22Instruments%22%7C%22Gauges%22%7C%22Meters%22%7C%22Monitors%22%7C%22Sensing%20devices%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1812 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Sensors'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2076-3417/13/17/9690' target='_blank'>Applied Sciences | Free Full-Text | Factory Simulation of Optimization Techniques Based on Deep Reinforcement Learning for Storage Devices</a></div><div class="date">27.08.2023</div><div><ul>
+<li>Problem: Optimizing storage devices in logistics using sensors</li>
+<li>Solution: Using deep reinforcement learning for storage optimization</li>
+</ul></div><br/><div><a href='http://cacm.acm.org/magazines/2023/7/274062-digital-twins-and-dependency-constraint-aware-ai-for-digital-manufacturing' target='_blank'>East Asia and Oceania Region Special Section: Hot Topics</a></div><div class="date">23.06.2023</div><div><ul>
+<li>Problem: Low productivity and high costs in factory automation</li>
+<li>Solution: Digital twins and dependency/constraint-aware machine learning</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Sensors%22%7C%22Detectors%22%7C%22Transducers%22%7C%22Probes%22%7C%22Instruments%22%7C%22Gauges%22%7C%22Meters%22%7C%22Monitors%22%7C%22Sensing%20devices%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 6271 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Sensors'' for ''Factory Automation''</div><div><a href='http://www.businesswire.com/news/home/20221205005517/en/Global-Smart-Factory-Market-Research-Report-2022-2027-Analysis-of-SCADA-PAM-MES-Industrial-Safety-Industrial-Sensors-Industrial-Robots-Industrial-3D-Printers-Machine-Vision-Systems---ResearchAndMarkets.com/' target='_blank'>Global Smart Factory Market Research Report 2022-2027: Analysis of SCADA, PAM, MES, Industrial Safety, Industrial Sensors, Industrial Robots, Industrial 3D Printers, Machine Vision Systems - ResearchAndMarkets.com | Business Wire</a></div><div class="date">05.12.2022</div><div><ul>
+<li>Smart factories can self-optimize and adapt to changing production conditions, driving the market.</li>
+<li>Industrial 3D printing is expected to grow at the highest CAGR, transforming traditional manufacturing processes.</li>
+<li>MES segment is projected to grow at the highest rate, enabling cost savings and improved operations.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221111005207/en/Industrial-Control-Factory-Automation-Global-Market-Report-2022-Adoption-of-Industry-4.0-Principles-for-Manufacturing-Presents-Opportunities---ResearchAndMarkets.com/' target='_blank'>Industrial Control & Factory Automation Global Market Report 2022: Adoption of Industry 4.0 Principles for Manufacturing Presents Opportunities - ResearchAndMarkets.com | Business Wire</a></div><div class="date">11.11.2022</div><div><ul>
+<li>Industrial sensors and robots are key components driving growth in factory automation.</li>
+<li>Advanced sensor technology is being adopted to improve production efficiency and capture data.</li>
+<li>DCS and PLC are dominant technologies in industrial control, with strict standards driving growth in food & beverage and metals & mining industries.</li>
+</ul></div><br/><div><a href='https://www.electronicsweekly.com/news/business/edition-3-of-etechjournal-published-2022-11/' target='_blank'>Edition 3 of Farnell e-TechJournal published</a></div><div class="date">07.11.2022</div><div><ul>
+<li>Smaller and smarter sensors are being developed for factory automation.</li>
+<li>New technologies are being developed for more reliable and convenient wired and wireless communications.</li>
+<li>The fourth issue of e-TechJournal will focus on Smart Sensors and their role in IoT and industrial automation.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Sensors%22%7C%22Detectors%22%7C%22Transducers%22%7C%22Probes%22%7C%22Instruments%22%7C%22Gauges%22%7C%22Meters%22%7C%22Monitors%22%7C%22Sensing%20devices%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 622 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Sensors'' for ''Factory Automation''</div><div><a href='https://www.wevolver.com/article/smarter-manufacturing-improving-safety-and-efficiency-with-iot' target='_blank'>Smarter Manufacturing: Improving Safety and Efficiency with IoT</a></div><div class="date">26.07.2023</div><div><ul>
+<li>IoT integration improves workplace safety, reduces downtime, and enhances overall efficiency in factory automation.</li>
+<li>Data-driven optimization through data analytics can optimize production processes and reduce repair time and potential replacement costs.</li>
+<li>IoT manufacturing integration leads to a more sustainable and responsible production process, reducing environmental impact and aligning with global efforts towards resource conservation and environmental protection.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/robotic-actuators-the-muscle-power-of-industry-40' target='_blank'>Robotic actuators: The muscle power of Industry 4.0</a></div><div class="date">11.11.2022</div><div><ul>
+<li>Robotic actuators are the muscle power of Industry 4.0</li>
+<li>There are three types of robotic actuators: hydraulic, pneumatic, and electric</li>
+<li>Robotic actuators are necessary for proper interaction between the environment and the robotic body</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/functional-safety-plays-a-key-role-in-achieving-automation-goals' target='_blank'>Functional Safety Plays a Key Role in Achieving Automation Goals</a></div><div class="date">24.03.2023</div><div><ul>
+<li>Functional safety is crucial in achieving automation goals and reducing risks to humans and machinery.</li>
+<li>Functional safety certifications, such as IEC61508, are expanding to many applications, including robotics and building management.</li>
+<li>Renesas offers easy-to-implement solutions for functional safety in automation, including SIL3-certified software and reference hardware solutions.</li>
+</ul></div><br/></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-3-5">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>PLC (Programmable Logic Controller)</th><th>SCADA (Supervisory Control and Data Acquisition)</th><th>Robotics</th><th>Sensors</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/68593' target='_blank'>PRISM Program at ESC/ENS</a></td><td><ul><li>Extend MTV model's range of applicability</li><li>Create OCU-style MTV model</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/330800' target='_blank'>Teri Research</a></td><td><ul><li>Developing language-based speech recognition module</li><li>Exploiting parallel DSP technology to reduce cost and size</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/287413' target='_blank'>RADATEC</a></td><td><ul><li>Developing low-cost vibration sensor for industrial and laboratory processes</li><li>Prototype non-contact sensor based on wireless chipsets</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/381311' target='_blank'>Opto-Knowledge Systems</a></td><td><ul><li>Manufacturing of high-efficiency gratings for imaging spectrometry</li><li>Reduces cost of high-end gratings for spaceborne and planetary missions</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1622731' target='_blank'>Delta Sigma Company</a></td><td><ul><li>Digital Processing Inspection Verification for the Production Environment</li><li>Augmented Reality Digital Twins</li></ul></td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/310288' target='_blank'>SPS</a></td><td><ul><li>Support migration of JCPMS to NDI/COTS</li><li>Develop JD-MAT for domain modeling and architecture</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/272258' target='_blank'>Physical Optics Corporation</a></td><td><ul><li>Automated shipboard handling and stowage of organic offboard vehicles</li><li>Compact and intelligent robotic system with open system architecture</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/344263' target='_blank'>VECNA TECHNOLOGIES</a></td><td><ul><li>Improving hydraulic actuation for small mobile robots</li><li>Novel, integrated approach to overcome efficiency, controllability, and noise challenges</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/node/1488449' target='_blank'>Air Force</a></td><td><ul><li>Reconfigurable manufacturing process simulation</li><li>Integrates with PLM software tools from Siemens</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1643641' target='_blank'>Vieletech</a></td><td><ul><li>Developing a new sensor for free-piston engines</li><li>Framework for a new integrated circuit (IC)</li></ul></td><td>-</td><td>-</td><td>-</td><td>x</td></tr></table><h4 id="section-3-6">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>PLC (Programmable Logic Controller)</th><th>SCADA (Supervisory Control and Data Acquisition)</th><th>Robotics</th><th>Sensors</th></tr><tr><td><a href='https://www.finsmes.com/2023/08/cellares-raises-255m-in-series-c-funding.html' target='_blank'>Cellares</a></td><td><ul><li>Integrated technologies for cell therapy manufacturing</li><li>Accelerates access to life-saving cell therapies</li></ul></td><td>-</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2022/10/software-defined-automation-raises-10m-in-seed-funding.html' target='_blank'>Software Defined Automation</a></td><td><ul><li>Industrial-Control-as-a-Service (ICaaS)</li><li>Innovates factory automation</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20221031005040/en/Bright-Machines-Raises-132M-in-New-Funding-to-Expand-Intelligent-Automation-in-Manufacturing/' target='_blank'>Bright Machines</a></td><td><ul><li>Software-defined manufacturing automation</li><li>Transforming product assembly for local, resilient, and sustainable operations</li></ul></td><td>x</td><td>-</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20230906626622/en/Arduino-Announces-22M-in-Additional-Funding-to-Support-Enterprise-and-Cloud-Expansion/' target='_blank'>Arduino</a></td><td><ul><li>Low-Code Development, Edge Computing, Machine Learning, Internet of Things, Industry 4.0</li><li>Democratizing electronics as a platform</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2022/12/darwinai-raises-6musd-in-funding.html' target='_blank'>DarwinAI</a></td><td><ul><li>Visual quality inspection system for Electronics (PCBA) manufacturers</li><li>Improves product quality and production efficiency</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/02/latys-raises-3m-in-seed-funding.html' target='_blank'>Latys</a></td><td><ul><li>Drop-in antenna extends wireless signals without interference</li><li>Resolves dead zone, interference, and reliability issues in Wi-Fi and mesh networks</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/04/groundlight-raises-10m-in-funding.html' target='_blank'>Groundlight</a></td><td><ul><li>Visual understanding service based on natural language instructions</li><li>Enables small to mid-sized manufacturers to activate productivity-enhancing ML solutions and to build vision solutions quickly</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20230905922006/en/Mujin-Secures-85-Million-in-Series-C-Funding-to-Accelerate-Adoption-of-Intelligent-Robotic-Automation/' target='_blank'>Mujin</a></td><td><ul><li>Intelligent robotics for manufacturing, logistics, and supply chain operations</li><li>Transforms industrial robots into intelligent machines with MujinController platform</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2023/10/edgecortix-closes-20m-in-additional-funding-round.html' target='_blank'>EdgeCortix</a></td><td><ul><li>SAKURA hardware products for energy-efficient AI processing</li><li>Accelerates AI inference tasks for various industries</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2022/11/strand-therapeutics-raises-45m-in-series-a1-funding.html' target='_blank'>Strand Therapeutics</a></td><td><ul><li>Programmable mRNA therapy for solid tumor immuno-oncology</li><li>Developing first-in-class programmable mRNA therapeutics</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></div></div>
+        <h2 id="section-4">4. Applications</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Automated Assembly</td>
+      <td>Using robots and other automated systems to assemble products in a factory setting.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Material Handling</td>
+      <td>Automated systems for moving materials and products throughout a factory, including conveyor belts and robotic arms.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Quality Control</td>
+      <td>Automated systems for inspecting and testing products to ensure they meet quality standards.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Packaging and Labeling</td>
+      <td>Automated systems for packaging and labeling products, including filling, sealing, and labeling machines.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Inventory Management</td>
+      <td>Automated systems for tracking inventory levels and managing stock in a factory or warehouse setting.</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-4-1">Automated Assembly</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Automated%20Assembly%22%7CAutomated%20Manufacturing%7CRobotic%20Assembly%7CRobotic%20Manufacturing%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 679 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automated Assembly'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2076-3417/13/18/10142' target='_blank'>Applied Sciences | Free Full-Text | Development and Verification of a Simulation Model of an Automated Assembly Line</a></div><div class="date">08.09.2023</div><div><ul>
+<li>Problem: Quickly analyzing designed product assembly scenarios on an automated assembly line</li>
+<li>Solution: Development and verification of a simulation model using Tecnomatix Plant Simulation</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2076-3417/13/2/767' target='_blank'>Applied Sciences | Free Full-Text | Special Issue on Advanced Design and Manufacturing in Industry 4.0</a></div><div class="date">05.01.2023</div><div><ul>
+<li>Problem: Efficient and flexible product design and manufacturing strategies in Industry 4.0</li>
+<li>Solution: Advancement of design and manufacturing techniques and tools</li>
+</ul></div><br/><div><a href='https://www.informahealthcare.com/doi/full/10.1080/14783363.2023.2194524?af=R' target='_blank'>Full article: Manufacturing quality assessment in the industry 4.0 era: a review</a></div><div class="date">29.07.2023</div><div><ul>
+<li>Problem: Maintaining high-quality standards while balancing cost and manufacturing time.</li>
+<li>Solution: Implementation of accurate quality prediction frameworks using machine learning and AI.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Automated%20Assembly%22%7CAutomated%20Manufacturing%7CRobotic%20Assembly%7CRobotic%20Manufacturing%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 3488 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automated Assembly'' for ''Factory Automation''</div><div><a href='https://semiengineering.com/smart-manufacturing-makes-gains-in-chip-industry/' target='_blank'>Smart Manufacturing Makes Gains In Chip Industry</a></div><div class="date">15.06.2023</div><div><ul>
+<li>Lights-out manufacturing is gaining steam in the semiconductor industry, improving productivity, quality, and reducing costs.</li>
+<li>Smart manufacturing in fabs refers to the synergizing of IoT, data-driven, and AI-driven technologies to optimize operational performance.</li>
+<li>Fully automated factories require significant investment in automation technology and may not be feasible for all manufacturing processes.</li>
+</ul></div><br/><div><a href='https://www.globenewswire.com/news-release/2023/06/20/2690662/0/en/South-Korea-Industrial-Robotics-Industry-to-Grow-at-a-CAGR-44-5-from-2022-to-2027.html' target='_blank'>South Korea Industrial Robotics Industry to Grow at a CAGR</a></div><div class="date">20.06.2023</div><div><ul>
+<li>South Korea is a leading country in industrial robot usage, with government support and initiatives.</li>
+<li>The country is pushing towards developing competencies in the robot industry through workforce development and training.</li>
+<li>The growth of the electronics industry is expected to drive the demand for industrial robots in South Korea.</li>
+</ul></div><br/><div><a href='https://www.prweb.com/releases/2022/12/prweb19048784.htm' target='_blank'>AUO Recognized with ROI-EFESO INDUSTRIE 4.0 AWARD for Production Line Improvement through AI</a></div><div class="date">01.12.2022</div><div><ul>
+<li>AUO uses AIoT technology for production line automation and digital twin management systems.</li>
+<li>Combining production lines with IoT, big data, optical identification technology, AGV/AMR to simplify changeover process.</li>
+<li>Digital twin-driven management systems responsible for 16% improvements in factory equipment efficiency and 36% increase in production yield.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Automated%20Assembly%22%7CAutomated%20Manufacturing%7CRobotic%20Assembly%7CRobotic%20Manufacturing%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 246 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Automated Assembly'' for ''Factory Automation''</div><div><a href='https://www.zdnet.com/article/schneider-electric-makes-smart-factories-a-reality/#ftag=RSSbaffb68' target='_blank'>Schneider Electric makes smart factories a reality | ZDNet</a></div><div class="date">16.07.2019</div><div><ul>
+<li>Schneider Electric uses IoT, AR, cobots, and other technologies to create smart factories worldwide.</li>
+<li>The company's Smart Factory Program involves the use of EcoStruxure, an open IoT-enabled architecture and platform.</li>
+<li>Schneider's factories have implemented tools such as EcoStruxure Augmented Operator Advisor, which delivers productivity and energy savings.</li>
+</ul></div><br/><div><a href='https://interestingengineering.com/the-rise-of-collaborative-industrial-robots-in-advanced-manufacturing' target='_blank'>The Rise of Collaborative Industrial Robots in Advanced Manufacturing</a></div><div class="date">23.07.2020</div><div><ul>
+<li>Cobots are set to be at the center stage of human-robot interaction in advanced manufacturing.</li>
+<li>Cobots increase productivity by taking over monotonous jobs, allowing humans to perform more complex tasks.</li>
+<li>Private 5G wireless technology is crucial for the improvement of collaborative robots in manufacturing.</li>
+</ul></div><br/><div><a href='http://www.pddnet.com/news/2014/01/fourth-industrial-revolution-brings-challenges-big-data' target='_blank'>The Fourth Industrial Revolution Brings Challenges to Big Data</a></div><div class="date">28.01.2014</div><div><ul>
+<li>Industry 4.0 aims to create flexible and customizable mass production through interconnected processes.</li>
+<li>Automated assembly is being used to increase flexibility and individualization in manufacturing processes.</li>
+<li>The biggest challenge in implementing individualized manufacturing systems will be on the software side.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-2">Material Handling</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Material%20Handling%22%7C%22Material%20Management%22%7C%22Material%20Logistics%22%7C%22Material%20Movement%22%7C%22Material%20Control%22%7C%22Material%20Flow%22%7C%22Material%20Transport%22%7C%22Material%20Transfer%22%7C%22Material%20Conveying%22%7C%22Material%20Lifting%22%7C%22Material%20Shifting%22%7C%22Material%20Carrying%22%7C%22Material%20Hoisting%22%7C%22Material%20Conveyance%22%7C%22Material%20Conveying%22%7C%22Material%20Handling%20Equipment%22%7C%22MHE%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 137 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Material Handling'' for ''Factory Automation''</div><div><a href='https://www.tandfonline.com/doi/full/10.1080/13675567.2022.2138290?af=R' target='_blank'>Full article: Autonomous mobile robot travel under deadlock and collision prevention algorithms by agent-based modelling in warehouses</a></div><div class="date">01.11.2022</div><div><ul>
+<li>Problem: Flexible travel of AMRs in warehouses</li>
+<li>Solution: Smart deadlock and collision prevention algorithms on agent-based modelling</li>
+</ul></div><br/><div><a href='http://arxiv.org/abs/2309.02949' target='_blank'>Evaluation of NR-Sidelink for Cooperative Industrial AGVs</a></div><div class="date">06.09.2023</div><div><ul>
+<li>Problem: Efficient resource allocation for NR-sidelink communication in AGVs</li>
+<li>Solution: Evaluating and improving 3GPP standardized algorithm for cooperative AGVs</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/14/23/15633' target='_blank'>Sustainability | Free Full-Text | The Nexus of Industry 4.0 and Circular Procurement: A Systematic Literature Review and Research Agenda</a></div><div class="date">24.11.2022</div><div><ul>
+<li>Problem: Lack of review study on the implications of Industry 4.0 in CP.</li>
+<li>Solution: Systematic review of existing literature and development of conceptual framework.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Material%20Handling%22%7C%22Material%20Management%22%7C%22Material%20Logistics%22%7C%22Material%20Movement%22%7C%22Material%20Control%22%7C%22Material%20Flow%22%7C%22Material%20Transport%22%7C%22Material%20Transfer%22%7C%22Material%20Conveying%22%7C%22Material%20Lifting%22%7C%22Material%20Shifting%22%7C%22Material%20Carrying%22%7C%22Material%20Hoisting%22%7C%22Material%20Conveyance%22%7C%22Material%20Conveying%22%7C%22Material%20Handling%20Equipment%22%7C%22MHE%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 1056 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Material Handling'' for ''Factory Automation''</div><div><a href='http://www.businesswire.com/news/home/20230613432569/en/Spiroflow-Automation-Launches-New-Website-for-Industrial-Control-Solutions/' target='_blank'>Spiroflow Automation Launches New Website for Industrial Control Solutions | Business Wire</a></div><div class="date">20.06.2023</div><div><ul>
+<li>Spiroflow Automation launched a new website for factory automation and industrial control systems.</li>
+<li>The website provides an enhanced user experience for customers looking for vital information.</li>
+<li>Spiroflow Automation offers turnkey control system integration, press control, and process automation solutions.</li>
+</ul></div><br/><div><a href='https://www.lelezard.com/en/news-20898704.html' target='_blank'>Mitsubishi Electric Announces Strategic Investment in OTTO Motors to Accelerate Industrial Automation</a></div><div class="date">12.05.2023</div><div><ul>
+<li>Mitsubishi Electric invests in OTTO Motors to accelerate industrial automation in material handling operations.</li>
+<li>OTTO Motors' autonomous mobile robot technology and software are used by Fortune 500 companies.</li>
+<li>The investment expands the strategic relationship between OTTO Motors and Mitsubishi Electric.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230512005014/en/Mitsubishi-Electric-Announces-Strategic-Investment-in-OTTO-Motors-to-Accelerate-Industrial-Automation/' target='_blank'>Mitsubishi Electric Announces Strategic Investment in OTTO Motors to Accelerate Industrial Automation | Business Wire</a></div><div class="date">12.05.2023</div><div><ul>
+<li>Mitsubishi Electric invests in OTTO Motors to accelerate industrial automation in material handling operations.</li>
+<li>OTTO Motors' autonomous mobile robot technology and software are trusted by Fortune 500 companies.</li>
+<li>The investment strengthens the strategic relationship between Mitsubishi Electric and OTTO Motors.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Material%20Handling%22%7C%22Material%20Management%22%7C%22Material%20Logistics%22%7C%22Material%20Movement%22%7C%22Material%20Control%22%7C%22Material%20Flow%22%7C%22Material%20Transport%22%7C%22Material%20Transfer%22%7C%22Material%20Conveying%22%7C%22Material%20Lifting%22%7C%22Material%20Shifting%22%7C%22Material%20Carrying%22%7C%22Material%20Hoisting%22%7C%22Material%20Conveyance%22%7C%22Material%20Conveying%22%7C%22Material%20Handling%20Equipment%22%7C%22MHE%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 40 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Material Handling'' for ''Factory Automation''</div><div><a href='https://www.wevolver.com/article/material-handling-automation-a-comprehensive-guide-for-engineers' target='_blank'>Material Handling Automation: A Comprehensive Guide for Engineers</a></div><div class="date">22.04.2023</div><div><ul>
+<li>Material handling automation uses advanced technologies to optimize production processes and increase efficiency.</li>
+<li>Automated material handling systems include AGVs, conveyor systems, robotic arms, ASRS, and sortation systems.</li>
+<li>Cutting-edge technologies driving the future of material handling automation include robotics, AI, IoT, and advanced data analytics.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/from-automation-to-autonomy-and-collaboration-manufacturing-robots-are-advancing-to-become-smarter' target='_blank'>From automation to autonomy and collaboration, manufacturing robots are advancing to become smarter</a></div><div class="date">02.03.2023</div><div><ul>
+<li>Smart robots in manufacturing autonomously adjust production conditions and expand scope of application</li>
+<li>Transport robots in semiconductor plants autonomously transport materials according to production schedule and progress status</li>
+<li>Collaborative robots in automobile plants work together with humans to improve task efficiency and quality</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/the-ultimate-guide-to-delta-arms-revolutionizing-robotics-and-automation' target='_blank'>The Ultimate Guide to Delta Arms: Revolutionizing Robotics and Automation</a></div><div class="date">05.04.2023</div><div><ul>
+<li>Delta arms are high-performance robots with speed, precision, and flexibility, ideal for various industrial applications.</li>
+<li>Delta arms use a parallel mechanism, interconnected arms, and a customizable end effector for precise and accurate motion.</li>
+<li>Delta arms have found applications in industries such as manufacturing, packaging, 3D printing, medical, and food processing.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-3">Quality Control</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Quality%20Control%22%7CQC%7CQuality%20Assurance%7CQA%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 366 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Quality Control'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/1424-8220/23/10/4852' target='_blank'>Sensors | Free Full-Text | Secure and Reliable Big-Data-Based Decision Making Using Quantum Approach in IIoT Systems</a></div><div class="date">18.05.2023</div><div><ul>
+<li>Problem: Computation and data processing challenges in smart factory systems</li>
+<li>Solution: Deployment of quantum solutions for efficient and sustainable development</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37688059' target='_blank'>Quality Control of Carbon Look Components via Surface Defect Classification with Deep Neural Networks.</a></div><div class="date">09.09.2023</div><div><ul>
+<li>Problem: Quality control of carbon look components in factory automation</li>
+<li>Solution: Surface defect classification with deep neural networks</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36559991' target='_blank'>A Study on the Application of Machine and Deep Learning Using the Impact Response Test to Detect Defects on the Piston Rod and Steering Rack of Automobiles.</a></div><div class="date">24.12.2022</div><div><ul>
+<li>Problem: Difficulty in identifying defects in piston rod and steering rack</li>
+<li>Solution: Shock response test and machine learning for defect detection</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Quality%20Control%22%7CQC%7CQuality%20Assurance%7CQA%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 1205 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Quality Control'' for ''Factory Automation''</div><div><a href='https://www.prnewswire.com/news-releases/top-quality-medical-grade-tpus-enabled-by-smart-factory-icp-das---bmp-to-exhibit-at-medtec-china-2023-301828259.html' target='_blank'>Top-quality medical grade TPUs enabled by smart factory: ICP DAS - BMP to exhibit at Medtec China 2023</a></div><div class="date">18.05.2023</div><div><ul>
+<li>Smart factory and IIoT systems ensure lot-to-lot consistency in TPU production for medical devices.</li>
+<li>ICP DAS - BMP offers three TPU product series with varying radiopaque fillers to suit customer-specific needs.</li>
+<li>ICP DAS - BMP places great importance on quality assurance and performs rigorous testing and thorough quality inspections for each batch of TPU produced.</li>
+</ul></div><br/><div><a href='https://www.greencarcongress.com/2023/07/20230701-audi.html' target='_blank'>Audi begins roll-out of artificial intelligence for quality control of spot welds - Green Car Congress</a></div><div class="date">01.07.2023</div><div><ul>
+<li>Audi uses AI to analyze 1.5 million spot welds on 300 vehicles per shift for quality control.</li>
+<li>AI enables employees to focus on anomalies and control quality more efficiently and in a targeted way.</li>
+<li>The data generated through use of the AI can be used to optimize other processes in the future.</li>
+</ul></div><br/><div><a href='https://www.lelezard.com/en/news-20871521.html' target='_blank'>CyberGRX Announces Winners of the Inaugural Cyber Risk Nation Awards</a></div><div class="date">26.04.2023</div><div><ul>
+<li>CyberGRX honors leaders who have overcome traditional limitations in third-party risk management.</li>
+<li>Leaders leverage cyber risk intelligence to pinpoint control gaps and ensure proper cyber defenses.</li>
+<li>Organizations can eliminate over 70% of incoming security questionnaires and accelerate the sales cycle.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Quality%20Control%22%7CQC%7CQuality%20Assurance%7CQA%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 62 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Quality Control'' for ''Factory Automation''</div><div><a href='https://www.wevolver.com/article/what-is-on-demand-manufacturing-accelerating-innovation-and-time-to-market' target='_blank'>What Is On-demand Manufacturing? Accelerating Innovation and Time-to-Market</a></div><div class="date">09.06.2023</div><div><ul>
+<li>On-demand manufacturing offers faster delivery times, significant cost savings, and waste reduction.</li>
+<li>Advances in technology, growing customer demands, and the requirement to curb costs are key drivers.</li>
+<li>Challenges include higher unit costs, material limitations, quality control issues, intellectual property risks, and limited scalability.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/microcontroller-based-iot-development-kits-powering-the-next-generation-of-iot-solutions' target='_blank'>Microcontroller-Based IoT Development Kits: Powering the Next Generation of IoT Solutions</a></div><div class="date">05.07.2023</div><div><ul>
+<li>Low-cost microcontroller-based IoT development kits democratize product development, fueling innovation.</li>
+<li>Microcontroller-based IoT kits offer integrated development environments, on-chip peripherals, and built-in communication modules.</li>
+<li>Particle Photon 2 development kit offers superior processing and storage capabilities, enhanced wireless capabilities, and flexible power options.</li>
+</ul></div><br/><div><a href='https://techxplore.com/news/2023-07-industry-sustainability.html' target='_blank'>Adoption of 'Industry 4.0' systems can lead to sustainability across organizations</a></div><div class="date">28.07.2023</div><div><ul>
+<li>Industry 4.0 systems improve quality control, sustainability, and employee well-being in factory automation.</li>
+<li>Digital technologies lead to improved sustainability through optimization, transparency, and value chain integration.</li>
+<li>Adoption of Industry 4.0 technologies can contribute to achieving net-zero emissions targets and sustainability agenda.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-4">Packaging and Labeling</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Packaging%20and%20Labeling%22%7C%22Packaging%20and%20Labelling%22%7C%22Packaging%22%20%7C%22Labeling%22%20%7C%22Labelling%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 253 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Packaging and Labeling'' for ''Factory Automation''</div><div><a href='http://arxiv.org/abs/2309.12329' target='_blank'>Mono/Multi-material Characterization Using Hyperspectral Images and
+  Multi-Block Non-Negative Matrix Factorization</a></div><div class="date">15.08.2023</div><div><ul>
+<li>Problem: Sorting of multilayer plastics in waste management</li>
+<li>Solution: Multi-Block Non-Negative Matrix Factorization for material characterization</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2076-3417/13/14/8406' target='_blank'>Applied Sciences | Free Full-Text | Revolutionizing Tire Quality Control: AI&rsquo;s Impact on Research, Development, and Real-Life Applications</a></div><div class="date">21.07.2023</div><div><ul>
+<li>Problem: Automatic detection of tire defects in industrial quality control</li>
+<li>Solution: Integration of artificial intelligence (AI) into tire quality control</li>
+</ul></div><br/><div><a href='http://arxiv.org/abs/2308.00215' target='_blank'>From Talent Shortage to Workforce Excellence in the CHIPS Act Era:
+  Harnessing Industry 4.0 Paradigms for a Sustainable Future in Domestic Chip
+  Production</a></div><div class="date">31.07.2023</div><div><ul>
+<li>Problem: Talent shortage in domestic chip production</li>
+<li>Solution: Using Industry 4.0 paradigms for workforce development</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Packaging%20and%20Labeling%22%7C%22Packaging%20and%20Labelling%22%7C%22Packaging%22%20%7C%22Labeling%22%20%7C%22Labelling%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 2597 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Packaging and Labeling'' for ''Factory Automation''</div><div><a href='https://semiengineering.com/smarter-ways-to-manufacture-chips/' target='_blank'>Smarter Ways To Manufacture Chips</a></div><div class="date">20.04.2023</div><div><ul>
+<li>Industry 4.0 solutions can improve efficiency and reduce operating costs in semiconductor manufacturing facilities.</li>
+<li>Smart manufacturing solutions can help address the chip industry’s talent shortage and automate decision making.</li>
+<li>Gathering data specific to equipment/workstation controllers and combining it with automation techniques can result in lower operational costs and increased production efficiency.</li>
+</ul></div><br/><div><a href='https://semiengineering.com/week-in-review-auto-security-pervasive-computing-151/' target='_blank'>Week In Review: Auto, Security, Pervasive Computing</a></div><div class="date">20.01.2023</div><div><ul>
+<li>Siemens opens eXplore Live smart factory for hands-on learning opportunities in Industry 4.0.</li>
+<li>Renesas releases new automotive Intelligent Power Device (IPD) to control power distribution within vehicles.</li>
+<li>Riscure releases automated tool to find hardware vulnerabilities during design stage of a semiconductor chip.</li>
+</ul></div><br/><div><a href='https://www.lelezard.com/en/news-21042409.html' target='_blank'>Epson to Exhibit Robotic and Color Label Solutions at PACK EXPO Las Vegas 2023</a></div><div class="date">31.08.2023</div><div><ul>
+<li>Epson to showcase robotic and color label solutions for packaging applications at PACK EXPO Las Vegas 2023</li>
+<li>Epson's solutions offer label placement flexibility and precision, ideal for product ID and package labeling</li>
+<li>Epson offers a range of robotic and color label solutions engineered for speed and adaptability</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Packaging%20and%20Labeling%22%7C%22Packaging%20and%20Labelling%22%7C%22Packaging%22%20%7C%22Labeling%22%20%7C%22Labelling%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 93 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Packaging and Labeling'' for ''Factory Automation''</div><div><a href='https://www.wevolver.com/article/inspiron-sustainability-in-design-engineering-on-demand' target='_blank'>InspirON - Sustainability in Design Engineering on demand</a></div><div class="date">15.11.2022</div><div><ul>
+<li>Shift towards sustainable products in design engineering due to customer demand and legislation</li>
+<li>InspirON series brings together experts to share knowledge on sustainable material selection, digital manufacturing, and supply chain optimization</li>
+<li>Experts discuss reducing waste and environmental impact, balancing humans and technology, and sustainability in product design and manufacturing</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/exploring-ladder-logic-programming-an-in-depth-exploration' target='_blank'>Exploring Ladder Logic Programming: An In-depth Exploration</a></div><div class="date">01.06.2023</div><div><ul>
+<li>Ladder Logic Programming is a graphical programming language used in industrial control systems.</li>
+<li>Ladder Diagrams provide a visual representation of electric circuits, allowing for easy troubleshooting and management.</li>
+<li>Ladder Logic Programming is widely used in Programmable Logic Controllers (PLCs) for automation in various industries.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/flexible-and-printed-electronics-breakthroughs-applications-and-challenges' target='_blank'>Flexible and Printed Electronics: Breakthroughs, Applications, and Challenges</a></div><div class="date">12.05.2023</div><div><ul>
+<li>Flexible and printed electronics have evolved, providing advantages for multiple industries, including smart packaging and IoT.</li>
+<li>Printing processes and materials have made significant progress, with non-contact and contact printing being the main approaches.</li>
+<li>Trends include the utilization of OLEDs, OPV, and printed TFTs, with challenges such as instabilities and low efficiencies that need to be overcome.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-4-5">Inventory Management</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Inventory%20Management%22%7CStock%20Control%7CStock%20Management%7CInventory%20Control%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 214 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Inventory Management'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2076-3417/13/3/1545' target='_blank'>Smart Manufacturing and Industry 4.0</a></div><div class="date">25.01.2023</div><div><ul>
+<li>Problem: Inventory management in smart manufacturing</li>
+<li>Solution: Machine learning for cost-effective inventory management</li>
+</ul></div><br/><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37726630' target='_blank'>Investigation of industry 4.0 technologies mediating effect on the supply chain performance and supply chain management practices.</a></div><div class="date">20.09.2023</div><div><ul>
+<li>Problem: Inventory management in factory automation</li>
+<li>Solution: Industry 4.0 technology for efficient supply chain management</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/15/11/8553' target='_blank'>Sustainability | Free Full-Text | Industry-4.0-Enabled Digital Transformation: Prospects, Instruments, Challenges, and Implications for Business Strategies</a></div><div class="date">25.05.2023</div><div><ul>
+<li>Problem: Inventory management in Factory Automation</li>
+<li>Solution: Industry 4.0 technologies as drivers of digital transformation</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Inventory%20Management%22%7CStock%20Control%7CStock%20Management%7CInventory%20Control%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 1191 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Inventory Management'' for ''Factory Automation''</div><div><a href='http://www.businesswire.com/news/home/20230301005594/en/Global-Autonomous-Mobile-Robots-Market-Report-2023-Increasing-Requirement-for-Factory-Automation-Fuels-Growth---ResearchAndMarkets.com/' target='_blank'>Global Autonomous Mobile Robots Market Report 2023: Increasing Requirement for Factory Automation Fuels Growth - ResearchAndMarkets.com | Business Wire</a></div><div class="date">01.03.2023</div><div><ul>
+<li>Autonomous mobile robots (AMRs) are increasingly used for inventory management in warehouses, reducing logistics costs.</li>
+<li>The requirement for factory automation solutions is driving the industry, particularly in APAC due to government initiatives.</li>
+<li>The AMR market is expected to grow at a rate of 16.90% and reach USD 10,979 million by 2030.</li>
+</ul></div><br/><div><a href='https://www.talkvietnam.com/2023/07/moit-and-samsung-viet-nam-start-smart-factory-project/' target='_blank'>MoIT and Samsung Viet Nam start smart factory project – Talk Vietnam</a></div><div class="date">03.07.2023</div><div><ul>
+<li>MoIT and Samsung Vietnam launched a smart factory development project to support Vietnamese firms in global supply chains.</li>
+<li>12 businesses will participate in a training course to establish smart factories with Samsung's specialists and Vietnamese consultants.</li>
+<li>The project aims to improve the competitiveness of Vietnamese manufacturing enterprises and promote industrialisation and modernisation in the country.</li>
+</ul></div><br/><div><a href='https://evertiq.com/design/54295' target='_blank'>Farnell's stocking more than 23,000 products from ADI</a></div><div class="date">06.09.2023</div><div><ul>
+<li>Farnell adds over 7,000 new ADI products to its existing stock, bringing the total to 23,300.</li>
+<li>More than 50% of ADI products offered by Farnell have a lead time shorter than 13 weeks.</li>
+<li>Farnell offers fast delivery on the ADI product portfolio, including the latest new-to-market products.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Inventory%20Management%22%7CStock%20Control%7CStock%20Management%7CInventory%20Control%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 39 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Inventory Management'' for ''Factory Automation''</div><div><a href='https://www.wevolver.com/article/building-internet-connected-smart-vending-machines-with-powerful-single-board-computers' target='_blank'>Building Internet-Connected Smart Vending Machines With Powerful Single Board Computers</a></div><div class="date">15.02.2023</div><div><ul>
+<li>Smart vending machines with SBCs offer real-time stock monitoring, digital payments, and intuitive UI.</li>
+<li>The self-service technology industry is expected to grow, driven by hygiene awareness and expanded activities.</li>
+<li>SBCs provide connectivity, control, and inventory management, enabling AI-driven decisions and high-quality streaming.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/ai-driven-ar-in-manufacturing-from-data-to-actionable-insights' target='_blank'>AI-Driven AR in Manufacturing: From Data to Actionable Insights</a></div><div class="date">07.06.2023</div><div><ul>
+<li>AI-driven AR can offer real-time data visualization and analytics capabilities in manufacturing.</li>
+<li>AR solves challenges in accessing information in manufacturing environments, and AI-driven AR can provide even greater results.</li>
+<li>The integration of AI and AR has the potential to revolutionize the way companies operate in the manufacturing industry.</li>
+</ul></div><br/><div><a href='https://eandt.theiet.org/content/articles/2017/07/keeping-manual-workers-at-the-centre-of-industry-40/' target='_blank'>Keeping manual workers at the centre of Industry 4.0 | E&ampT Magazine</a></div><div class="date">11.07.2017</div><div><ul>
+<li>Industry 4.0 can bring significant changes to industrial workers, but it does not necessarily involve a loss of human labor.</li>
+<li>Companies embracing Industry 4.0 keep factory workers at the heart of the process.</li>
+<li>Technological developments are increasing productivity through physical and digital assistance systems, rather than the replacement of human labor.</li>
+</ul></div><br/></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-4-6">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Automated Assembly</th><th>Material Handling</th><th>Quality Control</th><th>Packaging and Labeling</th><th>Inventory Management</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/68593' target='_blank'>PRISM Program at ESC/ENS</a></td><td><ul><li>Extend MTV model's range of applicability</li><li>Create OCU-style MTV model for various applications</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/330800' target='_blank'>Teri Research</a></td><td><ul><li>Language Based Speech Recognition Module</li><li>Parallel DSP/microcomputer module for real-time spoken language communications</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/287413' target='_blank'>RADATEC</a></td><td><ul><li>Developing low-cost vibration sensor for industrial and laboratory processes</li><li>Prototype non-contact sensor based on wireless chipsets</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/381311' target='_blank'>OKSI</a></td><td><ul><li>Manufacturing of high-efficiency gratings for imaging spectrometry</li><li>Reduces cost of high-end gratings for spaceborne and planetary missions</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1622731' target='_blank'>Delta Sigma Company</a></td><td><ul><li>Digital Processing Inspection Verification for the Production Environment</li><li>Augmented Reality Digital Twins</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/310288' target='_blank'>SPS</a></td><td><ul><li>Support migration of JCPMS to NDI/COTS</li><li>Develop JD-MAT for domain modeling and architecture</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/272258' target='_blank'>Physical Optics Corporation</a></td><td><ul><li>Automated shipboard handling and stowage of vehicles</li><li>Compact and intelligent robotic system with open architecture</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/344263' target='_blank'>VECNA TECHNOLOGIES</a></td><td><ul><li>Improving hydraulic actuation efficiency, controllability, and noise</li><li>Novel, integrated approach to hydraulic actuation</li></ul></td><td>-</td><td>x</td><td>x</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/node/1488449' target='_blank'>Siemens</a></td><td><ul><li>Smart factory simulation and reconfiguration</li><li>Integrates with PLM software</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1643641' target='_blank'>Vieletech</a></td><td><ul><li>Developing a new sensor for free-piston engines</li><li>Framework for a new integrated circuit (IC)</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr></table><h4 id="section-4-7">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>Automated Assembly</th><th>Material Handling</th><th>Quality Control</th><th>Packaging and Labeling</th><th>Inventory Management</th></tr><tr><td><a href='https://www.finsmes.com/2023/08/cellares-raises-255m-in-series-c-funding.html' target='_blank'>Cellares</a></td><td><ul><li>Integrated development and manufacturing organization for cell therapy</li><li>Accelerates access to life-saving cell therapies</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2022/10/software-defined-automation-raises-10m-in-seed-funding.html' target='_blank'>Software Defined Automation</a></td><td><ul><li>Industrial-Control-as-a-Service (ICaaS) for factory automation</li><li>Breaks down proprietary silos in control technology stacks</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20221031005040/en/Bright-Machines-Raises-132M-in-New-Funding-to-Expand-Intelligent-Automation-in-Manufacturing/' target='_blank'>Bright Machines</a></td><td><ul><li>Software-defined manufacturing automation</li><li>Transforming product assembly for local, resilient, and sustainable operations</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2022/12/darwinai-raises-6musd-in-funding.html' target='_blank'>DarwinAI</a></td><td><ul><li>Visual quality inspection system for Electronics (PCBA) manufacturers</li><li>Improves product quality and production efficiency</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/02/latys-raises-3m-in-seed-funding.html' target='_blank'>Latys</a></td><td><ul><li>Drop-in antenna extends wireless signals without interference</li><li>Resolves dead zone, interference, and reliability issues in Wi-Fi and mesh networks</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2023/04/groundlight-raises-10m-in-funding.html' target='_blank'>Groundlight</a></td><td><ul><li>Visual understanding service based on natural language instructions</li><li>Enables small to mid-sized manufacturers to activate productivity-enhancing ML solutions and to build vision solutions quickly</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2023/10/edgecortix-closes-20m-in-additional-funding-round.html' target='_blank'>EdgeCortix</a></td><td><ul><li>Energy-efficient AI processing technology</li><li>Accelerates AI inference tasks for computer vision, natural language processing and generative AI applications at low power and low latency</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20230802064966/en/LightForce-Orthodontics-Secures-80-Million-Series-D-Funding-Led-By-Ally-Bridge-Group-Opens-Second-Digital-Factory/' target='_blank'>LightForce Orthodontics</a></td><td><ul><li>3D printed custom orthodontic treatments using AI</li><li>Improving treatment efficiency and outcomes for patients</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.finsmes.com/2022/11/strand-therapeutics-raises-45m-in-series-a1-funding.html' target='_blank'>Strand Therapeutics</a></td><td><ul><li>Programmable mRNA therapy for solid tumor immuno-oncology</li><li>Developing first-in-class programmable mRNA therapeutics</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20230811999559/en/Olis-Robotics-Secures-4M-Funding-to-Meet-Surging-Demand-for-Remote-Robot-Management/' target='_blank'>Olis Robotics</a></td><td><ul><li>Remote robot management technology</li><li>Addresses costly robot downtime</li></ul></td><td>-</td><td>-</td><td>x</td><td>-</td><td>x</td></tr></table></div></div>
+        <h2 id="section-5">5. Unsolved Problems</h2>
+        <div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Human-Robot Collaboration</td>
+      <td>Developing safe and efficient ways for humans and robots to work together in the same workspace.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Flexible Manufacturing</td>
+      <td>Creating manufacturing systems that can quickly adapt to changes in product design and demand.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Cybersecurity</td>
+      <td>Ensuring the security of factory automation systems from cyber attacks and data breaches.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Interoperability</td>
+      <td>Developing standards and protocols for different factory automation systems to communicate and work together seamlessly.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Maintenance and Repair</td>
+      <td>Developing predictive maintenance and repair systems to minimize downtime and increase productivity.</td>
+    </tr>
+  </tbody>
+</table></div>
+        <div><div class="section-container"><h3 id="section-5-1">Human-Robot Collaboration</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 9150 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Human-Robot Collaboration'' for ''Factory Automation''</div><div><a href='http://arxiv.org/abs/2211.12354' target='_blank'>Resource Allocation for Uplink Cell-Free Massive MIMO enabled URLLC in a
+  Smart Factory</a></div><div class="date">22.11.2022</div><div><ul>
+<li>Problem: Short packet transmission for IIoT applications incurs performance loss.</li>
+<li>Solution: Adopt CF mMIMO to support URLLC in a smart factory.</li>
+</ul></div><br/><div><a href='http://arxiv.org/abs/2303.04406' target='_blank'>Enhanced Sliding Window Superposition Coding for Industrial Automation</a></div><div class="date">08.03.2023</div><div><ul>
+<li>Problem: Interference in machine-to-machine communication in factory automation</li>
+<li>Solution: Enhanced sliding window superposition coding for 5G broadcast network</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 32456 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Human-Robot Collaboration'' for ''Factory Automation''</div><div><a href='https://www.lelezard.com/en/news-20793296.html' target='_blank'>INVENTEC COLLABORATES WITH MICROSOFT TO DELIVER SMART FACTORY SOLUTIONS ON MICROSOFT AZURE PRIVATE 5G CORE</a></div><div class="date">27.02.2023</div><div><ul>
+<li>Inventec and Microsoft collaborate to provide smart factory solutions using Azure Private 5G Core.</li>
+<li>5G Next Lab established to showcase end-to-end industry solutions based on Azure Private 5G Core.</li>
+<li>Integration of 5G private network solutions, AIoT systems, and Microsoft HoloLens for smart factories.</li>
+</ul></div><br/><div><a href='https://www.talkvietnam.com/2023/03/world-trade-center-binh-duong-promotes-innovation-in-manufacturing/' target='_blank'>World Trade Center Binh Duong promotes innovation in manufacturing – Talk Vietnam</a></div><div class="date">16.03.2023</div><div><ul>
+<li>Vietnam's World Trade Center Binh Duong and Coex signed an MOU to promote innovation in manufacturing.</li>
+<li>The collaboration aims to strengthen the technological capabilities of the Vietnamese manufacturing industry.</li>
+<li>The MOU includes hosting smart factory and logistics automation exhibitions and executing manufacturing industry innovation programs in Vietnam.</li>
+</ul></div><br/><div><a href='https://www.greencarcongress.com/2023/03/20230305-kore.html' target='_blank'>KORE Power selects Siemens as infrastructure technology provider for Arizona battery gigafactory - Green Car Congress</a></div><div class="date">05.03.2023</div><div><ul>
+<li>Siemens to support KORE Power's 12-GWh lithium-ion battery cell production facility in Buckeye, AZ</li>
+<li>Siemens Smart Infrastructure to provide critical electrical infrastructure and energy management solutions</li>
+<li>Siemens Financial Services invested $75 million in KORE Power's new facility and joined its Board of Directors</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1948 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Human-Robot Collaboration'' for ''Factory Automation''</div><div><a href='https://eandt.theiet.org/content/sponsored/smart-factory-expo-2019/' target='_blank'>Smart Factory Expo 2019: Industrial Innovation Unleashed | E&ampT Magazine</a></div><div class="date">17.10.2019</div><div><ul>
+<li>Smart Factory Expo showcases latest innovations in industrial automation and digital manufacturing.</li>
+<li>Delegations from around the world attend to observe the UK's industrial ecosystem.</li>
+<li>Leaders in British and global industrial giants gather to discuss Brexit and future industrial policy.</li>
+</ul></div><br/><div><a href='https://eandt.theiet.org/content/sponsored/smart-factory-expo-2018/' target='_blank'>Sponsored: Smart Factory Expo 2018 | E&ampT Magazine</a></div><div class="date">05.10.2018</div><div><ul>
+<li>Smart Factory Expo 2018 showcases digital manufacturing and Industry 4.0 technologies.</li>
+<li>Human-robot collaboration is a key aspect of factory automation in Industry 4.0.</li>
+<li>The Internet of Things (IoT) plays a crucial role in enabling smart factories.</li>
+</ul></div><br/><div><a href='https://eandt.theiet.org/content/sponsored/essentra-injection-moulding/' target='_blank'>Sponsored: Injection Moulding in Industry 4.0 | E&ampT Magazine</a></div><div class="date">04.12.2017</div><div><ul>
+<li>Industry 4.0 enables smart factories with intelligent machines and advanced data analysis for improved efficiency and quality.</li>
+<li>Plastic manufacturing smart factories can optimize processes, reduce energy waste, and provide accurate forecasting.</li>
+<li>Predictive maintenance through diagnostic reports and cloud network connectivity minimizes interruptions and maximizes repeatability.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-5-2">Flexible Manufacturing</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Flexible%20Manufacturing%22%7CAdaptable%20Production%7CVersatile%20Manufacturing%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 219 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Flexible Manufacturing'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2079-8954/11/4/211' target='_blank'>Systems | Free Full-Text | Protection Schemes for DDoS, ARP Spoofing, and IP Fragmentation Attacks in Smart Factory</a></div><div class="date">20.04.2023</div><div><ul>
+<li>Problem: Protection against DDoS, ARP Spoofing, and IP Fragmentation attacks in Smart Factory</li>
+<li>Solution: Random Forest with PCA, Entropy-based detection, and OTC and Timestamp fields in packet header</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2071-1050/15/2/1441' target='_blank'>Sustainability | Free Full-Text | Intelligent Retrofitting Paradigm for Conventional Machines towards the Digital Triplet Hierarchy</a></div><div class="date">12.01.2023</div><div><ul>
+<li>Problem: Retrofitting conventional machines to Industry 4.0 standards</li>
+<li>Solution: Digital triplet D3 hierarchy for intelligent retrofitting paradigm</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/2076-3417/13/3/1687' target='_blank'>A Review of the High-Mix, Low-Volume Manufacturing Industry</a></div><div class="date">28.01.2023</div><div><ul>
+<li>Problem: Accommodating variability in HMLV production</li>
+<li>Solution: Industry 4.0 technologies for flexible production</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Flexible%20Manufacturing%22%7CAdaptable%20Production%7CVersatile%20Manufacturing%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 332 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Flexible Manufacturing'' for ''Factory Automation''</div><div><a href='https://www.lelezard.com/en/news-21050389.html' target='_blank'>Smart Factory Market to increase by USD 73.68 billion from 2022 to 2027, Need for simplification of complex manufacturing activities to drive the growth- Technavio</a></div><div class="date">07.09.2023</div><div><ul>
+<li>Smart factory market to grow by USD 73.68 billion from 2022 to 2027</li>
+<li>Need for simplification of complex manufacturing activities driving growth</li>
+<li>Industrial IoT and smart sensors are key trends driving growth in the market</li>
+</ul></div><br/><div><a href='https://www.prnewswire.com/news-releases/the-worldwide-industry-4-0-market-is-expected-to-reach-327-78-billion-by-2030--301713301.html' target='_blank'>The Worldwide Industry 4.0 Market is Expected to Reach $327.78 Billion by 2030</a></div><div class="date">04.01.2023</div><div><ul>
+<li>Industry 4.0 market to reach $327.78 billion by 2030</li>
+<li>Flexible manufacturing portfolios increasing through acquisitions or partnerships</li>
+<li>Industrial robots automate monotonous activities and cut error margins to extremely low levels</li>
+</ul></div><br/><div><a href='https://www.lelezard.com/en/news-20793334.html' target='_blank'>OMRON Chooses Red Hat OpenShift for Industrial Operational Technology (OT) Edge Solutions</a></div><div class="date">27.02.2023</div><div><ul>
+<li>OMRON adopts Red Hat OpenShift for virtualized control platform to improve agility and flexibility in manufacturing plants.</li>
+<li>Real-time data generated at manufacturing edge sites can be seamlessly transmitted throughout the organization.</li>
+<li>OMRON aims to convert containerized solutions into composable services for industrial Personal Computers PCs ("IPCs").</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Flexible%20Manufacturing%22%7CAdaptable%20Production%7CVersatile%20Manufacturing%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 34 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Flexible Manufacturing'' for ''Factory Automation''</div><div><a href='https://www.wevolver.com/article/protective-lattice-layer-for-cobots' target='_blank'>Protective Lattice Layer for Cobots</a></div><div class="date">08.06.2023</div><div><ul>
+<li>Flexible manufacturing with robots and humans requires safe collaboration, which is achieved through optical sensors.</li>
+<li>Protective lattice skin made of Ultrasint TPU01 enables safe human-robot collaboration without limiting processing speeds.</li>
+<li>The lattice RoboSkin reduces the risk of injuries to human workers and increases productivity by damping collision forces and pressures.</li>
+</ul></div><br/><div><a href='https://techxplore.com/news/2023-07-europe-virtual-factories-industrial-revolution.html' target='_blank'>Europe looks to virtual factories in new industrial revolution</a></div><div class="date">14.07.2023</div><div><ul>
+<li>European manufacturers are using digital twins to improve agility and navigate Industry 4.0.</li>
+<li>Plug and Produce system renders reconfiguring production lines easier by linking real machines with digital twins.</li>
+<li>Virtual-factory technologies can help companies more efficiently manage the maintenance of complex machines.</li>
+</ul></div><br/><div><a href='http://www.innovations-report.com/html/reports/trade-fair-news/siemens-drives-forward-digitalization-of-industrial-automation.html' target='_blank'>Siemens drives forward digitalization of industrial automation</a></div><div class="date">26.11.2014</div><div><ul>
+<li>Siemens expands its portfolio to offer cohesive, integral digitalization solutions for industrial automation.</li>
+<li>Siemens exhibits over 100 products and technologies, including 20 product innovations, at SPS IPC Drives fair.</li>
+<li>Siemens adopts a more selective, industry-specific approach in dealing with industrial enterprises, targeting discrete and process industries.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-5-3">Cybersecurity</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Cybersecurity%22%7C%22Cyber%20Security%22%7C%22Information%20Security%22%7C%22IT%20Security%22%7C%22Computer%20Security%22%7C%22Network%20Security%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 1240 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Cybersecurity'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2075-1702/11/3/379' target='_blank'>Machines | Free Full-Text | Communication Safety of Cybernetic Systems in a Smart Factory Environment</a></div><div class="date">12.03.2023</div><div><ul>
+<li>Problem: Communication safety in Smart Factory Cybernetic Systems</li>
+<li>Solution: Proposal of a layered design using IEC 62443 norm</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1424-8220/22/23/9407' target='_blank'>Sensors | Free Full-Text | Resource Allocation in Downlink VLC-NOMA Systems for Factory Automation Scenario</a></div><div class="date">02.12.2022</div><div><ul>
+<li>Problem: Improving reliability in downlink VLC-NOMA systems for factory automation</li>
+<li>Solution: Proposed a DNN-based power-allocation algorithm and a priority-based user-pairing scheme</li>
+</ul></div><br/><div><a href='https://www.tandfonline.com/doi/full/10.1080/00207543.2023.2165190?af=R' target='_blank'>Data-driven review of blockchain applications in supply chain management: key research themes and future directions: International Journal of Production Research: Vol 0, No 0</a></div><div class="date">18.01.2023</div><div><ul>
+<li>Problem: Cybersecurity in Blockchain applications for Supply Chain Management</li>
+<li>Solution: Data-driven review approach using text mining and LDA-based topic modelling</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Cybersecurity%22%7C%22Cyber%20Security%22%7C%22Information%20Security%22%7C%22IT%20Security%22%7C%22Computer%20Security%22%7C%22Network%20Security%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 5416 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Cybersecurity'' for ''Factory Automation''</div><div><a href='https://www.prnewswire.com/news-releases/nexcoms-security-appliance--your-key-factory-assets-are-safe-and-sound-301713185.html' target='_blank'>NEXCOM's Security Appliance - Your Key Factory Assets Are Safe and Sound</a></div><div class="date">05.01.2023</div><div><ul>
+<li>NEXCOM's ISA 140 ICS security appliance protects against industrial cybersecurity threats in Smart Factories.</li>
+<li>ISA 140 creates a micro-segmented & zero-trust network to safeguard factory equipment from attacks.</li>
+<li>NEXCOM plans to develop ICS security products for wireless connectivity & delay-sensitive communication between devices.</li>
+</ul></div><br/><div><a href='https://www.prnewswire.com/news-releases/smart-factory-kunshan-and-tencent-cloud-sign-mou-to-empower-chinese-and-german-smes-with-iiot-solutions-and-cloud-technologies-301659511.html' target='_blank'>Smart Factory Kunshan and Tencent Cloud Sign MOU to Empower Chinese and German SMEs with IIoT Solutions and Cloud Technologies</a></div><div class="date">26.10.2022</div><div><ul>
+<li>Factory automation's digitalization will increase IT workload, requiring strong cybersecurity partners like Tencent Cloud.</li>
+<li>Smart Factory Kunshan and Tencent Cloud partner to empower Chinese and German SMEs with IIoT solutions.</li>
+<li>Tencent Cloud provides stable and secure cloud products and services for various industries, including IIoT and cybersecurity.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221214005582/en/Global-Industrial-Software-On-Premise-Cloud-Market-Report-2022-A-157.41-Bn-Market-by-2027---Analysis-BFSI-IT-Telecom-Manufacturing-Government-Healthcare-Retail-Aerospace-Defense---ResearchAndMarkets.com/' target='_blank'>Global Industrial Software (On Premise, Cloud) Market Report 2022 A $157.41 Bn Market by 2027 - Analysis BFSI, IT & Telecom, Manufacturing, Government, Healthcare, Retail, Aerospace & Defense - ResearchAndMarkets.com | Business Wire</a></div><div class="date">14.12.2022</div><div><ul>
+<li>Industrial software market predicted to grow to $157.41 billion by 2027 with a CAGR of 9.25%.</li>
+<li>Cloud segment expected to be the fastest growing segment due to immediateness, efficiency, and scalability.</li>
+<li>Cybersecurity is a challenge impeding market growth, but adoption of digital twin technology can increase adoption of industrial software.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Cybersecurity%22%7C%22Cyber%20Security%22%7C%22Information%20Security%22%7C%22IT%20Security%22%7C%22Computer%20Security%22%7C%22Network%20Security%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 364 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Cybersecurity'' for ''Factory Automation''</div><div><a href='https://www.brookings.edu/blog/techtank/2022/12/09/the-digital-future-requires-making-5g-secure/' target='_blank'>The digital future requires making 5G secure</a></div><div class="date">12.12.2022</div><div><ul>
+<li>5G networks introduce new security vulnerabilities that threaten networks and those who rely on them.</li>
+<li>Virtualizing network functions in software creates new pathways to attack 5G networks.</li>
+<li>There is little formal oversight of companies' implementation of the 5G standard and its ORAN protocols.</li>
+</ul></div><br/><div><a href='https://eandt.theiet.org/content/articles/2022/12/nearly-half-of-british-manufacturers-hit-by-cyber-attack-in-the-last-year/' target='_blank'>Nearly half of British manufacturers hit by cyber-attack in the last year | E&ampT Magazine</a></div><div class="date">05.12.2022</div><div><ul>
+<li>42% of UK manufacturers experienced cyber attacks, with production stoppages and reputational damage as common results.</li>
+<li>Legacy IT, lack of cyber skills, and third-party access are top vulnerabilities.</li>
+<li>Industry 4.0 increases importance of cybersecurity, but 37% of respondents have not introduced new connected technologies due to cyber vulnerability concerns.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/bus-topology-the-backbone-of-simple-network-design' target='_blank'>Bus Topology: The Backbone of Simple Network Design</a></div><div class="date">29.04.2023</div><div><ul>
+<li>Bus topology is a cost-effective and simple network design suitable for small networks and specific applications.</li>
+<li>It may suffer from scalability issues, security concerns, and performance limitations, particularly in high-traffic situations.</li>
+<li>Bus topology remains relevant in specific applications and environments, and recent advancements in technology can help mitigate some of its limitations.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-5-4">Interoperability</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Interoperability%22%7C%22Interoperable%22%7C%22Interoperating%22%7C%22Interoperates%22%7C%22Interoperated%22%22&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 402 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Interoperability'' for ''Factory Automation''</div><div><a href='https://www.mdpi.com/2076-3417/13/3/1945' target='_blank'>Applied Sciences | Free Full-Text | Metamodelling of Manufacturing Processes and Automation Workflows towards Designing and Operating Digital Twins</a></div><div class="date">02.02.2023</div><div><ul>
+<li>Problem: Interoperability in Factory Automation</li>
+<li>Solution: Metamodelling framework for automation workflow knowledge database</li>
+</ul></div><br/><div><a href='http://link.springer.com/10.1007/s11036-023-02143-5' target='_blank'>Security and Privacy in 5G-IIoT Smart Factories: Novel Approaches, Trends, and Challenges</a></div><div class="date">06.07.2023</div><div><ul>
+<li>Problem: Interoperability in smart factories with 5G-IIoT</li>
+<li>Solution: Investigating security and privacy issues and proposing approaches</li>
+</ul></div><br/><div><a href='https://www.mdpi.com/1424-8220/22/24/9915' target='_blank'>Sensors | Free Full-Text | Holistic Security and Safety for Factories of the Future</a></div><div class="date">16.12.2022</div><div><ul>
+<li>Problem: Security and safety challenges in the Factories of the Future due to the integration of new technologies and interconnectivity.</li>
+<li>Solution: The SMS-DT platform, an integrated platform to simulate and monitor industrial conditions in a digital twin-based architecture, to capture, analyze, and correlate a wide range of events being tracked by sensors and systems in various domains of the factory.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Interoperability%22%7C%22Interoperable%22%7C%22Interoperating%22%7C%22Interoperates%22%7C%22Interoperated%22%22&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 731 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Interoperability'' for ''Factory Automation''</div><div><a href='https://evertiq.com/design/52855' target='_blank'>Evertiq - World’s First Long-Reach SPoE Solutions for Smart Buildin...</a></div><div class="date">23.11.2022</div><div><ul>
+<li>SPoE solutions for smart buildings and factory automation enable last-mile connectivity and real-time power management.</li>
+<li>SPoE reduces reliance on localised power and batteries, using a single twisted pair of Ethernet cables.</li>
+<li>Analog Devices' SPoE solutions support both SPoE and Power over Data Line (PoDL) variants of single-pair powering.</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20221216005363/en/PLM-in-Discrete-Manufacturing-Global-Market-Report-2022-Surging-Adoption-of-Smart-Factories-Drives-Growth---ResearchAndMarkets.com/' target='_blank'>PLM in Discrete Manufacturing Global Market Report 2022: Surging Adoption of Smart Factories Drives Growth - ResearchAndMarkets.com | Business Wire</a></div><div class="date">16.12.2022</div><div><ul>
+<li>PLM in discrete manufacturing market expected to grow to $28.61 billion in 2026 at a CAGR of 8.0%</li>
+<li>Surge in adoption of smart factories and smart manufacturing driving growth of PLM in discrete manufacturing market</li>
+<li>Strategic collaboration gaining traction in the discrete manufacturing PLM market</li>
+</ul></div><br/><div><a href='http://www.businesswire.com/news/home/20230412005267/en/Schneider-Electric-Doubles-Down-on-Sustainable-Digital-Industrial-Transformation-at-Hannover-Messe/' target='_blank'>Schneider Electric Doubles Down on Sustainable, Digital Industrial Transformation at Hannover Messe | Business Wire</a></div><div class="date">12.04.2023</div><div><ul>
+<li>Interoperable architecture and platform, EcoStruxure, drives efficiency in industries</li>
+<li>New motor management offers more flexible panel assembly with decarbonized steel materials</li>
+<li>AirSeT switchgear helps industrial customers manage tightening F-gas regulations and eliminates gas recycling</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22&q=%22Interoperability%22%7C%22Interoperable%22%7C%22Interoperating%22%7C%22Interoperates%22%7C%22Interoperated%22%22&sp=3178&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 58 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Interoperability'' for ''Factory Automation''</div><div><a href='https://spectrum.ieee.org/computer-networking' target='_blank'>The Do-or-Die Moments That Determined the Fate of the Internet - IEEE Spectrum</a></div><div class="date">27.03.2023</div><div><ul>
+<li>Interop '88 showcased TCP/IP products and promoted network interconnection, energizing the market.</li>
+<li>ARPANET's public demo in 1972 alerted experts to new technologies and altered the balance between competing approaches.</li>
+<li>OSI's founding premise was to create a comprehensive suite of standards and protocols for disparate networking technologies.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/predictive-maintenance-using-smart-sensors-to-get-the-most-out-of-your-assets' target='_blank'>Predictive Maintenance: Using Smart Sensors to get the most out of your assets</a></div><div class="date">02.11.2022</div><div><ul>
+<li>Predictive maintenance uses sensors and data to optimize maintenance schedules and maximize asset lifetime.</li>
+<li>Condition-based maintenance (CBM) and predictive maintenance (PdM) are more efficient than reactive or preventive maintenance.</li>
+<li>PdM systems require integration of sensors, big data management, cloud/edge computing, machine learning, and visualization.</li>
+</ul></div><br/><div><a href='https://www.wevolver.com/article/hmi-technologies-the-ultimate-guide-to-human-machine-interface-innovations' target='_blank'>HMI Technologies: The Ultimate Guide to Human-Machine Interface Innovations</a></div><div class="date">26.05.2023</div><div><ul>
+<li>HMI facilitates communication between humans and machines, improving efficiency and safety in various industries.</li>
+<li>HMI systems consist of hardware, software, and communication components, and can use various interaction mechanisms.</li>
+<li>Design considerations for HMI include usability, accessibility, consistency, feedback, simplicity, error prevention, and customization.</li>
+</ul></div><br/></div></div></div><div class="section-container"><h3 id="section-5-5">Maintenance and Repair</h3><div class="outer-container"><div class="content-container"><div class="container-heading"><div class="dataset-heading">Science Publications</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=2655&tagcat=Spotlight" target="_blank"><span class="total-hits">Total Hits: 9150 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Maintenance and Repair'' for ''Factory Automation''</div><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/36502109' target='_blank'>Resource Allocation in Downlink VLC-NOMA Systems for Factory Automation Scenario.</a></div><div class="date">12.12.2022</div><div><ul>
+<li>Problem: Maintenance and repair of factory automation systems</li>
+<li>Solution: Power-allocation algorithm and user-pairing scheme using VLC-NOMA</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Industry News</div><a class="explore-more" href="https://mergeflow.net/profiles/aplenk/search?&q=%22Factory%20Automation%22%7C%22Industrial%20Automation%22%7C%22Manufacturing%20Automation%22%7C%22Automation%20in%20Manufacturing%22%7C%22Smart%20Factory%22%7C%22Industry%204.0%22%7C%22factory%20automation%22%7C%22smart%20factories%22%7C%22smart%20factory%22%7C%22digital%20factory%22%7C%22digital%20factories%22error&sp=3814&tagcat=Company" target="_blank"><span class="total-hits">Total Hits: 32456 </span><i class="fa-solid fa-square-arrow-up-right"></i></a></div><div class="orientation-subheading">''Maintenance and Repair'' for ''Factory Automation''</div><div><a href='https://www.prnewswire.com/news-releases/inventec-collaborates-with-microsoft-to-deliver-smart-factory-solutions-on-microsoft-azure-private-5g-core-301756076.html' target='_blank'>INVENTEC COLLABORATES WITH MICROSOFT TO DELIVER SMART FACTORY SOLUTIONS ON MICROSOFT AZURE PRIVATE 5G CORE</a></div><div class="date">27.02.2023</div><div><ul>
+<li>Inventec collaborates with Microsoft to provide 5G-enabled smart factory solutions on Azure Private 5G Core.</li>
+<li>Azure Private 5G Core enables organizations to deploy and manage private 5G networks at the enterprise edge.</li>
+<li>The 5G Next Lab, established by Inventec, Microsoft, and Intel, provides a working space for ecosystem partners to collaborate on end-to-end industry solutions.</li>
+</ul></div><br/></div><div class="content-container"><div class="container-heading"><div class="dataset-heading">Technology Blogs</div></div><div class="not-found">(No matching technology blogs found)</div></div></div></div></div>
+        <div><div class="table-overview"><h4 id="section-5-6">SBIR Research Projects</h4><table><tr><th>Funded Entity</th><th>Description</th><th>Human-Robot Collaboration</th><th>Flexible Manufacturing</th><th>Cybersecurity</th><th>Interoperability</th><th>Maintenance and Repair</th></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/68593' target='_blank'>PRISM Program at ESC/ENS</a></td><td><ul><li>Extending MTV model's range of applicability</li><li>Applying OCU model to MTV model</li></ul></td><td>-</td><td>x</td><td>-</td><td>x</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/330800' target='_blank'>Teri Research</a></td><td><ul><li>Language Based Speech Recognition Module</li><li>Parallel DSP/microcomputer module for real-time spoken language communications</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/287413' target='_blank'>RADATEC</a></td><td><ul><li>Developing a low-cost vibration sensor using wireless chipsets</li><li>For factory automation, motor monitoring, and more</li></ul></td><td>-</td><td>-</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/381311' target='_blank'>Opto-Knowledge Systems</a></td><td><ul><li>Manufacturing of high-efficiency gratings for imaging spectrometry</li><li>Reduces cost of high-end gratings for space missions and provides alternative to low efficiency gratings</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1622731' target='_blank'>Delta Sigma Company</a></td><td><ul><li>Flexible Manufacturing</li><li>Digital Processing Inspection Verification</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/310288' target='_blank'>SPS</a></td><td><ul><li>Flexible Manufacturing</li><li>Development of JD-MAT</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/272258' target='_blank'>Physical Optics Corporation</a></td><td><ul><li>Automated shipboard handling and stowage of organic offboard vehicles</li><li>Compact and intelligent robotic system with open system architecture</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/344263' target='_blank'>VECNA TECHNOLOGIES</a></td><td><ul><li>Poor efficiency, controllability, and noisy operation of hydraulic actuation in small mobile robotic applications</li><li>Novel, integrated approach to hydraulic actuation</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td><td>x</td></tr><tr><td><a href='https://www.sbir.gov/sbirsearch/detail/1643641' target='_blank'>Vieletech</a></td><td><ul><li>Development of a new sensor for free-piston engines</li><li>Framework for a new integrated circuit for mass adoption</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr></table><h4 id="section-5-7">Venture Capital Companies</h4><table><tr><th>Company</th><th>Description</th><th>Human-Robot Collaboration</th><th>Flexible Manufacturing</th><th>Cybersecurity</th><th>Interoperability</th><th>Maintenance and Repair</th></tr><tr><td><a href='https://www.finsmes.com/2023/08/cellares-raises-255m-in-series-c-funding.html' target='_blank'>Cellares</a></td><td><ul><li>Integrated technologies for cell therapy manufacturing</li><li>Accelerates access to life-saving cell therapies</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2022/10/software-defined-automation-raises-10m-in-seed-funding.html' target='_blank'>Software Defined Automation</a></td><td><ul><li>Industrial-Control-as-a-Service offering</li><li>Flexible Manufacturing</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20221031005040/en/Bright-Machines-Raises-132M-in-New-Funding-to-Expand-Intelligent-Automation-in-Manufacturing/' target='_blank'>Bright Machines</a></td><td><ul><li>Software-defined manufacturing automation</li><li>Flexible, scalable, and cost-effective production</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2022/12/darwinai-raises-6musd-in-funding.html' target='_blank'>DarwinAI</a></td><td><ul><li>Visual quality inspection system for Electronics (PCBA) manufacturers</li><li>Improves product quality and production efficiency</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/02/latys-raises-3m-in-seed-funding.html' target='_blank'>Latys</a></td><td><ul><li>Drop-in antenna extends wireless signals without interference</li><li>Solves dead zone, interference, and reliability issues in Wi-Fi and mesh networks</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/04/groundlight-raises-10m-in-funding.html' target='_blank'>Groundlight</a></td><td><ul><li>Visual understanding service based on natural language instructions</li><li>Enables small to mid-sized manufacturers to activate productivity-enhancing ML solutions and to build vision solutions quickly</li></ul></td><td>x</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2023/10/edgecortix-closes-20m-in-additional-funding-round.html' target='_blank'>EdgeCortix</a></td><td><ul><li>SAKURA hardware products for energy-efficient AI processing</li><li>Accelerates AI inference tasks for computer vision, natural language processing and generative AI applications</li></ul></td><td>-</td><td>x</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='https://www.finsmes.com/2022/11/strand-therapeutics-raises-45m-in-series-a1-funding.html' target='_blank'>Strand Therapeutics</a></td><td><ul><li>Programmable mRNA therapy for solid tumor immuno-oncology</li><li>Developing first-in-class programmable mRNA therapeutics</li></ul></td><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><a href='http://www.businesswire.com/news/home/20230811999559/en/Olis-Robotics-Secures-4M-Funding-to-Meet-Surging-Demand-for-Remote-Robot-Management/' target='_blank'>Olis Robotics</a></td><td><ul><li>Remote robot management technology</li><li>Addresses costly robot downtime</li></ul></td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr></table></div></div>
+        <h2 id="section-6">6. Future Outlook</h2>
+        <div><div><div class="section-container"><h3>Ageing workforce in industry 4.0</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.informahealthcare.com/doi/full/10.1080/1463922X.2022.2148178?af=R' target='_blank'>Full article: The sociodemographic challenge in human-centred production systems – a systematic literature review</a></div><div class="date">18.08.2023</div><div><ul>
+<li>Adopting human-centred approaches to improve physical, ergonomic, and well-being conditions of ageing operators</li>
+<li>Integrating human factors and ergonomics into smart factories</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in advanced research</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2079-9292/12/6/1310' target='_blank'>Implementation and Evaluation of 5G MEC-Enabled Smart Factory</a></div><div class="date">09.03.2023</div><div><ul>
+<li>Integration of multiple techniques for advanced research</li>
+<li>Focus on future research directions and applications</li>
+<li>No specific timeframe mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in advanced research</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.mdpi.com/2079-9292/12/6/1321' target='_blank'>Electronics | Free Full-Text | Demand Response Management via Real-Time Pricing for Microgrid with Electric Vehicles under Cyber-Attack</a></div><div class="date">10.03.2023</div><div><ul>
+<li>Integration of multiple techniques for advanced research</li>
+<li>Focus on future research directions and applications</li>
+<li>No specific timeframe mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in digital manufacturing ecosystems</h3><div class="outer-container"><div class="content-container"><div><a href='http://www.ncbi.nlm.nih.gov/pubmed/37687851' target='_blank'>Building a Digital Manufacturing as a Service Ecosystem for Catena-X.</a></div><div class="date">09.09.2023</div><div><ul>
+<li>Shift from integrated production to open production with flexible supply chains</li>
+<li>Realization of new business models and overcoming challenges in legislation, sustainability, and standardization</li>
+<li>Timeframe: Not mentioned</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in digital twin technology for smart factories</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.wevolver.com/article/a-closer-look-at-digital-twins-virtual-factory-models-that-expand-the-potential-of-their-real-counterpart' target='_blank'>A Closer Look at Digital Twins, Virtual Factory Models that Expand the Potential of Their Real Counterpart</a></div><div class="date">26.07.2023</div><div><ul>
+<li>Increased use of digital twins for efficient changeovers in production schedules</li>
+<li>Implementation of high-precision digital twins using physics, chemistry, and sensor technology</li>
+<li>Potential use of AI and quantum computers for advanced information processing in digital twin analysis</li>
+<li>Timeframe: The article does not mention a specific timeframe for these trends.</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in pneumatics for motorsport and beyond</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.wevolver.com/article/pneumatics-in-motorsport' target='_blank'>Pneumatics In Motorsport</a></div><div class="date">27.05.2023</div><div><ul>
+<li>Increasing use of pneumatics in motorsport for valve actuation, suspension, and pit-stop solutions</li>
+<li>Potential for pneumatics to be used in ordinary road vehicles for driving assistance for the less abled</li>
+<li>Continued development of pneumatics for 3D printing and additive manufacturing</li>
+<li>Timeframe: not specified</li>
+</ul></div></div></div></div><div class="section-container"><h3>Future trends in supercar design and production</h3><div class="outer-container"><div class="content-container"><div><a href='https://www.wevolver.com/article/revolutionizing-supercar-design-and-production-with-the-ultimaker-ecosystem' target='_blank'>Revolutionizing Supercar Design and Production with the UltiMaker Ecosystem</a></div><div class="date">17.06.2023</div><div><ul>
+<li>Increased use of 3D printing for bespoke parts</li>
+<li>Centralization and streamlining of 3D printing operations</li>
+<li>Timeframe: ongoing</li>
+</ul></div></div></div></div><div class="section-container"><h3>Opportunities in industry 4.0</h3><div class="outer-container"><div class="content-container"><div><a href='https://techxplore.com/news/2023-09-easing-job-jitters-digital-revolution.html' target='_blank'>Easing job jitters in the digital revolution</a></div><div class="date">21.09.2023</div><div><ul>
+<li>Develop new business practices and welfare support to shape the future and create new jobs</li>
+<li>Use technology to enhance jobs, not downgrade the quality of jobs</li>
+<li>Timeframe: not specified</li>
+</ul></div></div></div></div></div></div>
+    </div>
+</body>
+</html>
